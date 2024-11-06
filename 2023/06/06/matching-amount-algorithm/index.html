@@ -404,6 +404,7 @@ var _hmt = _hmt || [];
       
 
         
+
 <p>在同一平台中买卖交易，需要进行订单撮合。相近的金额从大到小递减组合。期初想用mq分别匹配整数的金额倍数处理，总觉的不太完美。最近刚好有空就找到了猴子选大王算法：<br><span id="more"></span><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">function King($monkeys_arr,$m)</span><br><span class="line">&#123;</span><br><span class="line">    $i = 0;</span><br><span class="line">    $finsh=[];</span><br><span class="line">    while(count($monkeys_arr)&gt;1)</span><br><span class="line">    &#123;</span><br><span class="line">        $i++;</span><br><span class="line">        if($i&gt;count($monkeys_arr)) break;</span><br><span class="line">        $head = array_shift($monkeys_arr);</span><br><span class="line">        if ($head%$m != 0) &#123;</span><br><span class="line">            array_push($monkeys_arr, $head);</span><br><span class="line">            continue;</span><br><span class="line">        &#125;</span><br><span class="line">        $finsh[]=$head;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return $finsh;</span><br><span class="line">&#125;</span><br><span class="line">$a=king([1,2,6,3,4,8,7],7);</span><br><span class="line">var_dump($a);</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><br>根据以上算法改造一下。<br>先确定匹配金额顺序，即做降序排列。<br>然后每次匹配到小于指定金额后，减去此金额。把匹配金额赋值为差结果。<br>依次类推。<br>在这过程中记录匹配到的金额、最后差值的余额。<br>撮合代码如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">function marriedDeal($arr, $change_number)</span><br><span class="line">&#123;</span><br><span class="line">    $i = 0;</span><br><span class="line">    $finsh = []; //匹配到的金额</span><br><span class="line">    $default_total = count($arr);</span><br><span class="line">    if($default_total==0) return [];</span><br><span class="line">    arsort($arr);</span><br><span class="line">    $blance = 0;  //最后余额</span><br><span class="line">    while ($default_total &gt;= 1) &#123;</span><br><span class="line">        $i += 1;</span><br><span class="line">        if ($i &gt; $default_total || $change_number &lt;= 0) break;</span><br><span class="line">        $head = array_shift($arr);</span><br><span class="line">        if ($head &gt; $change_number) &#123;</span><br><span class="line">            array_push($arr, $head);</span><br><span class="line">            continue;</span><br><span class="line">        &#125;</span><br><span class="line">        $finsh[] = $head;</span><br><span class="line">        $change_number -= $head;</span><br><span class="line">        $blance = $change_number;</span><br><span class="line">    &#125;</span><br><span class="line">    return [$finsh, $blance, $arr];</span><br><span class="line">&#125;</span><br><span class="line">  $get_number = marriedDeal([120, 200,100,300,11,221],20);</span><br><span class="line">print_r($get_number);</span><br></pre></td></tr></table></figure>
 <p>最近闲来无事，做了测试。如下图做测试数据<br><img src="/img/202306/20230701220606.png" alt="https://erik.xyz"><br>测试后生成结果<br><img src="/img/202306/20230701221810.png" alt="https://erik.xyz"><br>发现这样撮合数据多的时候会耗时太久,就尝试找优化方法。<br>如果使用生成器呢，生成结果如下<br><img src="/img/202306/20230701220832.png" alt="https://erik.xyz"></p>
@@ -604,7 +605,9 @@ var _hmt = _hmt || [];
 
 
 
-  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
+  
+
+<div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
 
 <link rel="stylesheet" href="/css/gitalk.css">
 <script src="/js/gitalk.min.js"></script>
@@ -626,6 +629,19 @@ if(true){
 })
 gitalk.render('gitalk-container')
 }
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
+     crossorigin="anonymous"></script>
+<!-- dev1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4999274615022440"
+     data-ad-slot="4067790488"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
   
 
@@ -686,10 +702,10 @@ gitalk.render('gitalk-container')
 				mermaid.initialize({ theme: 'forest' });
 			}
 		</script>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
-		crossorigin="anonymous"></script>
+
 		
 </footer>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -854,6 +870,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">说说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php服务器</a>
               </li>
              
@@ -863,18 +887,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php实例</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">说说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -898,6 +910,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">漏洞</a>
               </li>
              
@@ -910,23 +926,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">kali</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -942,11 +950,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+                <a href="javascript:void(0)" class="js-tag color5">kali</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">支付</a>
+                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -971,6 +979,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">nginx隐藏index</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">支付</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2010,15 +2026,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">redis锁</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">redis分布式锁</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2090,6 +2106,18 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">空间</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">资源</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">路由器烧录</a>
               </li>
              
@@ -2103,18 +2131,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">砖头烧录</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">空间</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">资源</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2206,18 +2222,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">socket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
@@ -2227,6 +2231,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">json解析</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">socket</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2262,15 +2278,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">树</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">二叉树</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2943,6 +2959,10 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://lichong.work" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>Ric&#39;s Blog</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://simonsu.cn" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>SimonSu</a>
             </li>
           
         </ul>

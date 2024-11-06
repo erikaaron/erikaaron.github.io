@@ -374,6 +374,7 @@ var _hmt = _hmt || [];
       
 
         
+
 <p>最近在做响应式布局适应不同分辨率的屏幕，太痛苦了，摸着石头过河。之前没有做过这块，手机端又不是很在行，ipad/iphone/三星……一大堆不同的屏幕，如何测试呢，总不能买一大堆设备吧。</p>
 <p>偶然间发现谷歌浏览器(最新版)可以缩小来实现，这样又有问题了，分辨率是多少呢？发现新方法了，废话不多说了，直接上教程。 1.在谷歌浏览器打开你要测试的网页按键盘F12，打开网页调试   2.点击调试工具右上角形似菜单的图标   3.这时候你会发现紧挨着浏览器底部有一排英文菜单   4.把菜单往上拉出来，点击第三个菜单   5.点击打开菜单下面的手机标示   6.如此便是手机设计效果   7.有2个地方可以选择不同的分辨率及屏幕对应的像素   8.下次打开就直接点击F12，然后左上角的手机标示就可以切换</p>
 
@@ -919,6 +920,7 @@ var _hmt = _hmt || [];
       
 
         
+
 <p>官方消息称今天上午11:00左右携程网站部分页面遭遇攻击无法打开，截止目前携程网站仍处于紧急修复中，预计修复时间未知…… <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://tietuku.com/43e219fd23d8cc95" target="_blank"><img src="http://i1.tietuku.com/43e219fd23d8cc95.jpg" alt="携程网站"></a>   <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://tietuku.com/f2f3564418be4138" target="_blank"><img src="http://i1.tietuku.com/f2f3564418be4138.png" alt="携程故障"></a> 据几个qq群友讲，携程此次遭遇物理删除攻击，只要往服务器上传代码就会被自动删除，所有岗位技术，紧急加班修复，目前还未找到原因。 前段时间是易网遭遇不明原因攻击一部分功能无法使用，昨天是支付宝因挖断光纤无法完成支付（官方解释）。这个五月难道注定了互联网的不平凡。   <strong>物理删除是什么？</strong> 物理删除是指文件存储所用到的磁存储区域被真正的擦除或清零，这样删除的文件是不可以恢复的。</p>
 
       
@@ -1133,6 +1135,7 @@ var _hmt = _hmt || [];
       
 
         
+
 <p>源码 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://i1.tietuku.com/c143e48c21880077.png" target="_blank"><img src="http://i1.tietuku.com/c143e48c21880077.png" alt="php闰年"></a> &lt;?php /<strong> <em> 版权所有 木木夕互联网开发 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.erik.xyz" target="_blank">http://www.erik.xyz</a> </em> 开发者：艾瑞可 <em> 2015年5月13日 下午11:50:36 </em> PHP */ header(“Content-Type:text/html;Charset=utf-8”); //计算2000到2030之间所有的闰年 /</strong> <em> 分析：闰年是除以4为整数的的年份，所以只要符合除以4没有余数的年份都是闰年 </em>/ $_POST[“sub”]=2000; //从2000年开始 if($_POST[“sub”]){ for($a=2000;$a&lt;=2030;$a++){ //定义循环变量 if($a%4==0){ //判断除以4为整数的年份 echo $a.”&nbsp;&nbsp;”; } } } ?&gt;   输出结果 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://i1.tietuku.com/da8ce81f6b455132.png" target="_blank"><img src="http://i1.tietuku.com/da8ce81f6b455132.png" alt=""></a></p>
 
       
@@ -1343,6 +1346,7 @@ var _hmt = _hmt || [];
       
 
         
+
 <p>最近用bootstrap在做前端设计页面，突然发现a标签点击后出现虚线框，很郁闷啊。原因是css的outline属性 百度后找到网友给的解决办法是添加css样式 a:focus { outline: none; outline-style:none; -moz-outline:none; } 试试后貌似不起作用，肿么办。又找了一下才发现还有一个办法 在a标签里加入js控制，当a标签被聚焦时，强制取消焦点，这时候a标签自然不会有虚线框。 <strong><a href="#" onfocus="this.blur();">测试</a></strong> 搞定 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.erik.xyz/web_a" target="_blank"><img src="http://i1.tietuku.com/3901561e8bc8d85b.jpg" alt="展示图"></a></p>
 
       
@@ -1429,7 +1433,6 @@ var _hmt = _hmt || [];
     </nav>
   
 
-
           </div>
         </div>
       </div>
@@ -1476,10 +1479,10 @@ var _hmt = _hmt || [];
 				mermaid.initialize({ theme: 'forest' });
 			}
 		</script>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
-		crossorigin="anonymous"></script>
+
 		
 </footer>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -1644,6 +1647,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">说说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php服务器</a>
               </li>
              
@@ -1653,18 +1664,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php实例</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">说说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1688,6 +1687,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">漏洞</a>
               </li>
              
@@ -1700,23 +1703,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">kali</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1732,11 +1727,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+                <a href="javascript:void(0)" class="js-tag color5">kali</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">支付</a>
+                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1761,6 +1756,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">nginx隐藏index</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">支付</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2800,15 +2803,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">redis锁</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">redis分布式锁</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2880,6 +2883,18 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">空间</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">资源</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">路由器烧录</a>
               </li>
              
@@ -2893,18 +2908,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">砖头烧录</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">空间</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">资源</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2996,18 +2999,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">socket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
@@ -3017,6 +3008,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">json解析</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">socket</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3052,15 +3055,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">树</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">二叉树</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3733,6 +3736,10 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://lichong.work" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>Ric&#39;s Blog</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://simonsu.cn" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>SimonSu</a>
             </li>
           
         </ul>

@@ -883,6 +883,7 @@ func GetMonthDay(types int) (string, string) &#123;
       
 
         
+
 <pre><code>package main
 
 import (
@@ -1111,6 +1112,7 @@ func GetIP(r *http.Request) string &#123;
       
 
         
+
 <p>go中我们往往要对变量分配内存，那么分配内存有两中方式分别是new和make。查了一些资料，顺便看我开发中用的几个地方。其实，很好理解。</p>
 <p>new分配中内存，不做初始化，也就是不能直接赋值，必须初始化后才能赋值。</p>
 <p>make分配好内存且已经</p>
@@ -1211,6 +1213,7 @@ func GetIP(r *http.Request) string &#123;
       
 
         
+
 <p>在go中往redis的hash写数据的时候遇到了结构体数组写入时无法写入，看了看写入数据要求是map[string]interface，而我的是struct。因此，无法写入的。<br>那么就是转格式呗</p>
 <pre><code>type order struct&#123;
     Id int64 `json:&quot;id&quot;`
@@ -1407,7 +1410,6 @@ log.Info(redisData)
     </nav>
   
 
-
           </div>
         </div>
       </div>
@@ -1454,10 +1456,10 @@ log.Info(redisData)
 				mermaid.initialize({ theme: 'forest' });
 			}
 		</script>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
-		crossorigin="anonymous"></script>
+
 		
 </footer>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -1622,6 +1624,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">说说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php服务器</a>
               </li>
              
@@ -1631,18 +1641,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php实例</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">说说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1666,6 +1664,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">漏洞</a>
               </li>
              
@@ -1678,23 +1680,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">kali</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1710,11 +1704,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+                <a href="javascript:void(0)" class="js-tag color5">kali</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">支付</a>
+                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1739,6 +1733,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">nginx隐藏index</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">支付</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2778,15 +2780,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">redis锁</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">redis分布式锁</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2858,6 +2860,18 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">空间</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">资源</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">路由器烧录</a>
               </li>
              
@@ -2871,18 +2885,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">砖头烧录</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">空间</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">资源</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2974,18 +2976,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">socket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
@@ -2995,6 +2985,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">json解析</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">socket</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3030,15 +3032,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">树</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">二叉树</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3711,6 +3713,10 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://lichong.work" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>Ric&#39;s Blog</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://simonsu.cn" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>SimonSu</a>
             </li>
           
         </ul>

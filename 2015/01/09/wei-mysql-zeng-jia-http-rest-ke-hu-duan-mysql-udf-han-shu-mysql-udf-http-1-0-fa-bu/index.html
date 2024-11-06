@@ -403,6 +403,7 @@ var _hmt = _hmt || [];
       
 
         
+
 <p>文章作者：张宴 Mysql-udf-http 是一款简单的MySQL用户自定义函数（UDF, User-Defined Functions），具有http_get()、http_post()、http_put()、http_delete()四个函数，可以在 MySQL数据库中利用HTTP协议进行REST相关操作。 项目网址：<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://code.google.com/p/mysql-udf-http/" target="_blank">http://code.google.com/p/mysql-udf-http/</a> 中文说明：<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://blog.zyan.cc/mysql-udf-http/" target="_blank">http://blog.zyan.cc/mysql-udf-http/</a> 使用环境：Linux操作系统，支持的MySQL版本：5.1.x 和 5.5.x。5.0.x未经测试。 软件作者：张宴<span id="more"></span></p>
 <hr>
 <p><strong>一、REST架构风格：</strong> REST（Representational State Transfer）是一种轻量级的Web Service架构风格，其实现和操作明显比SOAP和XML-RPC更为简洁，可以完全通过HTTP协议实现，还可以利用缓存Cache来提高响应速 度，性能、效率和易用性上都优于SOAP协议。REST最早是由 Roy Thomas Fielding 博士2000年在论文《<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.ics.uci.edu/%7Efielding/pubs/dissertation/top.htm" target="_blank">Architectural Styles and the Design of Network-based Software Architectures</a>》中提出的，<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://mysql-udf-http.googlecode.com/files/REST_cn.pdf" target="_blank">中文译文全文PDF点此下载</a>。另外，<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.infoq.com/cn/articles/rest-introduction" target="_blank">有篇译文</a>对REST做了一个简化说明。 目前，REST架构风格的常见实现是基于HTTP协议及其四种基本方法（如POST、GET、PUT和DELETE）的。有人将HTTP协议的四种方法 与CRUD原则相对应，CRUD原则对于资源只需要四种行为：Create（创建）、Read（读取）、Update（更新）和Delete（删除）就可 以完成对其操作和处理。 </p>
@@ -744,7 +745,9 @@ drop function http_delete;
 
 
 
-  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
+  
+
+<div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
 
 <link rel="stylesheet" href="/css/gitalk.css">
 <script src="/js/gitalk.min.js"></script>
@@ -766,6 +769,19 @@ if(true){
 })
 gitalk.render('gitalk-container')
 }
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
+     crossorigin="anonymous"></script>
+<!-- dev1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4999274615022440"
+     data-ad-slot="4067790488"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
   
 
@@ -826,10 +842,10 @@ gitalk.render('gitalk-container')
 				mermaid.initialize({ theme: 'forest' });
 			}
 		</script>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
-		crossorigin="anonymous"></script>
+
 		
 </footer>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -994,6 +1010,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">说说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php服务器</a>
               </li>
              
@@ -1003,18 +1027,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php实例</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">说说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1038,6 +1050,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">漏洞</a>
               </li>
              
@@ -1050,23 +1066,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">kali</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1082,11 +1090,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+                <a href="javascript:void(0)" class="js-tag color5">kali</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">支付</a>
+                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1111,6 +1119,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">nginx隐藏index</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">支付</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2150,15 +2166,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">redis锁</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">redis分布式锁</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2230,6 +2246,18 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">空间</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">资源</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">路由器烧录</a>
               </li>
              
@@ -2243,18 +2271,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">砖头烧录</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">空间</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">资源</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2346,18 +2362,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">socket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
@@ -2367,6 +2371,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">json解析</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">socket</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2402,15 +2418,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">树</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">二叉树</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3083,6 +3099,10 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://lichong.work" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>Ric&#39;s Blog</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://simonsu.cn" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>SimonSu</a>
             </li>
           
         </ul>

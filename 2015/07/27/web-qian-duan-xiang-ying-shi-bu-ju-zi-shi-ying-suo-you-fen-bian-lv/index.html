@@ -408,6 +408,7 @@ var _hmt = _hmt || [];
       
 
         
+
 <p>写phpd的我。最近公司要弄个app关键是没有web开发，而我有比较闲，那就扛枪上阵吧。 响应式布局，web端的？php我一直都是用tp框架，对于web首先想到的是bootstrap框架。只是简单了解过，没真正实践啊，bootstrap比我想象的要好用的多。关键是，关键来了…… app端是只有手机的，pc基本上木有。那就是说只能按照手机端开发，那么boostrap响应式布局就不适用于app了（反正我是做了一套半成品，被推翻了）。不能愉快的工作了，好不淡定的时间。。百度，百又问问同事，发现了amaze ui也就是妹子框架，终于可以省事了，太高兴了。 amaze框架下载后是一套让人极其郁闷的示例包，文件引入是分开来介绍的，如果你不仔细看文档，会很痛苦的（因为我就是如此，好折磨人）。 好了附上amaze的引入文件，仅供大伙参考。 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://tietuku.com/b84e74496e36a7e0" target="_blank"><img src="http://i1.tietuku.com/b84e74496e36a7e0.jpg" alt=""></a> 对了手机端要在头部加上这句话<span id="more"></span><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt; </span><br></pre></td></tr></table></figure><br>一切就绪，那就直奔主题。 手机端目前最低宽度是300.不过说实话智能手机300的屏幕估计是木有，那就按iphone4的320来设计web。那么问题来了，设计给的参考图示640的肿么办，所有的像素除以2，一切解决。 使用amaze框架并不能很好的解决不同分辨率的像素问题，而且最苦逼的就是要设置好多@media only screen and (min-width:320px) and (max-width:480px) {}屏幕范围样式。太痛苦了，受不了。。有木有一种可以控制的方法呢，京东是怎么弄的？小米又是怎么弄的？百度吧，一切从度娘中找答案。 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://tietuku.com/64ab3ce5b39e08f0" target="_blank"><img src="http://i1.tietuku.com/64ab3ce5b39e08f0.jpg" alt=""></a>   答案好多，慢慢筛选吧……   于是找到这段代码 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://tietuku.com/f5a3689aabbb0f21" target="_blank"><img src="http://i3.tietuku.com/f5a3689aabbb0f21.jpg" alt=""></a>   那么问题来了，这只是页面的，我想要所有的地方在不同尺寸的浏览器都能自适应，怎解决？ clientwidth是获取屏幕显示的宽度，设定最小屏幕为320，以320为基础，那么最小最字体就是12px。于是就有了改动。 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://tietuku.com/234327da825807f4" target="_blank"><img src="http://i3.tietuku.com/234327da825807f4.jpg" alt=""></a>   好了这下子无论什么浏览器都是以最宽320，最小12px为基准。接着还有个问题，所有布局改用什么单位？px/em/pt/rem px是最精确的单位,固定值。em值不固定，继承父元素。rem在设定元素时仍是相对大小，但相对的是html根元素。pt就是印刷业上的单位，不过app开发中也用到。 那么好了，该用哪种的呢，我们先来看看上面的自适应js执行效果。 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://tietuku.com/c68b6fbfed3d6b9c" target="_blank"><img src="http://i1.tietuku.com/c68b6fbfed3d6b9c.jpg" alt=""></a> 在html元素中生成了一个行内字体样式，答案就有了吧。</p>
 
       
@@ -605,7 +606,9 @@ var _hmt = _hmt || [];
 
 
 
-  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
+  
+
+<div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
 
 <link rel="stylesheet" href="/css/gitalk.css">
 <script src="/js/gitalk.min.js"></script>
@@ -627,6 +630,19 @@ if(true){
 })
 gitalk.render('gitalk-container')
 }
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
+     crossorigin="anonymous"></script>
+<!-- dev1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4999274615022440"
+     data-ad-slot="4067790488"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
   
 
@@ -687,10 +703,10 @@ gitalk.render('gitalk-container')
 				mermaid.initialize({ theme: 'forest' });
 			}
 		</script>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
-		crossorigin="anonymous"></script>
+
 		
 </footer>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -855,6 +871,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">说说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php服务器</a>
               </li>
              
@@ -864,18 +888,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php实例</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">说说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -899,6 +911,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">漏洞</a>
               </li>
              
@@ -911,23 +927,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">kali</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -943,11 +951,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+                <a href="javascript:void(0)" class="js-tag color5">kali</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">支付</a>
+                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -972,6 +980,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">nginx隐藏index</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">支付</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2011,15 +2027,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">redis锁</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">redis分布式锁</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2091,6 +2107,18 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">空间</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">资源</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">路由器烧录</a>
               </li>
              
@@ -2104,18 +2132,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">砖头烧录</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">空间</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">资源</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2207,18 +2223,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">socket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
@@ -2228,6 +2232,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">json解析</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">socket</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2263,15 +2279,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">树</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">二叉树</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2944,6 +2960,10 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://lichong.work" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>Ric&#39;s Blog</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://simonsu.cn" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>SimonSu</a>
             </li>
           
         </ul>

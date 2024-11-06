@@ -401,6 +401,7 @@ var _hmt = _hmt || [];
       
 
         
+
 <p>memcached配置好久没怎么搞懂，今天就试试还真弄成了 首先，下载文件 wget  <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz" target="_blank">http://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz</a> wget  <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz" target="_blank">http://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz</a> wget  <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz" target="_blank">http://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz</a> 如果新手不太懂命令下载可以直接点击下面的下载到本地。然后再用ftp上传到服务器 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz" target="_blank">libevent-1.4.14b-stable.tar.gz</a> <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz" target="_blank">memcached-1.4.20.tar.gz</a> <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz" target="_blank">memcache-2.2.1.tgz</a> 因为考虑到文件的完整性建议最好在服务器上解压 解压文件 tar xzfv  libevent-1.4.14b-stable.tar.gz 给权限 chmod -R 777 libevent-1.4.14b-stable 进入文件 cd libevent-1.4.14b-stable 一次编译安装 ./configure   (这里也可以指定，目录根据自己实际情况来选择) make &amp;&amp; make install 笔者默认安装到<strong>/usr/local/lib/</strong>目录<span id="more"></span></p>
 <h3 id="安装memcached"><a href="#安装memcached" class="headerlink" title="安装memcached"></a>安装memcached</h3><p>如上依次解压 memcached-1.4.20.tar.gz tar zxvf memcached-1.4.20.tar.gz chmod -R 777 memcached-1.4.20 ./configure  —prefix=/local/memcached   (这里笔者指定了安装目录) make &amp;&amp; make install 然后启动一下 ./memcached -d -u nobody -m 512 127.0.0.1 -p 11211</p>
 <h3 id="安装memcache-php模块"><a href="#安装memcache-php模块" class="headerlink" title="安装memcache php模块"></a>安装memcache php模块</h3><p>tar zxvf memcache-2.2.1.tgz chmod -R 777 memcache-2.2.1 cd memcache-2.2.1 找一下phpize 一般是在php目录下的bin里面，笔者目录是/alidata/php/bin/phpize 输入 /alidata/php/bin/phpize ./configure —enable-memcache=/alidata/memcache/bin/memcached —with-php-config=/alidata/php/bin/php-config make &amp;&amp; make install 然后修改php.ini vi /alidata/php/etc/php.ini 把extension_dir = “./“ 修改为extension_dir = “/alidata/php/lib/php/extensions/no-debug-non-zts-20060613”  （一般自动都生成了） 然后在下一行添加 extension=”memcache.so”   重启httpd，在phpinfo.php中就可以看到 [caption id=”attachment_48” align=”alignnone” width=”300”]<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.erik.xyz/wp-content/uploads/2014/10/20141006180621.png" target="_blank"><img src="http://www.erik.xyz/wp-content/uploads/2014/10/20141006180621-300x177.png" alt="memcache安装成功图片"></a> memcache安装成功图片[/caption]</p>
@@ -588,7 +589,9 @@ var _hmt = _hmt || [];
 
 
 
-  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
+  
+
+<div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
 
 <link rel="stylesheet" href="/css/gitalk.css">
 <script src="/js/gitalk.min.js"></script>
@@ -610,6 +613,19 @@ if(true){
 })
 gitalk.render('gitalk-container')
 }
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
+     crossorigin="anonymous"></script>
+<!-- dev1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4999274615022440"
+     data-ad-slot="4067790488"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
   
 
@@ -670,10 +686,10 @@ gitalk.render('gitalk-container')
 				mermaid.initialize({ theme: 'forest' });
 			}
 		</script>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
-		crossorigin="anonymous"></script>
+
 		
 </footer>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -838,6 +854,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">说说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php服务器</a>
               </li>
              
@@ -847,18 +871,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php实例</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">说说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -882,6 +894,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">漏洞</a>
               </li>
              
@@ -894,23 +910,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">kali</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -926,11 +934,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+                <a href="javascript:void(0)" class="js-tag color5">kali</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">支付</a>
+                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -955,6 +963,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">nginx隐藏index</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">支付</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1994,15 +2010,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">redis锁</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">redis分布式锁</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2074,6 +2090,18 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">空间</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">资源</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">路由器烧录</a>
               </li>
              
@@ -2087,18 +2115,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">砖头烧录</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">空间</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">资源</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2190,18 +2206,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">socket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
@@ -2211,6 +2215,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">json解析</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">socket</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2246,15 +2262,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">树</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">二叉树</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2927,6 +2943,10 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://lichong.work" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>Ric&#39;s Blog</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://simonsu.cn" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>SimonSu</a>
             </li>
           
         </ul>

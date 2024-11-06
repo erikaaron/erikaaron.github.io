@@ -405,6 +405,7 @@ var _hmt = _hmt || [];
       
 
         
+
 <p>摘自：<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.cnblogs.com/gowhy/" target="_blank"><img src="http://www.cnblogs.com/Skins/custom/images/logo.gif" alt="返回主页"></a><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.cnblogs.com/gowhy/" target="_blank">狼-志</a> 你知道世界上有多少种浏览器吗？除了我们熟知的IE, Firefox, Opera, Safari四大浏览器之外，世界上还有近百种浏览器。 几天前，浏览器家族有刚诞生了一位小王子，就是Google推出的Chrome浏览器。由于Chrome出生名门，尽管他还是个小家伙，没有人敢小看他。以后，咱们常说浏览器的“四大才子”就得改称为“五朵金花”了。 在网站前端开发中，浏览器兼容性问题本已让我们手忙脚乱，Chrome的出世不知道又要给我们添多少乱子。虽然说现在有一些WEB技术（AJAX、ExtJS等）已经帮我们处理不同浏览器的兼容问题，但是有时候自己来解决岂不是更好，浏览器兼容性是前端开发框架要解决的第一个问题，要解决兼容性问题就得首先准确判断出浏览器的类型及其版本。 JavaScript是前端开发的主要语言，我们可以通过编写JavaScript程序来判断浏览器的类型及版本。JavaScript判断浏览器类型一般有两种办法，一种是根据各种浏览器独有的属性来分辨，另一种是通过分析浏览器的userAgent属性来判断的。在许多情况下，值判断出浏览器类型之后，还需判断浏览器版本才能处理兼容性问题，而判断浏览器的版本一般只能通过分析浏览器的userAgent才能知道。 我们先来分析一下各种浏览器的特征及其userAgent。<span id="more"></span> <strong>IE</strong> 只有IE支持创建ActiveX控件，因此她有一个其他浏览器没有的东西，就是ActiveXObject函数。只要判断window对象存在 ActiveXObject函数，就可以明确判断出当前浏览器是IE。而IE各个版本典型的userAgent如下：     Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)     Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2)     Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)     Mozilla/4.0 (compatible; MSIE 5.0; Windows NT) 其中，版本号是MSIE之后的数字。 <strong>Firefox</strong> Firefox中的DOM元素都有一个getBoxObjectFor函数，用来获取该DOM元素的位置和大小（IE对应的中是 getBoundingClientRect函数）。这是Firefox独有的，判断它即可知道是当前浏览器是Firefox。Firefox几个版本的 userAgent大致如下：     Mozilla/5.0 (Windows; U; Windows NT 5.2) Gecko/2008070208 Firefox/3.0.1     Mozilla/5.0 (Windows; U; Windows NT 5.1) Gecko/20070309 Firefox/2.0.0.3     Mozilla/5.0 (Windows; U; Windows NT 5.1) Gecko/20070803 Firefox/1.5.0.12 其中，版本号是Firefox之后的数字。 <strong>Opera</strong> Opera提供了专门的浏览器标志，就是window.opera属性。Opera典型的userAgent如下：     Opera/9.27 (Windows NT 5.2; U; zh-cn)     Opera/8.0 (Macintosh; PPC Mac OS X; U; en)     Mozilla/5.0 (Macintosh; PPC Mac OS X; U; en) Opera 8.0     其中，版本号是靠近Opera的数字。 <strong>Safari</strong> Safari浏览器中有一个其他浏览器没有的openDatabase函数，可做为判断Safari的标志。Safari典型的userAgent如下：     Mozilla/5.0 (Windows; U; Windows NT 5.2) AppleWebKit/525.13 (KHTML, like Gecko) Version/3.1 Safari/525.13     Mozilla/5.0 (iPhone; U; CPU like Mac OS X) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/4A93 Safari/419.3 其版本号是Version之后的数字。 <strong>Chrome</strong> Chrome有一个MessageEvent函数，但Firefox也有。不过，好在Chrome并没有Firefox的getBoxObjectFor 函数，根据这个条件还是可以准确判断出Chrome浏览器的。目前，Chrome的userAgent是：     Mozilla/5.0 (Windows; U; Windows NT 5.2) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.27 Safari/525.13 其中，版本号在Chrome只后的数字。 有趣的是，Chrome的userAgent还包含了Safari的特征，也许这就是Chrome可以运行所有Apple浏览器应用的基础吧。 只要了解了以上信息，我们就可以根基这些特征来判断浏览器类型及其版本了。我们会将判断的结果保存在Sys名字空间中，成为前端框架的基本标志信息，供今后的程序来读取。如果判断出谋种浏览器，Sys名字空间将有一个该浏览器名称的属性，其值为该浏览器的版本号。例如，如果判断出IE 7.0，则Sys.ie的值为7.0；如果判断出Firefox 3.0，则Sys.firefox的值为3.0。下面是判断浏览器的代码：  </p>
 <pre><code> &lt;script type=&quot;text/javascript&quot;&gt;
     var Sys = &#123;&#125;;
@@ -659,7 +660,9 @@ var _hmt = _hmt || [];
 
 
 
-  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
+  
+
+<div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
 
 <link rel="stylesheet" href="/css/gitalk.css">
 <script src="/js/gitalk.min.js"></script>
@@ -681,6 +684,19 @@ if(true){
 })
 gitalk.render('gitalk-container')
 }
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
+     crossorigin="anonymous"></script>
+<!-- dev1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4999274615022440"
+     data-ad-slot="4067790488"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
   
 
@@ -741,10 +757,10 @@ gitalk.render('gitalk-container')
 				mermaid.initialize({ theme: 'forest' });
 			}
 		</script>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
-		crossorigin="anonymous"></script>
+
 		
 </footer>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -909,6 +925,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">说说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php服务器</a>
               </li>
              
@@ -918,18 +942,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php实例</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">说说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -953,6 +965,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">漏洞</a>
               </li>
              
@@ -965,23 +981,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">kali</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -997,11 +1005,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+                <a href="javascript:void(0)" class="js-tag color5">kali</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">支付</a>
+                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1026,6 +1034,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">nginx隐藏index</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">支付</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2065,15 +2081,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">redis锁</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">redis分布式锁</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2145,6 +2161,18 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">空间</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">资源</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">路由器烧录</a>
               </li>
              
@@ -2158,18 +2186,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">砖头烧录</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">空间</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">资源</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2261,18 +2277,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">socket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
@@ -2282,6 +2286,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">json解析</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">socket</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2317,15 +2333,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">树</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">二叉树</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2998,6 +3014,10 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://lichong.work" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>Ric&#39;s Blog</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://simonsu.cn" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>SimonSu</a>
             </li>
           
         </ul>

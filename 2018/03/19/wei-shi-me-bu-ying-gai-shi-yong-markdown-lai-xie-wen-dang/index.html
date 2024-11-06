@@ -404,6 +404,7 @@ var _hmt = _hmt || [];
       
 
         
+
 <p><img src="http://mmbiz.qpic.cn/mmbiz_gif/GJM4P9zwRqib34BLPzma5a9DHsfqxpndBBsq84yviayUYSib0Pju3mgk1ZibvIAjbd469r8bepAYPooHj48dvyFAicg/640?wx_fmt=gif&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""> Python部落(python.freelycode.com)组织翻译，禁止转载，欢迎转发。 Markdown是互联网上最普遍使用的轻量级标记语言。对于写博客和评论这类的任务，用Markdown很棒。不过最近技术社区的人员开始用它来写文档。   下面我列出一些反对使用Markdown的观点，希望能帮助你决定是否适合使用Markdown。如果你在考虑使用Markdown，我希望你也可以关注下Asciidoctor 和Sphinx，我发现用它们写文档更好。   人们选择Markdown是因为它可以很简单的处理一些基本任务。开发者选择它是因为GitHub支持它，尽管GitHub支持9种不同的标记语言，包括 Asciidoc和reStructuredText。但是当文档从几页逐渐增长到大的文档集，Markdown很快就崩溃并成为累赘。下面是这种情况发生的原因。<br><strong>缺乏一个标准</strong> 最初，Markdown是由John Gruber写的initial implementation来定义，但并未明确规定行为规范。   随着Markdown越来越流行，越来越多的站点开始支持Markdown的实现，这些站点是用其它语言写成的，因此产生了更多的Markdown实现。所有这些实现有轻微差别，但都达不到令人接受的程度。   比如有些实现要求开头有一个空格，但另外的一些不做要求：<br><img src="http://mmbiz.qpic.cn/mmbiz_png/GJM4P9zwRqib66HO7lgjaeV8Alfw53aX9QyNQoZssPTuxiaSq8LdZDwibpIepQan9MQ3WwRfjXnuxshibntUWjSR4w/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""><span id="more"></span><br>还有一些小问题使得Markdown很难在不同的站点和版本之间移植 在过去的几年里，Commonmark已经发展成标准化的Markdown。这很好，应该解决很多问题，但是却没人采用它。</p>
 <p><strong>风格</strong> Markdown缺乏采用的主要原因是这些年来其一直在变化。起初，Markdown功能很有限，每当有流行的工具在Markdown上实现的时候，都会有一个特定的风格。听起来不错 ，是吧？问题是每一个工具都形成了不同的风格，甚至连实现相似任务的工具都有不同的语法。   举个例子，在Markdown Extra 中代码块是下面这种样式：<br><img src="http://mmbiz.qpic.cn/mmbiz_png/GJM4P9zwRqib66HO7lgjaeV8Alfw53aX9UF2Tgzv4KWPMzBLhOBdEOVJBhX1cDzbLsxpPIye6yNSRT31aH08mMw/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""><br>这将python类应用于输出的HTML块   然而，同样的情况在GitHub Flavored Markdown 中是这样的：<br><img src="http://mmbiz.qpic.cn/mmbiz_png/GJM4P9zwRqib66HO7lgjaeV8Alfw53aX9TTEmoM8kafhIQAmg18qnCRChjxS9iaWAPJQN5uHbCO3myFJNkV2fBqg/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""><br>这会将语法高亮显示应用于实际呈现的HTML输出。 相似的概念，不同的语法，但都是Markdown。  </p>
 <p><strong>缺乏扩展</strong> 其它的标记语言，可以对其进行扩展以提供需要的功能。它们在语法上有增添新功能同时又不会违反初始规范的机制。 比如reStructuredText，具有内嵌和块级别的标记：<br><img src="http://mmbiz.qpic.cn/mmbiz_png/GJM4P9zwRqib66HO7lgjaeV8Alfw53aX9VyrPatzKIapmX7rrica3zOyXls8XT3fauTGicePZgRQGu73H71b1OmYw/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""><br>可以了解更多关于 rfc， class和 contents的概念。   作为一个使用rST或Asciidoctor的开发者，我可以以一种简单，可插入的方式增添新的标记。 我不必改变语言的解析方式，而且我还可以通过标准扩展机制向其它用户分享那些新功能。 在不同的版本间进行移植这些功能，用Markdown可办不到。 注意：CommonMark正在开发可扩展性的语法，但还没有实现。<br><strong>缺乏语义化</strong> 尽管很多人添加了很多扩展，但都不够语义化。这意味着不能写Class或Warning，只能写文本。因此很多人直接将HTML嵌入到Markdown中：<br><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt=""><br>而在reStructuredText中，你可以写成：<br><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt=""><br>这在HTML,PDF，甚至任何创建的输出格式中都可以合适的显示为一个Warning.   语义化标记可以将所写的文字与它们的显示方式完全分开。   缺乏语义化将导致问题，原因如下：</p>
@@ -598,7 +599,9 @@ var _hmt = _hmt || [];
 
 
 
-  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
+  
+
+<div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
 
 <link rel="stylesheet" href="/css/gitalk.css">
 <script src="/js/gitalk.min.js"></script>
@@ -620,6 +623,19 @@ if(true){
 })
 gitalk.render('gitalk-container')
 }
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
+     crossorigin="anonymous"></script>
+<!-- dev1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4999274615022440"
+     data-ad-slot="4067790488"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
   
 
@@ -680,10 +696,10 @@ gitalk.render('gitalk-container')
 				mermaid.initialize({ theme: 'forest' });
 			}
 		</script>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
-		crossorigin="anonymous"></script>
+
 		
 </footer>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -848,6 +864,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">说说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php服务器</a>
               </li>
              
@@ -857,18 +881,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php实例</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">说说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -892,6 +904,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">漏洞</a>
               </li>
              
@@ -904,23 +920,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">kali</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -936,11 +944,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+                <a href="javascript:void(0)" class="js-tag color5">kali</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">支付</a>
+                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -965,6 +973,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">nginx隐藏index</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">支付</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2004,15 +2020,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">redis锁</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">redis分布式锁</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2084,6 +2100,18 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">空间</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">资源</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">路由器烧录</a>
               </li>
              
@@ -2097,18 +2125,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">砖头烧录</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">空间</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">资源</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2200,18 +2216,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">socket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
@@ -2221,6 +2225,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">json解析</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">socket</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2256,15 +2272,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">树</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">二叉树</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2937,6 +2953,10 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://lichong.work" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>Ric&#39;s Blog</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://simonsu.cn" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>SimonSu</a>
             </li>
           
         </ul>

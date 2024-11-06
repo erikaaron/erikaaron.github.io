@@ -399,6 +399,7 @@ var _hmt = _hmt || [];
       
 
         
+
 <p>最近被excel 导出困扰了，终于解决了大部分为题，在这里分享一下 方法1 首先下载PHPexcel插件包 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://download.csdn.net/detail/w15875510692/7747765" target="_blank">http://download.csdn.net/detail/w15875510692/7747765</a> 以下是ecshop订单详细页的导出代码 目前没找到直接能到处网站空间的图片（超链接地址的图片），只能到处本地网站的图片。。 htm页面代码 <span id="more"></span><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;script language=&quot;JavaScript&quot;&gt; </span><br><span class="line">function check() &#123; </span><br><span class="line">  var snArray = new Array(); var eles = document.forms\[&#x27;listForm&#x27;\].elements; </span><br><span class="line">  for (var i=0; i&lt;eles.length; i++) &#123; </span><br><span class="line">    if (eles\[i\].tagName == &#x27;INPUT&#x27; &amp;&amp; eles\[i\].type == &#x27;hidden&#x27; &amp;&amp; eles\[i\].checked &amp;&amp; eles\[i\].value != &#x27;on&#x27;) &#123; snArray.push(eles\[i\].value);</span><br><span class="line">    &#125; </span><br><span class="line">  &#125; </span><br><span class="line">  if (snArray.length == 0) &#123;</span><br><span class="line">  	return false; </span><br><span class="line">  &#125; else &#123; </span><br><span class="line">  	eles\[&#x27;order\_id&#x27;\].value = snArray.toString(); return true; </span><br><span class="line">  &#125; </span><br><span class="line">&#125; </span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;form action=&quot;order.php?act=operate&quot; method=&quot;post&quot; name=&quot;listForm&quot;  onsubmit=&quot;return check()&quot;&gt; </span><br><span class="line">&lt;div class=&quot;div\_excel&quot;&gt; </span><br><span class="line">&lt;input type=&quot;hidden&quot; name=&quot;checkboxes&quot;checked=&quot;checked&quot;  value=&quot;&#123;$order.order\_sn&#125;&quot; /&gt; </span><br><span class="line">&lt;input name=&quot;export&quot; type=&quot;submit&quot; id=&quot;btnSubmit5&quot; value=&quot;导出&quot; class=&quot;button&quot;   onclick=&quot;this.form.target = &#x27;\_blank&#x27;&quot; onclick=&quot;window.open(&#x27;order.php?act=operate&#x27;)&quot; onsubmit=&quot;return check()&quot;/&gt; &lt;input name=&quot;order\_id&quot; type=&quot;hidden&quot; value=&quot;&#123;$order.order\_sn&#125;&quot; /&gt; &lt;/div&gt; &lt;/form&gt; </span><br></pre></td></tr></table></figure><br>  php文件代码 /*******************excel导出*************/<br>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">elseif (isset($\_POST\[&#x27;export&#x27;\])) &#123; /* 赋值公用信息 */ require\_once ROOT\_PATH.&#x27;salesmans/Classes/PHPExcel.php&#x27;; require\_once ROOT\_PATH.&#x27;salesmans/Classes/PHPExcel/IOFactory.php&#x27;; // Create new PHPExcel object $objPHPExcel = new PHPExcel(); // Set properties $objPHPExcel-&gt;getProperties()-&gt;setCreator(&quot;DizzyLion&quot;) -&gt;setLastModifiedBy(&quot;DizzyLion&quot;) -&gt;setSubject(&quot;Orders output Document&quot;); $filepaths= ROOT\_PATH.&quot;data/&quot;.date(&quot;Y-m&quot;).&#x27;.xls&#x27;; $filename = date(&quot;Y-m&quot;).&#x27;.xls&#x27;; $rowix = 1; error\_reporting(E\_ALL); date\_default\_timezone\_set(&#x27;Europe/London&#x27;); $objPHPExcel-&gt;getProperties()-&gt;setCreator(&quot;wdz&quot;)-&gt;setLastModifiedBy(&quot;wdz&quot;)-&gt;setTitle(&quot; 我的订单&quot;)-&gt;setSubject(&quot;我的订单&quot;)-&gt;setDescription(date(&#x27;Y/m/d H:i:s&#x27;) . &quot;导出的订单&quot;)-&gt;setKeywords(&quot;我的订单&quot;)-&gt;setCategory(&quot;Test result file&quot;); /*设置标题属性*/ //字体大小 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;A1&#x27;)-&gt;getFont()-&gt;setSize(16); //加粗 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;A1&#x27;)-&gt;getFont()-&gt;setBold(true); //表格宽度 $objPHPExcel-&gt;getActiveSheet()-&gt;getColumnDimension(&#x27;A&#x27;)-&gt;setWidth(20); //垂直居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;A1&#x27;)-&gt;getAlignment()-&gt;setVertical(PHPExcel\_Style\_Alignment::VERTICAL\_CENTER); //水平居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;A1&#x27;)-&gt;getAlignment()-&gt;setHorizontal(PHPExcel\_Style\_Alignment::HORIZONTAL\_CENTER); /////////////////////// //字体大小 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;B1&#x27;)-&gt;getFont()-&gt;setSize(16); //加粗 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;B1&#x27;)-&gt;getFont()-&gt;setBold(true); //表格宽度 $objPHPExcel-&gt;getActiveSheet()-&gt;getColumnDimension(&#x27;B&#x27;)-&gt;setWidth(20); //垂直居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;B1&#x27;)-&gt;getAlignment()-&gt;setVertical(PHPExcel\_Style\_Alignment::VERTICAL\_CENTER); //水平居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;B1&#x27;)-&gt;getAlignment()-&gt;setHorizontal(PHPExcel\_Style\_Alignment::HORIZONTAL\_CENTER); //////////////////// //字体大小 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;C1&#x27;)-&gt;getFont()-&gt;setSize(16); //加粗 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;C1&#x27;)-&gt;getFont()-&gt;setBold(true); //表格宽度 $objPHPExcel-&gt;getActiveSheet()-&gt;getColumnDimension(&#x27;C&#x27;)-&gt;setWidth(30); //表格高度 $objPHPExcel-&gt;getActiveSheet()-&gt;getRowDimension(&#x27;2&#x27;)-&gt;setRowHeight(75); $objPHPExcel-&gt;getActiveSheet()-&gt;getRowDimension(&#x27;3&#x27;)-&gt;setRowHeight(75); $objPHPExcel-&gt;getActiveSheet()-&gt;getRowDimension(&#x27;4&#x27;)-&gt;setRowHeight(75); $objPHPExcel-&gt;getActiveSheet()-&gt;getRowDimension(&#x27;5&#x27;)-&gt;setRowHeight(75); $objPHPExcel-&gt;getActiveSheet()-&gt;getRowDimension(&#x27;6&#x27;)-&gt;setRowHeight(75); $objPHPExcel-&gt;getActiveSheet()-&gt;getRowDimension(&#x27;7&#x27;)-&gt;setRowHeight(75); $objPHPExcel-&gt;getActiveSheet()-&gt;getRowDimension(&#x27;8&#x27;)-&gt;setRowHeight(75); //垂直居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;C1&#x27;)-&gt;getAlignment()-&gt;setVertical(PHPExcel\_Style\_Alignment::VERTICAL\_CENTER); //水平居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;C1&#x27;)-&gt;getAlignment()-&gt;setHorizontal(PHPExcel\_Style\_Alignment::HORIZONTAL\_CENTER); /////////////////////// //字体大小 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;D1&#x27;)-&gt;getFont()-&gt;setSize(16); //加粗 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;D1&#x27;)-&gt;getFont()-&gt;setBold(true); //表格宽度 $objPHPExcel-&gt;getActiveSheet()-&gt;getColumnDimension(&#x27;D&#x27;)-&gt;setWidth(30); //垂直居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;D1&#x27;)-&gt;getAlignment()-&gt;setVertical(PHPExcel\_Style\_Alignment::VERTICAL\_CENTER); //水平居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;D1&#x27;)-&gt;getAlignment()-&gt;setHorizontal(PHPExcel\_Style\_Alignment::HORIZONTAL\_CENTER); //////////////////// //字体大小 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;E1&#x27;)-&gt;getFont()-&gt;setSize(16); //加粗 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;E1&#x27;)-&gt;getFont()-&gt;setBold(true); //表格宽度 $objPHPExcel-&gt;getActiveSheet()-&gt;getColumnDimension(&#x27;E&#x27;)-&gt;setWidth(30); //垂直居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;E1&#x27;)-&gt;getAlignment()-&gt;setVertical(PHPExcel\_Style\_Alignment::VERTICAL\_CENTER); //水平居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;E1&#x27;)-&gt;getAlignment()-&gt;setHorizontal(PHPExcel\_Style\_Alignment::HORIZONTAL\_CENTER); //////////////////// //字体大小 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;F1&#x27;)-&gt;getFont()-&gt;setSize(16); //加粗 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;F1&#x27;)-&gt;getFont()-&gt;setBold(true); //表格宽度 $objPHPExcel-&gt;getActiveSheet()-&gt;getColumnDimension(&#x27;F&#x27;)-&gt;setWidth(80); //垂直居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;F1&#x27;)-&gt;getAlignment()-&gt;setVertical(PHPExcel\_Style\_Alignment::VERTICAL\_CENTER); //水平居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;F1&#x27;)-&gt;getAlignment()-&gt;setHorizontal(PHPExcel\_Style\_Alignment::HORIZONTAL\_CENTER); //////////////////// //字体大小 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;G1&#x27;)-&gt;getFont()-&gt;setSize(16); //加粗 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;G1&#x27;)-&gt;getFont()-&gt;setBold(true); //表格宽度 $objPHPExcel-&gt;getActiveSheet()-&gt;getColumnDimension(&#x27;G&#x27;)-&gt;setWidth(10); //垂直居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;G1&#x27;)-&gt;getAlignment()-&gt;setVertical(PHPExcel\_Style\_Alignment::VERTICAL\_CENTER); //水平居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;G1&#x27;)-&gt;getAlignment()-&gt;setHorizontal(PHPExcel\_Style\_Alignment::HORIZONTAL\_CENTER); //////////////////// //字体大小 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;H1&#x27;)-&gt;getFont()-&gt;setSize(16); //加粗 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;H1&#x27;)-&gt;getFont()-&gt;setBold(true); //表格宽度 $objPHPExcel-&gt;getActiveSheet()-&gt;getColumnDimension(&#x27;H&#x27;)-&gt;setWidth(10); //垂直居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;H1&#x27;)-&gt;getAlignment()-&gt;setVertical(PHPExcel\_Style\_Alignment::VERTICAL\_CENTER); //水平居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;H1&#x27;)-&gt;getAlignment()-&gt;setHorizontal(PHPExcel\_Style\_Alignment::HORIZONTAL\_CENTER); //////////////////// //字体大小 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;I1&#x27;)-&gt;getFont()-&gt;setSize(16); //加粗 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;I1&#x27;)-&gt;getFont()-&gt;setBold(true); //表格宽度 $objPHPExcel-&gt;getActiveSheet()-&gt;getColumnDimension(&#x27;I&#x27;)-&gt;setWidth(10); //垂直居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;I1&#x27;)-&gt;getAlignment()-&gt;setVertical(PHPExcel\_Style\_Alignment::VERTICAL\_CENTER); //水平居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;I1&#x27;)-&gt;getAlignment()-&gt;setHorizontal(PHPExcel\_Style\_Alignment::HORIZONTAL\_CENTER); //////////////////// //字体大小 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;J1&#x27;)-&gt;getFont()-&gt;setSize(16); //加粗 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;J1&#x27;)-&gt;getFont()-&gt;setBold(true); //表格宽度 $objPHPExcel-&gt;getActiveSheet()-&gt;getColumnDimension(&#x27;J&#x27;)-&gt;setWidth(15); //垂直居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;J1&#x27;)-&gt;getAlignment()-&gt;setVertical(PHPExcel\_Style\_Alignment::VERTICAL\_CENTER); //水平居中 $objPHPExcel-&gt;getActiveSheet()-&gt;getStyle(&#x27;J1&#x27;)-&gt;getAlignment()-&gt;setHorizontal(PHPExcel\_Style\_Alignment::HORIZONTAL\_CENTER); //////////////////// echo date(&#x27;H:i:s&#x27;) . &quot; Add some data\\n&quot;; $objPHPExcel-&gt;setActiveSheetIndex(0); $objPHPExcel-&gt;getActiveSheet()-&gt;setCellValue(&#x27;A1&#x27;, &#x27;订货日期&#x27;); $objPHPExcel-&gt;getActiveSheet()-&gt;setCellValue(&#x27;B1&#x27;, &#x27;订单号&#x27;); $objPHPExcel-&gt;getActiveSheet()-&gt;setCellValue(&#x27;C1&#x27;, &#x27;商品图&#x27;); $objPHPExcel-&gt;getActiveSheet()-&gt;setCellValue(&#x27;D1&#x27;, &#x27;款号&#x27;); $objPHPExcel-&gt;getActiveSheet()-&gt;setCellValue(&#x27;E1&#x27;, &#x27;商品名称&#x27;); $objPHPExcel-&gt;getActiveSheet()-&gt;setCellValue(&#x27;F1&#x27;, &#x27;属性&#x27;); $objPHPExcel-&gt;getActiveSheet()-&gt;setCellValue(&#x27;G1&#x27;, &#x27;数量&#x27;); $objPHPExcel-&gt;getActiveSheet()-&gt;setCellValue(&#x27;H1&#x27;, &#x27;价格&#x27;); $objPHPExcel-&gt;getActiveSheet()-&gt;setCellValue(&#x27;I1&#x27;, &#x27;合计&#x27;); $objPHPExcel-&gt;getActiveSheet()-&gt;setCellValue(&#x27;J1&#x27;, &#x27;应付金额&#x27;); $rowix++; $i=0; $list = array(); //         $order\_id = intval($\_REQUEST\[&#x27;order\_id&#x27;\]); $order\_sn\_list = explode(&#x27;,&#x27;, $\_POST\[&#x27;order\_id&#x27;\]); foreach ($order\_sn\_list as $order\_sn) &#123; /* 取得订单信息 */ $sql = &quot;select * from &quot;.$GLOBALS\[&#x27;ecs&#x27;\]-&gt;table(&#x27;order\_info&#x27;).&quot; o  join &quot;.$GLOBALS\[&#x27;ecs&#x27;\]-&gt;table(&#x27;users&#x27;).&quot; u on o.user\_id =u.user\_id where order\_sn=&#x27;$order\_sn&#x27;&quot;; $row = $db-&gt;getRow($sql); $goods= $db-&gt;getAll(&quot;select goods\_name,goods\_id,goods\_number,goods\_price,goods\_price,goods\_attr\_id,goods\_attr \*goods\_number as je,goods\_sn from &quot;.$GLOBALS\[&#x27;ecs&#x27;\]-&gt;table(&#x27;order\_goods&#x27;).&quot; where order\_id = &#x27;&quot;.$row\[&#x27;order\_id&#x27;\].&quot;&#x27;&quot;); if($goods)&#123; foreach($goods as $k=&gt;$v)&#123; $temp    = array(); $v\[&#x27;img&#x27;\] = $db-&gt;getOne(&quot;select goods\_thumb from &quot;.$GLOBALS\[&#x27;ecs&#x27;\]-&gt;table(&#x27;goods&#x27;).&quot; where goods\_id=&#x27;&quot;.$v\[&#x27;goods\_id&#x27;\].&quot;&#x27;&quot;); $temp\[&#x27;goods&#x27;\] = $v; $temp\[&#x27;order\_info&#x27;\] = $row; $list\[$row\[&#x27;order\_id&#x27;\]\]\[\] = $temp; &#125; &#125; &#125; foreach ($list as $key =&gt; $t) &#123; foreach($t as $k1=&gt;$value)&#123; $objPHPExcel-&gt;setActiveSheetIndex(0) -&gt;setCellValue(&#x27;B&#x27;.$rowix ,  $value\[&#x27;order\_info&#x27;\]\[&#x27;order\_sn&#x27;\]) -&gt;setCellValue(&#x27;D&#x27;.$rowix ,  $value\[&#x27;goods&#x27;\]\[&#x27;img&#x27;\]) -&gt;setCellValue(&#x27;D&#x27;.$rowix ,  $value\[&#x27;goods&#x27;\]\[&#x27;goods\_sn&#x27;\]) -&gt;setCellValue(&#x27;E&#x27;.$rowix ,  $value\[&#x27;goods&#x27;\]\[&#x27;goods\_name&#x27;\]) -&gt;setCellValue(&#x27;F&#x27;.$rowix ,  $value\[&#x27;goods&#x27;\]\[&#x27;goods\_attr\_id&#x27;\]) -&gt;setCellValue(&#x27;G&#x27;.$rowix ,  $value\[&#x27;goods&#x27;\]\[&#x27;goods\_number&#x27;\]) -&gt;setCellValue(&#x27;H&#x27;.$rowix ,  $value\[&#x27;goods&#x27;\]\[&#x27;goods\_price&#x27;\]) -&gt;setCellValue(&#x27;A&#x27;.$rowix ,  local\_date(&quot;Y-m-d&quot;,$value\[&#x27;order\_info&#x27;\]\[&#x27;add\_time&#x27;\])) -&gt;setCellValue(&#x27;I&#x27;.$rowix ,  $value\[&#x27;order\_info&#x27;\]\[&#x27;goods\_amount&#x27;\]) -&gt;setCellValue(&#x27;J&#x27;.$rowix ,  $value\[&#x27;order\_info&#x27;\]\[&#x27;order\_amount&#x27;\]); $objDrawing = new PHPExcel\_Worksheet\_Drawing();</span><br><span class="line">$objDrawing-&gt;setName(&#x27;ZealImg&#x27;); $objDrawing-&gt;setDescription(&#x27;Image&#x27;); </span><br><span class="line">$objDrawing-&gt;setPath(&#x27;../images/img\_excel/img10.jpg&#x27;); $objDrawing-&gt;setHeight(&#x27;92px&#x27;);//照片高度 $objDrawing-&gt;setWidth(&#x27;90px&#x27;); //照片宽度 $objDrawing-&gt;setCoordinates(&#x27;C&#x27;.$rowix); $objDrawing-&gt;setWorksheet($objPHPExcel-&gt;getActiveSheet()); $rowix++; &#125; &#125; $objPHPExcel-&gt;setActiveSheetIndex(0); $objWriter = PHPExcel\_IOFactory::createWriter($objPHPExcel, &#x27;Excel5&#x27;); $objWriter-&gt;setTempDir(ROOT\_PATH.&quot;data&quot;); $objWriter-&gt;save($filepaths); header(&quot;Location:../data/&quot;.$filename); exit; &#125; </span><br></pre></td></tr></table></figure></p>
 <p>*——————————-excel表格————end————————————————- */ 方法2 这种就比较简单，不需要导出图片代码也很少<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php define(&#x27;IN\_ECS&#x27;, true); include (&#x27;includes/init.php&#x27;); $filename=&#x27;订单&#x27;; header(&quot;Content-type: application/vnd.ms-excel; charset=gbk&quot;); header(&quot;Content-Disposition: attachment; filename=$filename.xls&quot;); $order\_id = intval($\_REQUEST\[&#x27;order\_id&#x27;\]); // $sql = &quot;select a.user\_id from&quot; .$GLOBALS\[&#x27;ecs&#x27;\]-&gt;table(&#x27;users&#x27;).&quot; a join (select p.order\_id, o.order\_sn, o.user\_id from &quot; . $GLOBALS\[&#x27;ecs&#x27;\]-&gt;table(&#x27;order\_goods&#x27;) . &quot; p join&quot; . $GLOBALS\[&#x27;ecs&#x27;\]-&gt;table(&#x27;order\_info&#x27;) .&quot; o on p.order\_id=o.order\_id where user\_id in&quot;. //         &quot;(select user\_id from&quot; .$GLOBALS\[&#x27;ecs&#x27;\]-&gt;table(&#x27;users&#x27;). &quot; a join &quot;.$GLOBALS\[&#x27;ecs&#x27;\]-&gt;table(&#x27;ex\_user&#x27;).&quot; b on a.s\_user=b.username &quot;. //         &quot;where 1=1 )) b on a.user\_id=b.user\_id&quot;; //$sql=&quot;select * from &quot; . $GLOBALS\[&#x27;ecs&#x27;\]-&gt;table(&#x27;order\_info&#x27;) .&quot; g join (select  o.*, g.goods\_number   AS storage,  IFNULL(b.brand\_name, &#x27;&#x27;) AS brand\_name &quot; .&quot; from &quot; . $GLOBALS\[&#x27;ecs&#x27;\]-&gt;table(&#x27;order\_goods&#x27;) . &quot; AS o &quot; . &quot;LEFT JOIN &quot; . $GLOBALS\[&#x27;ecs&#x27;\]-&gt;table(&#x27;goods&#x27;) . &quot; AS g ON o.goods\_id = g.goods\_id &quot; . &quot;LEFT JOIN &quot; . $GLOBALS\[&#x27;ecs&#x27;\]-&gt;table(&#x27;brand&#x27;) . &quot; AS b ON g.brand\_id = b.brand\_id &quot; . &quot;WHERE o.order\_id = &#x27;$order\_id&#x27; )  p on g.order\_id=p.order\_id&quot;; $sql=&quot;select *, (g.goods\_price*g.goods\_number) as num\_price, g.goods\_attr from &quot; . $GLOBALS\[&#x27;ecs&#x27;\]-&gt;table(&#x27;goods&#x27;) .&quot; gt, &quot; . $GLOBALS\[&#x27;ecs&#x27;\]-&gt;table(&#x27;order\_info&#x27;) .&quot; i, &quot; . $GLOBALS\[&#x27;ecs&#x27;\]-&gt;table(&#x27;order\_goods&#x27;) .&quot; g where g.order\_id=i.order\_id and gt.goods\_id = g.goods\_id and i.order\_id = &#x27;$order\_id&#x27;&quot;; $res=$db-&gt;getAll($sql); //print\_r($res);die; $data.=&#x27;订单号&#x27;.&quot;\\t&quot;; $data.=&#x27;商品图&#x27;.&quot;\\t&quot;; $data.=&#x27;商品名称&#x27;.&quot;\\t&quot;; $data.=&#x27;商品编号&#x27;.&quot;\\t&quot;; $data.=&#x27;商品单价&#x27;.&quot;\\t&quot;; $data.=&#x27;商品数量&#x27;.&quot;\\t&quot;; $data.=&#x27;合计价格&#x27;.&quot;\\t&quot;; $data.=&#x27;应付金额&#x27;.&quot;\\t&quot;; $data.=&#x27;属性备注&#x27;.&quot;\\t\\n&quot;; while (!empty($res)) &#123; foreach ($res as $key=&gt;$var) &#123; $a=$var\[&#x27;goods\_id&#x27;\]; foreach ($res as $keys=&gt;$vars) &#123; if($a==$vars\[&#x27;goods\_id&#x27;\]) &#123; $res1\[0\]\[&#x27;order\_sn&#x27;\]=$vars\[&#x27;order\_sn&#x27;\]; $res1\[$key\]\[&#x27;goods\_thumb&#x27;\]=$vars\[&#x27;goods\_thumb&#x27;\]; $res1\[$key\]\[&#x27;goods\_name&#x27;\]=$vars\[&#x27;goods\_name&#x27;\]; $res1\[$key\]\[&#x27;goods\_sn&#x27;\]=$vars\[&#x27;goods\_sn&#x27;\]; $res1\[$key\]\[&#x27;goods\_price&#x27;\]=$vars\[&#x27;goods\_price&#x27;\]; $res1\[$key\]\[&#x27;goods\_number&#x27;\]=$vars\[&#x27;goods\_number&#x27;\]; $res1\[0\]\[&#x27;goods\_amount&#x27;\]=$vars\[&#x27;goods\_amount&#x27;\]; $res1\[0\]\[&#x27;order\_amount&#x27;\]=$vars\[&#x27;order\_amount&#x27;\]; $res1\[$key\]\[&#x27;goods\_attr\_id&#x27;\]=$vars\[&#x27;goods\_attr\_id&#x27;\]; unset ($res\[$keys\]); &#125; &#125; &#125; &#125; foreach ($res1 as $key =&gt;$var) &#123; $data.=$var\[&#x27;order\_sn&#x27;\].&quot;\\t&quot;; $data.=$var\[&#x27;goods\_thumb&#x27;\].&quot;\\t&quot;; $data.=$var\[&#x27;goods\_name&#x27;\].&quot;\\t&quot;; $data.=$var\[&#x27;goods\_sn&#x27;\].&quot;\\t&quot;; $data.=$var\[&#x27;goods\_price&#x27;\].&quot;\\t&quot;; $data.=$var\[&#x27;goods\_number&#x27;\].&quot;\\t&quot;; $data.=$var\[&#x27;goods\_amount&#x27;\].&quot;\\t&quot;; $data.=$var\[&#x27;order\_amount&#x27;\].&quot;\\t&quot;; $data.=$var\[&#x27;goods\_attr\_id&#x27;\].&quot;\\t&quot;; $data.=&quot;\\t\\n&quot;; &#125; if (EC\_CHARSET != &#x27;gbk&#x27;) &#123; echo $data.ecs\_iconv(EC\_CHARSET, &#x27;gbk&#x27;, $data) . &quot;\\t&quot;; &#125; else &#123; echo $data.$data. &quot;\\t&quot;; &#125; ?&gt; if (!empty(    $order\_sn\_list))&#123; $goods\_thumb = $\_POST\[&#x27;goods\_thumb&#x27;\]; $img = grabImage($goods\_thumb,&quot;&quot;); echo $img; echo &#x27;&lt;pre&gt;&lt;img src=&quot;&#x27;.$img.&#x27;&quot;&gt;&lt;/pre&gt;&#x27;; &#125; //下载图片函数 function grabImage($goods\_thumb,$filename=&quot;&quot;)&#123; if ($goods\_thumb == &quot;&quot;) return false; if($filename == &quot;&quot;) &#123; $ext=strrchr($goods\_thumb,&quot;.&quot;); //获取扩展名 $ext\_arr = array(&quot;.gif&quot;,&quot;.png&quot;,&quot;.jpg&quot;,&quot;.bmp&quot;); //判断扩展名是否为图片 if (!in\_array($ext, $ext\_arr)) return false; //将图片文件名保存为时间戳 $filename = time().$ext; &#125; ob\_start(); //打开浏览器的缓冲区 readfile($goods\_thumb); //将图片读入缓冲区 $img = ob\_get\_contents(); //获取缓冲区的内容复制给变量$img ob\_end_clean(); //关闭并清空缓冲 $fp = @fopen($filename,&quot;a&quot;); //将文件绑定到流 fwrite($fp,$img); //写入文件 fclose($fp); //关闭文件之争 return $filename; &#125; ?&gt;</span><br></pre></td></tr></table></figure></p>
 
@@ -585,7 +586,9 @@ var _hmt = _hmt || [];
 
 
 
-  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
+  
+
+<div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
 
 <link rel="stylesheet" href="/css/gitalk.css">
 <script src="/js/gitalk.min.js"></script>
@@ -607,6 +610,19 @@ if(true){
 })
 gitalk.render('gitalk-container')
 }
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
+     crossorigin="anonymous"></script>
+<!-- dev1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4999274615022440"
+     data-ad-slot="4067790488"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
   
 
@@ -667,10 +683,10 @@ gitalk.render('gitalk-container')
 				mermaid.initialize({ theme: 'forest' });
 			}
 		</script>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
-		crossorigin="anonymous"></script>
+
 		
 </footer>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -835,6 +851,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">说说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php服务器</a>
               </li>
              
@@ -844,18 +868,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php实例</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">说说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -879,6 +891,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">漏洞</a>
               </li>
              
@@ -891,23 +907,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">kali</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -923,11 +931,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+                <a href="javascript:void(0)" class="js-tag color5">kali</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">支付</a>
+                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -952,6 +960,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">nginx隐藏index</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">支付</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1991,15 +2007,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">redis锁</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">redis分布式锁</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2071,6 +2087,18 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">空间</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">资源</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">路由器烧录</a>
               </li>
              
@@ -2084,18 +2112,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">砖头烧录</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">空间</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">资源</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2187,18 +2203,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">socket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
@@ -2208,6 +2212,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">json解析</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">socket</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2243,15 +2259,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">树</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">二叉树</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2924,6 +2940,10 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://lichong.work" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>Ric&#39;s Blog</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://simonsu.cn" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>SimonSu</a>
             </li>
           
         </ul>

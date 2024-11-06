@@ -400,6 +400,7 @@ var _hmt = _hmt || [];
       
 
         
+
 <p>PHP是一种弱类型语言, 这样的特性, 必然要求有无缝透明的隐式类型转换, PHP内部使用zval来保存任意类型的数值, zval的结构如下(5.2为例):<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">struct \_zval\_struct &#123;</span><br><span class="line">    /\* Variable information */</span><br><span class="line">    zvalue_value value; /\* value */</span><br><span class="line">    zend_uint refcount;</span><br><span class="line">    zend_uchar type; /\* active type */</span><br><span class="line">    zend_uchar is_ref;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><br><span id="more"></span><br>上面的结构中, 实际保存数值本身的是zvalue_value联合体:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">typedef union \_zvalue\_value &#123;</span><br><span class="line">    long lval; /\* long value */</span><br><span class="line">    double dval; /\* double value */</span><br><span class="line">    struct &#123;</span><br><span class="line">        char *val;</span><br><span class="line">        int len;</span><br><span class="line">    &#125; str;</span><br><span class="line">    HashTable *ht; /\* hash table value */</span><br><span class="line">    zend\_object\_value obj;</span><br><span class="line">&#125; zvalue_value;</span><br></pre></td></tr></table></figure><br>今天的话题, 我们只关注其中的俩个成员, lval和dval, 我们要意识到, long lval是随着编译器, OS的字长不同而不定长的, 它有可能是32bits或者64bits, 而double dval(双精度)由<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://en.wikipedia.org/wiki/IEEE_754-2008" target="_blank">IEEE 754</a>规定, 是定长的, 一定是64bits. 请记住这一点, 造就了PHP的一些代码的”非平台无关性”. <strong>我们接下来的讨论, 除了特别指明, 都是假设long为64bits</strong> IEEE 754的浮点计数法, 我这里就不引用了, 大家有兴趣的可以自己查看, 关键的一点是, double的尾数采用52位bit来保存, 算上隐藏的1位有效位, 一共是53bits. 在这里, 引出一个很有意思的问题, 我们用c代码举例(假设long为64bits):<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">      long a = x;</span><br><span class="line">      assert(a == (long)(double)a);</span><br></pre></td></tr></table></figure><br>请问, a的取值在什么范围内的时候, 上面的代码可以断言成功?(留在文章最后解答) 现在我们回归正题, PHP在执行一个脚本之前, 首先需要读入脚本, 分析脚本, 这个过程中也包含着, 对脚本中的字面量进行zval化, 比如对于如下脚本:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$a = 9223372036854775807; //64位有符号数最大值</span><br><span class="line">$b = 9223372036854775808; //最大值+1</span><br><span class="line">var_dump($a);</span><br><span class="line">var_dump($b);</span><br></pre></td></tr></table></figure><br>输出:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int(9223372036854775807)</span><br><span class="line">float(9.22337203685E+18)</span><br></pre></td></tr></table></figure><br>也就说, PHP在词法分析阶段, 对于一个字面量的数值, 会去判断, 是否超出了当前系统的long的表值范围, 如果不是, 则用lval来保存, zval为IS_LONG, 否则就用dval表示, zval IS_FLOAT. 凡是大于最大的整数值的数值, 我们都要小心, 因为它可能会有精度损失:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$a = 9223372036854775807;</span><br><span class="line">$b = 9223372036854775808;</span><br><span class="line"></span><br><span class="line">var_dump($a === ($b - 1));</span><br></pre></td></tr></table></figure><br>输出是false. 现在接上开头的讨论, 之前说过, PHP的整数, 可能是32位, 也可能是64位, 那么就决定了, 一些在64位上可以运行正常的代码, 可能会因为隐形的类型转换, 发生精度丢失, 从而造成代码不能正常的运行在32位系统上. 所以, 我们一定要警惕这个临界值, 好在PHP中已经定义了这个临界值:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">    echo PHP\_INT\_MAX;</span><br><span class="line"> ?&gt;</span><br></pre></td></tr></table></figure><br>当然, 为了保险起见, 我们应该使用字符串来保存大整数, 并且采用比如<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.php.net/manual/en/book.bc.php" target="_blank">bcmath</a>这样的数学函数库来进行计算. 另外, 还有一个关键的配置, 会让我们产生迷惑, 这个配置就是<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.php.net/manual/en/ini.core.php#ini.precision" target="_blank">php.precision</a>, 这配置决定了PHP再输出一个float值的时候, 输出多少有效位. 最后, 我们再来回头看上面提出的问题, 也就是一个long的整数, 最大的值是多少, 才能保证转到float以后再转回long不会发生精度丢失? 比如, 对于整数, 我们知道它的二进制表示是, 101, 现在, 让我们右移俩位, 变成1.01, 舍去高位的隐含有效位1, 我们得到在double中存储5的二进制数值为:</p>
 <ol>
 <li>0/<em>符号位</em>/ 10000000001/<em>指数位</em>/ 0100000000000000000000000000000000000000000000000000</li>
@@ -597,7 +598,9 @@ var _hmt = _hmt || [];
 
 
 
-  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
+  
+
+<div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
 
 <link rel="stylesheet" href="/css/gitalk.css">
 <script src="/js/gitalk.min.js"></script>
@@ -619,6 +622,19 @@ if(true){
 })
 gitalk.render('gitalk-container')
 }
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
+     crossorigin="anonymous"></script>
+<!-- dev1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4999274615022440"
+     data-ad-slot="4067790488"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
   
 
@@ -679,10 +695,10 @@ gitalk.render('gitalk-container')
 				mermaid.initialize({ theme: 'forest' });
 			}
 		</script>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
-		crossorigin="anonymous"></script>
+
 		
 </footer>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -847,6 +863,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">说说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php服务器</a>
               </li>
              
@@ -856,18 +880,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php实例</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">说说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -891,6 +903,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">漏洞</a>
               </li>
              
@@ -903,23 +919,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">kali</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -935,11 +943,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+                <a href="javascript:void(0)" class="js-tag color5">kali</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">支付</a>
+                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -964,6 +972,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">nginx隐藏index</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">支付</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2003,15 +2019,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">redis锁</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">redis分布式锁</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2083,6 +2099,18 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">空间</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">资源</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">路由器烧录</a>
               </li>
              
@@ -2096,18 +2124,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">砖头烧录</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">空间</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">资源</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2199,18 +2215,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">socket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
@@ -2220,6 +2224,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">json解析</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">socket</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2255,15 +2271,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">树</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">二叉树</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2936,6 +2952,10 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://lichong.work" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>Ric&#39;s Blog</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://simonsu.cn" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>SimonSu</a>
             </li>
           
         </ul>

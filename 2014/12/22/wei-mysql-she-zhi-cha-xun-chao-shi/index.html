@@ -401,6 +401,7 @@ var _hmt = _hmt || [];
       
 
         
+
 <p>作者: <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.laruence.com" target="_blank">Laruence</a> 昨天有人在群里问, MySQL是否可以设置读写超时(非连接超时), 如果可以就可以避免一条SQL执行过慢, 导致PHP超时错误. 这个, 其实可以有. 只不过稍微要麻烦点. 首先, 在libmysql中, 是提供了MYSQL_OPT_READ_TIMEOUT设置项的, 并且libmysql中提供了设置相关设置项的API, mysql_options:<span id="more"></span></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">int STDCALL</span><br><span class="line">  mysql_options(MYSQL *mysql,enum mysql_option option, const void *arg)</span><br><span class="line">  &#123;</span><br><span class="line">    DBUG_ENTER(&quot;mysql_option&quot;);</span><br><span class="line">    DBUG_PRINT(&quot;enter&quot;,(&quot;option: %d&quot;,(int) option));</span><br><span class="line">    switch (option) &#123;</span><br><span class="line">    case MYSQL\_OPT\_CONNECT_TIMEOUT:</span><br><span class="line">      mysql-&gt;options.connect_timeout= *(uint*) arg;</span><br><span class="line">      break;</span><br><span class="line">    /\*\* 读超时时间 */</span><br><span class="line">   case MYSQL\_OPT\_READ_TIMEOUT:</span><br><span class="line">      mysql-&gt;options.read_timeout= *(uint*) arg;</span><br><span class="line">      break;</span><br><span class="line">    case MYSQL\_OPT\_WRITE_TIMEOUT:</span><br><span class="line">      mysql-&gt;options.write_timeout= *(uint*) arg;</span><br><span class="line">      break;</span><br><span class="line">    case MYSQL\_OPT\_COMPRESS:</span><br><span class="line">      mysql-&gt;options.compress= 1;</span><br><span class="line"></span><br><span class="line">     /\* 以下省略 */</span><br></pre></td></tr></table></figure>
 <p>但是, 可惜的是, 目前只有mysqli扩展, 把mysql_options完全暴露给了PHP:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">PHP_FUNCTION(mysqli_options)</span><br><span class="line">&#123;</span><br><span class="line"> /\*\* 有省略 */</span><br><span class="line">     switch (Z\_TYPE\_PP(mysql_value)) &#123;</span><br><span class="line">        /\*\* 没有任何限制, 直接传递给mysql_options */</span><br><span class="line">        case IS_STRING:</span><br><span class="line">            ret = mysql_options(mysql-&gt;mysql, mysql_option, Z\_STRVAL\_PP(mysql_value));</span><br><span class="line">            break;</span><br><span class="line">         default:</span><br><span class="line">            convert\_to\_long_ex(mysql_value);</span><br><span class="line">             l_value = Z\_LVAL\_PP(mysql_value);</span><br><span class="line">            ret = mysql_options(mysql-&gt;mysql, mysql_option, (char *)&amp;l_value);</span><br><span class="line">            break;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    RETURN_BOOL(!ret);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>但是因为Mysqli并没有导出这个常量, 所以我们需要通过查看MySQL的代码, 得到MYSQL_OPT_READ_TIMEOUT的实际值, 然后直接调用mysql_options:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">enum mysql_option</span><br><span class="line">&#123;</span><br><span class="line">  MYSQL\_OPT\_CONNECT_TIMEOUT, MYSQL\_OPT\_COMPRESS, MYSQL\_OPT\_NAMED_PIPE,</span><br><span class="line">  MYSQL\_INIT\_COMMAND, MYSQL\_READ\_DEFAULT_FILE, MYSQL\_READ\_DEFAULT_GROUP,</span><br><span class="line">  MYSQL\_SET\_CHARSET_DIR, MYSQL\_SET\_CHARSET_NAME, MYSQL\_OPT\_LOCAL_INFILE,</span><br><span class="line">   MYSQL\_OPT\_PROTOCOL, MYSQL\_SHARED\_MEMORY\_BASE\_NAME, MYSQL\_OPT\_READ_TIMEOUT,</span><br><span class="line">  MYSQL\_OPT\_WRITE_TIMEOUT, MYSQL\_OPT\_USE_RESULT,</span><br><span class="line">  MYSQL\_OPT\_USE\_REMOTE\_CONNECTION, MYSQL\_OPT\_USE\_EMBEDDED\_CONNECTION,</span><br><span class="line">  MYSQL\_OPT\_GUESS_CONNECTION, MYSQL\_SET\_CLIENT_IP, MYSQL\_SECURE\_AUTH,</span><br><span class="line">  MYSQL\_REPORT\_DATA_TRUNCATION, MYSQL\_OPT\_RECONNECT,</span><br><span class="line">  MYSQL\_OPT\_SSL\_VERIFY\_SERVER_CERT</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><br>可以看到, MYSQL_OPT_READ_TIMEOUT为11. 现在, 我们就可以设置查询超时了:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$mysqli = mysqli_init();</span><br><span class="line">$mysqli-&gt;options(11 /\*MYSQL\_OPT\_READ_TIMEOUT\*/, 1);</span><br><span class="line">$mysql-&gt;real_connect(***);</span><br></pre></td></tr></table></figure><br>不过, 因为在libmysql中有重试机制(尝试一次, 重试俩次), 所以, 最终我们设置的超时阈值都会三倍于我们设置的值. 也就是说, 如果我们设置了MYSQL_OPT_READ_TIMEOUT为1, 最终会在3s以后超时结束. 也就是说, 我们目前能设置的最短超时时, 就是3秒… 虽说大了点,, 不过总比没有好, 呵呵 PS: 写了一半的时候, 就发现小黑已经写过一篇了, 所以大家也可以参看这篇<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://blog.csdn.net/heiyeshuwu/archive/2010/09/08/5869813.aspx" target="_blank">PHP访问MySQL查询超时处理</a></p>
@@ -596,7 +597,9 @@ var _hmt = _hmt || [];
 
 
 
-  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
+  
+
+<div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
 
 <link rel="stylesheet" href="/css/gitalk.css">
 <script src="/js/gitalk.min.js"></script>
@@ -618,6 +621,19 @@ if(true){
 })
 gitalk.render('gitalk-container')
 }
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
+     crossorigin="anonymous"></script>
+<!-- dev1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-4999274615022440"
+     data-ad-slot="4067790488"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
   
 
@@ -678,10 +694,10 @@ gitalk.render('gitalk-container')
 				mermaid.initialize({ theme: 'forest' });
 			}
 		</script>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4999274615022440"
-		crossorigin="anonymous"></script>
+
 		
 </footer>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -846,6 +862,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">说说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php服务器</a>
               </li>
              
@@ -855,18 +879,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php实例</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">说说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -890,6 +902,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">漏洞</a>
               </li>
              
@@ -902,23 +918,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">kali</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -934,11 +942,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+                <a href="javascript:void(0)" class="js-tag color5">kali</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">支付</a>
+                <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -963,6 +971,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">nginx隐藏index</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">支付系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">支付</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2002,15 +2018,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">redis锁</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">redis分布式锁</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2082,6 +2098,18 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">空间</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">资源</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">路由器烧录</a>
               </li>
              
@@ -2095,18 +2123,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">砖头烧录</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">免费服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">空间</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">资源</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2198,18 +2214,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">socket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">json</a>
               </li>
              
@@ -2219,6 +2223,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">json解析</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">socket</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2254,15 +2270,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">树</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">二叉树</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">js插件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2935,6 +2951,10 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://lichong.work" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>Ric&#39;s Blog</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://simonsu.cn" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>SimonSu</a>
             </li>
           
         </ul>
