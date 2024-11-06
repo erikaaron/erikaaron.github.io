@@ -7,12 +7,12 @@
         <language>zh-CN</language>
         <pubDate>Fri, 27 Feb 2015 15:13:00 +0800</pubDate>
         <lastBuildDate>Fri, 27 Feb 2015 15:13:00 +0800</lastBuildDate>
+        <category>日志</category>
+        <category>工具</category>
         <category>php扩展</category>
         <category>php技巧</category>
         <category>php类库</category>
         <category>php资源</category>
-        <category>日志</category>
-        <category>工具</category>
         <category>jquery</category>
         <category>jquery插件</category>
         <category>js</category>
@@ -21,36 +21,36 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
-        <category>说说</category>
-        <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
+        <category>说说</category>
+        <category>趣闻</category>
+        <category>nginx</category>
         <category>转载</category>
         <category>php库</category>
         <category>互联</category>
         <category>项目实战</category>
         <category>javascript</category>
-        <category>nginx</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>负载均衡</category>
         <category>http</category>
         <category>http服务器</category>
+        <category>负载均衡</category>
+        <category>kali</category>
+        <category>kali安装</category>
         <category>克莱姆法则</category>
         <category>行列式</category>
         <category>n阶行列式</category>
-        <category>kali</category>
-        <category>kali安装</category>
+        <category>支付系统</category>
+        <category>支付</category>
         <category>centos</category>
         <category>linux</category>
         <category>apache优化</category>
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>支付系统</category>
-        <category>支付</category>
         <category>日常</category>
         <category>seo</category>
         <category>优化</category>
@@ -239,8 +239,8 @@
         <category>穿透</category>
         <category>go</category>
         <category>new和make的区别</category>
-        <category>红包算法</category>
         <category>深圳劳动法服务部门</category>
+        <category>红包算法</category>
         <category>非关系型数据库</category>
         <category>onethink</category>
         <category>oop</category>
@@ -310,9 +310,9 @@
         <category>redis</category>
         <category>redis总结</category>
         <category>redis命令</category>
+        <category>redis监控</category>
         <category>redis锁</category>
         <category>redis分布式锁</category>
-        <category>redis监控</category>
         <category>任意金额输入</category>
         <category>10元、5元、2元</category>
         <category>队列</category>
@@ -330,13 +330,13 @@
         <category>rust配置</category>
         <category>seajs</category>
         <category>session</category>
-        <category>免费服务器</category>
-        <category>空间</category>
-        <category>资源</category>
         <category>路由器烧录</category>
         <category>烧录</category>
         <category>极路由2烧录</category>
         <category>砖头烧录</category>
+        <category>免费服务器</category>
+        <category>空间</category>
+        <category>资源</category>
         <category>深圳政府电话</category>
         <category>深圳电话</category>
         <category>特区电话</category>
@@ -359,12 +359,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -373,9 +373,9 @@
         <category>config</category>
         <category>thinkphp</category>
         <category>配置文件</category>
-        <category>js插件</category>
         <category>树</category>
         <category>二叉树</category>
+        <category>js插件</category>
         <category>web自适应</category>
         <category>响应式布局</category>
         <category>响应式所有分辨率</category>
