@@ -13,19 +13,19 @@
     <category term="jquery" />
     <category term="jquery插件" />
     <category term="js" />
-    <category term="css" />
     <category term="php" />
-    <category term="web" />
-    <category term="代码" />
-    <category term="压缩" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
+    <category term="css" />
+    <category term="web" />
+    <category term="代码" />
+    <category term="压缩" />
     <category term="说说" />
     <category term="趣闻" />
-    <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="nginx" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
@@ -2165,8 +2165,8 @@ $img_data-&amp;gt;download();
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;了解更多CSS缩写技巧，可以访问下面的文章： &lt;a href=&#34;http://www.dustindiaz.com/css-shorthand/&#34;&gt;&lt;img src=&#34;http://paranimage.com/img/css-compression/shorthand.jpg&#34; alt=&#34;screenshot&#34;&gt;&lt;/a&gt; 推荐阅读阿捷的文章：《&lt;a href=&#34;http://www.w3cn.org/article/tips/2005/103.html&#34;&gt;常用CSS缩写语法总结&lt;/a&gt;》&lt;/p&gt;
 &lt;h3 id=&#34;CSS-Sprites&#34;&gt;&lt;a href=&#34;#CSS-Sprites&#34; class=&#34;headerlink&#34; title=&#34;CSS Sprites&#34;&gt;&lt;/a&gt;CSS Sprites&lt;/h3&gt;&lt;p&gt;CSS sprites背后的最初想法是减少HTTP请求的数量以加快页面的加载时间。Sprite实现这个目标的途径就是拼合多张图片到一个单独的图片文件中， 通常是一个网格格式的图片。每个单独的图片通过切换大的sprite图片的background-position来显示。对于CSS代码来说，使用 sprite技术可以大大的提高代码的重用度和可维护性，这会明显的减少CSS的代码量。&lt;/p&gt;
 </content>
-        <category term="css" />
         <category term="php" />
+        <category term="css" />
         <category term="web" />
         <category term="代码" />
         <category term="压缩" />
@@ -2644,8 +2644,8 @@ function resize_image($filename, $tmpname, $xmax, $ymax)
 &lt;p&gt;extension = “memcache.so”&lt;/p&gt;
 </content>
         <category term="php" />
-        <category term="web" />
         <category term="php服务器" />
+        <category term="web" />
         <updated>2014-12-20T11:58:00.000Z</updated>
     </entry>
 </feed>
