@@ -4,12 +4,12 @@
     <title>艾瑞可erik • Posts by &#34;shodan&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2016-02-23T08:35:00.000Z</updated>
-    <category term="日志" />
-    <category term="工具" />
     <category term="php扩展" />
     <category term="php技巧" />
     <category term="php类库" />
     <category term="php资源" />
+    <category term="日志" />
+    <category term="工具" />
     <category term="jquery" />
     <category term="jquery插件" />
     <category term="js" />
@@ -23,11 +23,11 @@
     <category term="php实例" />
     <category term="说说" />
     <category term="趣闻" />
+    <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
     <category term="互联" />
     <category term="项目实战" />
-    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
@@ -49,13 +49,13 @@
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
     <category term="日常" />
-    <category term="摘要" />
-    <category term="文章" />
     <category term="seo" />
     <category term="优化" />
+    <category term="摘要" />
+    <category term="文章" />
+    <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
-    <category term="游记" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
@@ -113,11 +113,11 @@
     <category term="快速排序" />
     <category term="冒泡排序" />
     <category term="二分查找" />
+    <category term="datahub" />
+    <category term="datahub安装" />
     <category term="dns" />
     <category term="域名监测" />
     <category term="网站监测" />
-    <category term="datahub" />
-    <category term="datahub安装" />
     <category term="docker" />
     <category term="php安装" />
     <category term="杂谈" />
@@ -181,6 +181,7 @@
     <category term="jenkins" />
     <category term="jetbtrains" />
     <category term="phpstorm" />
+    <category term="搜索引擎" />
     <category term="图片" />
     <category term="素材" />
     <category term="jq" />
@@ -191,7 +192,6 @@
     <category term="判断浏览器" />
     <category term="浏览器版本判断" />
     <category term="获取浏览器信息" />
-    <category term="搜索引擎" />
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
@@ -221,6 +221,8 @@
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
     <category term="mysql瓶颈解决办法" />
+    <category term="redis" />
+    <category term="数据一致性" />
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
@@ -304,7 +306,6 @@
     <category term="虚线框" />
     <category term="R语言" />
     <category term="数据随机化" />
-    <category term="redis" />
     <category term="redis总结" />
     <category term="redis命令" />
     <category term="redis监控" />

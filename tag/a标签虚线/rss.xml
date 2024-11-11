@@ -7,12 +7,12 @@
         <language>zh-CN</language>
         <pubDate>Fri, 08 May 2015 15:23:00 +0800</pubDate>
         <lastBuildDate>Fri, 08 May 2015 15:23:00 +0800</lastBuildDate>
-        <category>日志</category>
-        <category>工具</category>
         <category>php扩展</category>
         <category>php技巧</category>
         <category>php类库</category>
         <category>php资源</category>
+        <category>日志</category>
+        <category>工具</category>
         <category>jquery</category>
         <category>jquery插件</category>
         <category>js</category>
@@ -26,11 +26,11 @@
         <category>php实例</category>
         <category>说说</category>
         <category>趣闻</category>
+        <category>nginx</category>
         <category>转载</category>
         <category>php库</category>
         <category>互联</category>
         <category>项目实战</category>
-        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
@@ -52,13 +52,13 @@
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
         <category>日常</category>
-        <category>摘要</category>
-        <category>文章</category>
         <category>seo</category>
         <category>优化</category>
+        <category>摘要</category>
+        <category>文章</category>
+        <category>游记</category>
         <category>ca证书</category>
         <category>证书生成</category>
-        <category>游记</category>
         <category>二战</category>
         <category>二战熊</category>
         <category>西伯利亚熊</category>
@@ -116,11 +116,11 @@
         <category>快速排序</category>
         <category>冒泡排序</category>
         <category>二分查找</category>
+        <category>datahub</category>
+        <category>datahub安装</category>
         <category>dns</category>
         <category>域名监测</category>
         <category>网站监测</category>
-        <category>datahub</category>
-        <category>datahub安装</category>
         <category>docker</category>
         <category>php安装</category>
         <category>杂谈</category>
@@ -184,6 +184,7 @@
         <category>jenkins</category>
         <category>jetbtrains</category>
         <category>phpstorm</category>
+        <category>搜索引擎</category>
         <category>图片</category>
         <category>素材</category>
         <category>jq</category>
@@ -194,7 +195,6 @@
         <category>判断浏览器</category>
         <category>浏览器版本判断</category>
         <category>获取浏览器信息</category>
-        <category>搜索引擎</category>
         <category>kali右键汉化</category>
         <category>kali桌面右键汉化</category>
         <category>kali右键创建文件</category>
@@ -224,6 +224,8 @@
         <category>mysql应对千万级</category>
         <category>mysql瓶颈</category>
         <category>mysql瓶颈解决办法</category>
+        <category>redis</category>
+        <category>数据一致性</category>
         <category>mysql消息</category>
         <category>mysql队列</category>
         <category>mysql高并发</category>
@@ -307,7 +309,6 @@
         <category>虚线框</category>
         <category>R语言</category>
         <category>数据随机化</category>
-        <category>redis</category>
         <category>redis总结</category>
         <category>redis命令</category>
         <category>redis监控</category>
