@@ -26,18 +26,18 @@
         <category>php实例</category>
         <category>说说</category>
         <category>趣闻</category>
+        <category>nginx</category>
         <category>转载</category>
         <category>php库</category>
-        <category>nginx</category>
         <category>互联</category>
         <category>项目实战</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>负载均衡</category>
         <category>http</category>
         <category>http服务器</category>
+        <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
         <category>克莱姆法则</category>
@@ -69,15 +69,15 @@
         <category>chromium安装报错</category>
         <category>svn</category>
         <category>代码提交</category>
+        <category>deb</category>
+        <category>deb/rpm互转</category>
+        <category>deb转rpm</category>
+        <category>rpm互转</category>
         <category>centos7安装steam</category>
         <category>centos安装steam</category>
         <category>centos安装吃鸡steam</category>
         <category>linux安装steam</category>
         <category>steam安装</category>
-        <category>deb</category>
-        <category>deb/rpm互转</category>
-        <category>deb转rpm</category>
-        <category>rpm互转</category>
         <category>centos软件安装</category>
         <category>centos6.5</category>
         <category>linux系统</category>
@@ -294,11 +294,11 @@
         <category>递归</category>
         <category>phpunit</category>
         <category>phpunit安装</category>
+        <category>php过滤</category>
+        <category>过滤</category>
         <category>foreach</category>
         <category>foreach报错</category>
         <category>php中foreach报错</category>
-        <category>php过滤</category>
-        <category>过滤</category>
         <category>php中if</category>
         <category>php中if判断</category>
         <category>php的if</category>
@@ -357,10 +357,10 @@
         <category>css工具</category>
         <category>php正则</category>
         <category>正则</category>
+        <category>shopex</category>
         <category>shodan</category>
         <category>黑谷歌</category>
         <category>黒帽搜素</category>
-        <category>shopex</category>
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
@@ -449,7 +449,7 @@
         <category>谷歌搜索</category>
         <item>
             <guid isPermalink="true">https://erik.xyz/2024/11/15/deepin-not-login/</guid>
-            <title>deepin无法登录宝报错emergency mode</title>
+            <title>deepin无法登录报错emergency mode</title>
             <link>https://erik.xyz/2024/11/15/deepin-not-login/</link>
             <category>deepin</category>
             <category>emergency</category>

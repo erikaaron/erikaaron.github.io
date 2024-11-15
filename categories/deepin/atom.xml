@@ -23,18 +23,18 @@
     <category term="php实例" />
     <category term="说说" />
     <category term="趣闻" />
+    <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
-    <category term="nginx" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="负载均衡" />
     <category term="http" />
     <category term="http服务器" />
+    <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
     <category term="克莱姆法则" />
@@ -66,15 +66,15 @@
     <category term="chromium安装报错" />
     <category term="svn" />
     <category term="代码提交" />
+    <category term="deb" />
+    <category term="deb/rpm互转" />
+    <category term="deb转rpm" />
+    <category term="rpm互转" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
     <category term="linux安装steam" />
     <category term="steam安装" />
-    <category term="deb" />
-    <category term="deb/rpm互转" />
-    <category term="deb转rpm" />
-    <category term="rpm互转" />
     <category term="centos软件安装" />
     <category term="centos6.5" />
     <category term="linux系统" />
@@ -291,11 +291,11 @@
     <category term="递归" />
     <category term="phpunit" />
     <category term="phpunit安装" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="foreach" />
     <category term="foreach报错" />
     <category term="php中foreach报错" />
-    <category term="php过滤" />
-    <category term="过滤" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -354,10 +354,10 @@
     <category term="css工具" />
     <category term="php正则" />
     <category term="正则" />
+    <category term="shopex" />
     <category term="shodan" />
     <category term="黑谷歌" />
     <category term="黒帽搜素" />
-    <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
@@ -446,7 +446,7 @@
     <category term="谷歌搜索" />
     <entry>
         <id>https://erik.xyz/2024/11/15/deepin-not-login/</id>
-        <title>deepin无法登录宝报错emergency mode</title>
+        <title>deepin无法登录报错emergency mode</title>
         <link rel="alternate" href="https://erik.xyz/2024/11/15/deepin-not-login/"/>
         <content type="html">&lt;p&gt;由于系统重启后，新安装的微信一直弹出框，卡在那难受。立马强制重启，开机后就一直显示You are in emergency mode……一堆东西，意思是说让进入root用户，查看报错并修复。&lt;/p&gt;
 &lt;p&gt;  有点头大了。&lt;/p&gt;
