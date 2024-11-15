@@ -5,6 +5,19 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2024/11/15/deepin-not-login/",
+            "url": "https://erik.xyz/2024/11/15/deepin-not-login/",
+            "title": "deepin无法登录宝报错emergency mode",
+            "date_published": "2024-11-15T02:56:00.000Z",
+            "content_html": "<p>由于系统重启后，新安装的微信一直弹出框，卡在那难受。立马强制重启，开机后就一直显示You are in emergency mode……一堆东西，意思是说让进入root用户，查看报错并修复。</p>\n<p>  有点头大了。</p>\n<p>  系统命令可以显示，图形界面不显示。<br>  <span id=\"more\"></span><br>  果断拿出安装系统的u盘，使用u盘启动进入安装界面，按ctrl+alt+f4进入u盘命令界面。输入startx进入u盘图形界面。这下可以看到电脑的挂着盘。根据挂着的盘一个个找根目录盘。找到后使用u盘系统的命令窗口:<br><figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">sudo vi /etc/fstab</span><br><span class=\"line\"></span><br></pre></td></tr></table></figure></p>\n<p> 注释掉home目录，重启系统。</p>\n<p> 重启后会显示个登录图形界面。这个是假的，没用。按ctrl+alt+f2进入命令界面。<br> 使用账号密码登录命令界面。</p>\n<p> 打开/etc/fstab文件取消home注释。（这里要看一下home挂载路径，比如我的/dev/sda6）</p>\n<p> 使用以下命令修复：<br> <figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">sudo e2fsck /dev/sda6</span><br></pre></td></tr></table></figure></p>\n<p> 你会看到一堆修复，一个个确认后，等待修复完成就重启系统。</p>\n",
+            "tags": [
+                "deepin",
+                "emergency",
+                "emergency mode",
+                "deepin黑屏"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2021/12/29/about-centos-load-balacnig/",
             "url": "https://erik.xyz/2021/12/29/about-centos-load-balacnig/",
             "title": "负载均衡-初谈",
@@ -238,17 +251,6 @@
                 "centos7-wine",
                 "wine",
                 "wine安装"
-            ]
-        },
-        {
-            "id": "https://erik.xyz/2015/09/05/kali-de-yi-xie-an-zhuang-ming-ling/",
-            "url": "https://erik.xyz/2015/09/05/kali-de-yi-xie-an-zhuang-ming-ling/",
-            "title": "kali的一些安装命令",
-            "date_published": "2015-09-05T11:46:00.000Z",
-            "content_html": "<p><a href=\"http://tietuku.com/f23c99b541e6483e\"><img src=\"http://i3.tietuku.com/f23c99b541e6483e.jpg\" alt=\"\"></a><br>apt-get clean &amp;&amp; apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get dist-upgrade -y<br><strong>更新、升级和发行版升级</strong> </p>\n<p>apt-get install alsa-utils -y     <strong>确保启动时发出声音</strong> </p>\n<p>apt-get install unrar unace rar unrar p7zip zip unzip p7zip-full p7zip-rar file-roller -y     <strong>安装File Roller（归档管理器）</strong> <span id=\"more\"></span></p>\n<p>apt-get install tor    <strong>安装Tor</strong> </p>\n<p>apt-get install filezilla filezilla-common -y   <strong>安装Filezilla FTP客户端</strong></p>\n<p>apt-get install htop nethogs -y     <strong>安装HTOP和NetHogs</strong> </p>\n<p>apt-get install fcitx-table-wbpy ttf-wqy-microhei ttf-wqy-zenhei      <strong>安装中文小企鹅输入法</strong> </p>\n<p>apt-get install gtk-recordmydesktop recordmydesktop remmina -y     <strong>安装Recordmydesktop和Reminna远程桌面客户端</strong></p>\n<p>apt-get upgrade  升级已存在的包 出现无法所锁定目录错误执行以下命令 </p>\n<p>sudo rm /var/cache/apt/archives/lock</p>\n<p>sudo rm /var/lib/dpkg/lock proxychains msfconsole </p>\n<p>用proxychains程序,启动msfconsole www.turnkeylinux.org   </p>\n<p>基于乌班图的linux发行版，他把一些好的开源程序集成到完备可用的解决方案中。</p>\n",
-            "tags": [
-                "kali",
-                "linux"
             ]
         }
     ]

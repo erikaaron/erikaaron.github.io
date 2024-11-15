@@ -3,7 +3,7 @@
     <id>https://erik.xyz</id>
     <title>艾瑞可erik • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
-    <updated>2024-11-11T01:58:00.000Z</updated>
+    <updated>2024-11-15T02:56:00.000Z</updated>
     <category term="php扩展" />
     <category term="php技巧" />
     <category term="php类库" />
@@ -13,14 +13,14 @@
     <category term="jquery" />
     <category term="jquery插件" />
     <category term="js" />
-    <category term="php" />
-    <category term="php服务器" />
-    <category term="随笔" />
-    <category term="php实例" />
     <category term="css" />
+    <category term="php" />
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php服务器" />
+    <category term="随笔" />
+    <category term="php实例" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="转载" />
@@ -32,9 +32,9 @@
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="负载均衡" />
     <category term="http" />
     <category term="http服务器" />
-    <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
     <category term="克莱姆法则" />
@@ -66,15 +66,15 @@
     <category term="chromium安装报错" />
     <category term="svn" />
     <category term="代码提交" />
-    <category term="deb" />
-    <category term="deb/rpm互转" />
-    <category term="deb转rpm" />
-    <category term="rpm互转" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
     <category term="linux安装steam" />
     <category term="steam安装" />
+    <category term="deb" />
+    <category term="deb/rpm互转" />
+    <category term="deb转rpm" />
+    <category term="rpm互转" />
     <category term="centos软件安装" />
     <category term="centos6.5" />
     <category term="linux系统" />
@@ -115,6 +115,10 @@
     <category term="二分查找" />
     <category term="datahub" />
     <category term="datahub安装" />
+    <category term="deepin" />
+    <category term="emergency" />
+    <category term="emergency mode" />
+    <category term="deepin黑屏" />
     <category term="dns" />
     <category term="域名监测" />
     <category term="网站监测" />
@@ -287,11 +291,11 @@
     <category term="递归" />
     <category term="phpunit" />
     <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
     <category term="foreach" />
     <category term="foreach报错" />
     <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -440,6 +444,25 @@
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2024/11/15/deepin-not-login/</id>
+        <title>deepin无法登录宝报错emergency mode</title>
+        <link rel="alternate" href="https://erik.xyz/2024/11/15/deepin-not-login/"/>
+        <content type="html">&lt;p&gt;由于系统重启后，新安装的微信一直弹出框，卡在那难受。立马强制重启，开机后就一直显示You are in emergency mode……一堆东西，意思是说让进入root用户，查看报错并修复。&lt;/p&gt;
+&lt;p&gt;  有点头大了。&lt;/p&gt;
+&lt;p&gt;  系统命令可以显示，图形界面不显示。&lt;br&gt;  &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;  果断拿出安装系统的u盘，使用u盘启动进入安装界面，按ctrl+alt+f4进入u盘命令界面。输入startx进入u盘图形界面。这下可以看到电脑的挂着盘。根据挂着的盘一个个找根目录盘。找到后使用u盘系统的命令窗口:&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo vi /etc/fstab&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt; 注释掉home目录，重启系统。&lt;/p&gt;
+&lt;p&gt; 重启后会显示个登录图形界面。这个是假的，没用。按ctrl+alt+f2进入命令界面。&lt;br&gt; 使用账号密码登录命令界面。&lt;/p&gt;
+&lt;p&gt; 打开/etc/fstab文件取消home注释。（这里要看一下home挂载路径，比如我的/dev/sda6）&lt;/p&gt;
+&lt;p&gt; 使用以下命令修复：&lt;br&gt; &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo e2fsck /dev/sda6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt; 你会看到一堆修复，一个个确认后，等待修复完成就重启系统。&lt;/p&gt;
+</content>
+        <category term="deepin" />
+        <category term="emergency" />
+        <category term="emergency mode" />
+        <category term="deepin黑屏" />
+        <updated>2024-11-15T02:56:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2024/11/11/mysql-redis-consistency/</id>
         <title>如何下保证MySQL数据库与Redis缓存数据一致性？</title>
@@ -1995,219 +2018,5 @@ sink:
         <category term="rust" />
         <category term="rust配置" />
         <updated>2022-09-15T12:51:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://erik.xyz/2022/08/09/go-zero-list-1/</id>
-        <title>go-zero微服务试用</title>
-        <link rel="alternate" href="https://erik.xyz/2022/08/09/go-zero-list-1/"/>
-        <content type="html">&lt;p&gt;参考地址：&lt;a href=&#34;https://go-zero.dev/cn/docs/quick-start/micro-service#%E5%88%9B%E5%BB%BAuser-rpc%E6%9C%8D%E5%8A%A1&#34;&gt;https://go-zero.dev/cn/docs/quick-start/micro-service#%E5%88%9B%E5%BB%BAuser-rpc%E6%9C%8D%E5%8A%A1&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;go-zero介绍&#34;&gt;&lt;a href=&#34;#go-zero介绍&#34; class=&#34;headerlink&#34; title=&#34;go-zero介绍&#34;&gt;&lt;/a&gt;go-zero介绍&lt;/h4&gt;&lt;p&gt;go-zero（收录于 CNCF 云原生技术全景图：&lt;a href=&#34;https://landscape.cncf.io/?selected=go-zero）是一个集成了各种工程实践的&#34;&gt;https://landscape.cncf.io/?selected=go-zero）是一个集成了各种工程实践的&lt;/a&gt; web 和 rpc 框架。通过弹性设计保障了大并发服务端的稳定性，经受了充分的实战检验。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;go-zero 包含极简的 API 定义和生成工具 goctl，可以根据定义的 api 文件一键生成 Go, iOS, Android, Kotlin, Dart, TypeScript, JavaScript 代码，并可直接运行。&lt;/p&gt;
-&lt;p&gt;使用 go-zero 的好处：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;轻松获得支撑千万日活服务的稳定性&lt;/li&gt;
-&lt;li&gt;内建级联超时控制、限流、自适应熔断、自适应降载等微服务治理能力，无需配置和额外代码&lt;/li&gt;
-&lt;li&gt;微服务治理中间件可无缝集成到其它现有框架使用&lt;/li&gt;
-&lt;li&gt;极简的 API 描述，一键生成各端代码&lt;/li&gt;
-&lt;li&gt;自动校验客户端请求参数合法性&lt;/li&gt;
-&lt;li&gt;大量微服务治理和并发工具包&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;1.根据官方文档快速创建微服务&lt;br&gt;我们首先在go项目目录创建go-zero-demo&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;  mkdir go-zero-demo
-  cd go-zero-demo
-  go mod init go-zero-demo
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.创建user rpc服务&lt;/p&gt;
-&lt;p&gt;2.1创建user rpc目录&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; mkdir -p mall/user/rpc
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.2添加user.proto文件，增加getUser方法&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;vim mall/user/rpc/user.proto
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.3增加如下代码：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    syntax = &amp;quot;proto3&amp;quot;;
-    package user;
-    // protoc-gen-go 版本大于1.4.0, proto文件需要加上go_package,否则无法生成
-    option go_package = &amp;quot;./user&amp;quot;;
-    message IdRequest &amp;#123;
-        string id = 1;
-    &amp;#125;
-    message UserResponse &amp;#123;
-      // 用户id
-      string id = 1;
-      // 用户名称
-      string name = 2;
-      // 用户性别
-      string gender = 3;
-    &amp;#125;
-    service User &amp;#123;
-        rpc getUser(IdRequest) returns(UserResponse);
-    &amp;#125;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.4生成代码 &lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;  cd mall/user/rpc
-  goctl rpc protoc user.proto --go_out=./types --go-grpc_out=./types --zrpc_out=.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;/img/202208/zero1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;2.5填充业务逻辑&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; vim internal/logic/getuserlogic.go
-
-
-package logic
-import (
-  &amp;quot;context&amp;quot;
-  &amp;quot;go-zero-demo/mall/user/rpc/internal/svc&amp;quot;
-  &amp;quot;go-zero-demo/mall/user/rpc/types/user&amp;quot;
-  &amp;quot;github.com/zeromicro/go-zero/core/logx&amp;quot;
-)
-type GetUserLogic struct &amp;#123;
-  ctx context.Context
-  svcCtx *svc.ServiceContext
-  logx.Logger
-&amp;#125;
-func NewGetUserLogic(ctx context.Context, svcCtx *svc.ServiceContext) *GetUserLogic &amp;#123;
-  return &amp;amp;GetUserLogic&amp;#123;
-  ctx: ctx,
-  svcCtx: svcCtx,
-  Logger: logx.WithContext(ctx),
-  &amp;#125;
-&amp;#125;
-func (l *GetUserLogic) GetUser(in *user.IdRequest) (*user.UserResponse, error) &amp;#123;
-  return &amp;amp;user.UserResponse&amp;#123;
-  Id: &amp;quot;1&amp;quot;,    
-  Name: &amp;quot;test&amp;quot;,
-  &amp;#125;, nil
-&amp;#125;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3创建order api服务#&lt;/p&gt;
-&lt;p&gt;3.1创建 order api目录&lt;/p&gt;
-&lt;p&gt;回到 go-zero-demo/mall 目录&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;mkdir -p order/api &amp;amp;&amp;amp; cd order/api
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.1添加api文件&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; vim order.api
-
-
-type(
-  OrderReq &amp;#123;
-      Id string `path:&amp;quot;id&amp;quot;`
-  &amp;#125;
-  OrderReply &amp;#123;
-      Id string `json:&amp;quot;id&amp;quot;`
-      Name string `json:&amp;quot;name&amp;quot;`
-  &amp;#125;
-)
-service order &amp;#123;
-  @handler getOrder
-  get /api/order/get/:id (OrderReq) returns (OrderReply)
-&amp;#125;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.2生成order服务&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; goctl api go -api order.api -dir .
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;/img/202208/zero2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;3.3添加user rpc配置&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; vim internal/config/config.go
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;补充内容&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;package config
-import (
-  &amp;quot;github.com/zeromicro/go-zero/zrpc&amp;quot;
-  &amp;quot;github.com/zeromicro/go-zero/rest&amp;quot;
-)
-
-type Config struct &amp;#123;
-  rest.RestConf
-  UserRpc zrpc.RpcClientConf
-&amp;#125;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.4添加yaml配置&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; vim etc/order.yaml 
-
-
-Name: order
-Host: 0.0.0.0
-Port: 8888
-UserRpc:
-Etcd:
-Hosts:
-- 127.0.0.1:2379
-Key: user.rpc
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.5完善服务依赖&lt;br&gt;这里官方文档用的是user，我本地使用发现生成的代码没有user只有userclient极有可能是官方文档未及时更新。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;vim internal/svc/servicecontext.go
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt; 补充内容&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;package svc
-
-import (
-
-&amp;quot;go-zero-demo/mall/order/api/internal/config&amp;quot;
-&amp;quot;go-zero-demo/mall/user/rpc/userclient&amp;quot;
-&amp;quot;github.com/zeromicro/go-zero/zrpc&amp;quot;
-)
-type ServiceContext struct &amp;#123;
-Config config.Config
-UserRpc userclient.User
-&amp;#125;
-func NewServiceContext(c config.Config) *ServiceContext &amp;#123;
-return &amp;amp;ServiceContext&amp;#123;
-Config: c,
-UserRpc: userclient.NewUser(zrpc.MustNewClient(c.UserRpc)),
-&amp;#125;
-&amp;#125;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.6给 getorderlogic 添加业务逻辑&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;vim internal/logic/getorderlogic.go
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;补充内容&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;package logic
-import (
-  &amp;quot;context&amp;quot;
-  &amp;quot;errors&amp;quot;
-  &amp;quot;go-zero-demo/mall/order/api/internal/svc&amp;quot;
-  &amp;quot;go-zero-demo/mall/order/api/internal/types&amp;quot;
-  &amp;quot;go-zero-demo/mall/user/rpc/types/user&amp;quot;
-  &amp;quot;github.com/zeromicro/go-zero/core/logx&amp;quot;
-)
-
-type GetOrderLogic struct &amp;#123;
-  logx.Logger
-  ctx context.Context
-  svcCtx *svc.ServiceContext
-&amp;#125;
-
-func NewGetOrderLogic(ctx context.Context, svcCtx *svc.ServiceContext) GetOrderLogic &amp;#123;
-    return GetOrderLogic&amp;#123;
-    Logger: logx.WithContext(ctx),
-    ctx: ctx,
-    svcCtx: svcCtx,
-    &amp;#125;
-&amp;#125;
-
-func (l *GetOrderLogic) GetOrder(req *types.OrderReq) (*types.OrderReply, error) &amp;#123;
-    user, err := l.svcCtx.UserRpc.GetUser(l.ctx, &amp;amp;user.IdRequest&amp;#123;
-    Id: &amp;quot;1&amp;quot;,
-    &amp;#125;)
-
-    if err != nil &amp;#123;
-    return nil, err
-    &amp;#125;
-    if user.Name != &amp;quot;test&amp;quot; &amp;#123;
-    return nil, errors.New(&amp;quot;用户不存在&amp;quot;)
-    &amp;#125;
-
-    return &amp;amp;types.OrderReply&amp;#123;
-    Id: req.Id,
-    Name: &amp;quot;test order&amp;quot;,
-    &amp;#125;, nil
-
-&amp;#125;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4.启动服务并验证#&lt;/p&gt;
-&lt;p&gt;4.1启动etcd&lt;br&gt;这里没有etcd服务需要自己安装&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; etcd
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4.2下载依赖&lt;/p&gt;
-&lt;p&gt; 在 go-zero-demo 目录下&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; go mod tidy
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4.3启动user rpc&lt;/p&gt;
-&lt;p&gt; 在 mall/user/rpc 目录&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; go run user.go -f etc/user.yaml
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;如果出现以下错误，就是没有启动etcd&lt;br&gt;&lt;img src=&#34;/img/202208/zero3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;4.4启动order api&lt;/p&gt;
-&lt;p&gt; 在 mall/order/api 目录&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; go run order.go -f etc/order.yaml
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;/img/202208/zero4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;4.5访问order api&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; curl -i -X GET http://localhost:8888/api/order/get/1
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;/img/202208/zero5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-</content>
-        <category term="微服务" />
-        <category term="go-zero" />
-        <category term="rpc" />
-        <updated>2022-08-09T13:48:00.000Z</updated>
     </entry>
 </feed>

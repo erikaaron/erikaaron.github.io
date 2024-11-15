@@ -3,7 +3,7 @@
     <id>https://erik.xyz</id>
     <title>艾瑞可erik • Posts by &#34;linux&#34; categories</title>
     <link href="https://erik.xyz" />
-    <updated>2021-12-29T04:41:00.000Z</updated>
+    <updated>2024-11-15T02:56:00.000Z</updated>
     <category term="php扩展" />
     <category term="php技巧" />
     <category term="php类库" />
@@ -13,14 +13,14 @@
     <category term="jquery" />
     <category term="jquery插件" />
     <category term="js" />
-    <category term="php" />
-    <category term="php服务器" />
-    <category term="随笔" />
-    <category term="php实例" />
     <category term="css" />
+    <category term="php" />
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php服务器" />
+    <category term="随笔" />
+    <category term="php实例" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="转载" />
@@ -32,9 +32,9 @@
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="负载均衡" />
     <category term="http" />
     <category term="http服务器" />
-    <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
     <category term="克莱姆法则" />
@@ -66,15 +66,15 @@
     <category term="chromium安装报错" />
     <category term="svn" />
     <category term="代码提交" />
-    <category term="deb" />
-    <category term="deb/rpm互转" />
-    <category term="deb转rpm" />
-    <category term="rpm互转" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
     <category term="linux安装steam" />
     <category term="steam安装" />
+    <category term="deb" />
+    <category term="deb/rpm互转" />
+    <category term="deb转rpm" />
+    <category term="rpm互转" />
     <category term="centos软件安装" />
     <category term="centos6.5" />
     <category term="linux系统" />
@@ -115,6 +115,10 @@
     <category term="二分查找" />
     <category term="datahub" />
     <category term="datahub安装" />
+    <category term="deepin" />
+    <category term="emergency" />
+    <category term="emergency mode" />
+    <category term="deepin黑屏" />
     <category term="dns" />
     <category term="域名监测" />
     <category term="网站监测" />
@@ -287,11 +291,11 @@
     <category term="递归" />
     <category term="phpunit" />
     <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
     <category term="foreach" />
     <category term="foreach报错" />
     <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -440,6 +444,25 @@
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2024/11/15/deepin-not-login/</id>
+        <title>deepin无法登录宝报错emergency mode</title>
+        <link rel="alternate" href="https://erik.xyz/2024/11/15/deepin-not-login/"/>
+        <content type="html">&lt;p&gt;由于系统重启后，新安装的微信一直弹出框，卡在那难受。立马强制重启，开机后就一直显示You are in emergency mode……一堆东西，意思是说让进入root用户，查看报错并修复。&lt;/p&gt;
+&lt;p&gt;  有点头大了。&lt;/p&gt;
+&lt;p&gt;  系统命令可以显示，图形界面不显示。&lt;br&gt;  &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;  果断拿出安装系统的u盘，使用u盘启动进入安装界面，按ctrl+alt+f4进入u盘命令界面。输入startx进入u盘图形界面。这下可以看到电脑的挂着盘。根据挂着的盘一个个找根目录盘。找到后使用u盘系统的命令窗口:&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo vi /etc/fstab&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt; 注释掉home目录，重启系统。&lt;/p&gt;
+&lt;p&gt; 重启后会显示个登录图形界面。这个是假的，没用。按ctrl+alt+f2进入命令界面。&lt;br&gt; 使用账号密码登录命令界面。&lt;/p&gt;
+&lt;p&gt; 打开/etc/fstab文件取消home注释。（这里要看一下home挂载路径，比如我的/dev/sda6）&lt;/p&gt;
+&lt;p&gt; 使用以下命令修复：&lt;br&gt; &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo e2fsck /dev/sda6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt; 你会看到一堆修复，一个个确认后，等待修复完成就重启系统。&lt;/p&gt;
+</content>
+        <category term="deepin" />
+        <category term="emergency" />
+        <category term="emergency mode" />
+        <category term="deepin黑屏" />
+        <updated>2024-11-15T02:56:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2021/12/29/about-centos-load-balacnig/</id>
         <title>负载均衡-初谈</title>
@@ -2730,27 +2753,5 @@ OpenResty® 的目标是让你的Web服务直接跑在 Nginx 服务内部，充�
         <category term="wine" />
         <category term="wine安装" />
         <updated>2016-01-07T08:12:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://erik.xyz/2015/09/05/kali-de-yi-xie-an-zhuang-ming-ling/</id>
-        <title>kali的一些安装命令</title>
-        <link rel="alternate" href="https://erik.xyz/2015/09/05/kali-de-yi-xie-an-zhuang-ming-ling/"/>
-        <content type="html">&lt;p&gt;&lt;a href=&#34;http://tietuku.com/f23c99b541e6483e&#34;&gt;&lt;img src=&#34;http://i3.tietuku.com/f23c99b541e6483e.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;apt-get clean &amp;amp;&amp;amp; apt-get update &amp;amp;&amp;amp; apt-get upgrade -y &amp;amp;&amp;amp; apt-get dist-upgrade -y&lt;br&gt;&lt;strong&gt;更新、升级和发行版升级&lt;/strong&gt; &lt;/p&gt;
-&lt;p&gt;apt-get install alsa-utils -y     &lt;strong&gt;确保启动时发出声音&lt;/strong&gt; &lt;/p&gt;
-&lt;p&gt;apt-get install unrar unace rar unrar p7zip zip unzip p7zip-full p7zip-rar file-roller -y     &lt;strong&gt;安装File Roller（归档管理器）&lt;/strong&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;apt-get install tor    &lt;strong&gt;安装Tor&lt;/strong&gt; &lt;/p&gt;
-&lt;p&gt;apt-get install filezilla filezilla-common -y   &lt;strong&gt;安装Filezilla FTP客户端&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;apt-get install htop nethogs -y     &lt;strong&gt;安装HTOP和NetHogs&lt;/strong&gt; &lt;/p&gt;
-&lt;p&gt;apt-get install fcitx-table-wbpy ttf-wqy-microhei ttf-wqy-zenhei      &lt;strong&gt;安装中文小企鹅输入法&lt;/strong&gt; &lt;/p&gt;
-&lt;p&gt;apt-get install gtk-recordmydesktop recordmydesktop remmina -y     &lt;strong&gt;安装Recordmydesktop和Reminna远程桌面客户端&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;apt-get upgrade  升级已存在的包 出现无法所锁定目录错误执行以下命令 &lt;/p&gt;
-&lt;p&gt;sudo rm /var/cache/apt/archives/lock&lt;/p&gt;
-&lt;p&gt;sudo rm /var/lib/dpkg/lock proxychains msfconsole &lt;/p&gt;
-&lt;p&gt;用proxychains程序,启动msfconsole www.turnkeylinux.org   &lt;/p&gt;
-&lt;p&gt;基于乌班图的linux发行版，他把一些好的开源程序集成到完备可用的解决方案中。&lt;/p&gt;
-</content>
-        <category term="kali" />
-        <category term="linux" />
-        <updated>2015-09-05T11:46:00.000Z</updated>
     </entry>
 </feed>
