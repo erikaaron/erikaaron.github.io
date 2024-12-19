@@ -5,8 +5,8 @@
         <link>https://erik.xyz</link>
         <description>一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。</description>
         <language>zh-CN</language>
-        <pubDate>Fri, 15 Nov 2024 10:56:00 +0800</pubDate>
-        <lastBuildDate>Fri, 15 Nov 2024 10:56:00 +0800</lastBuildDate>
+        <pubDate>Wed, 25 Dec 2024 13:34:00 +0800</pubDate>
+        <lastBuildDate>Wed, 25 Dec 2024 13:34:00 +0800</lastBuildDate>
         <category>php扩展</category>
         <category>php技巧</category>
         <category>php类库</category>
@@ -40,6 +40,8 @@
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>农业系统</category>
+        <category>系统设计</category>
         <category>克莱姆法则</category>
         <category>行列式</category>
         <category>n阶行列式</category>
@@ -147,8 +149,8 @@
         <category>ping服务器</category>
         <category>各大网站ping</category>
         <category>搜引擎ping服务器</category>
-        <category>go获取ip</category>
         <category>go中pdf生成</category>
+        <category>go获取ip</category>
         <category>go中限流</category>
         <category>go对接快递签名</category>
         <category>go时间获取</category>
@@ -181,6 +183,8 @@
         <category>hyperf</category>
         <category>杂录</category>
         <category>新冠肺炎</category>
+        <category>springboot</category>
+        <category>springboot内网部署</category>
         <category>linux恢复</category>
         <category>linux误删</category>
         <category>linux命令</category>
@@ -216,6 +220,9 @@
         <category>linux运行命令报错</category>
         <category>web前端</category>
         <category>web优化</category>
+        <category>maven搭建库</category>
+        <category>maven</category>
+        <category>maven内网库</category>
         <category>撮合算法</category>
         <category>撮合</category>
         <category>php撮合算法</category>
@@ -357,10 +364,10 @@
         <category>css工具</category>
         <category>php正则</category>
         <category>正则</category>
-        <category>shopex</category>
         <category>shodan</category>
         <category>黑谷歌</category>
         <category>黒帽搜素</category>
+        <category>shopex</category>
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
@@ -447,6 +454,323 @@
         <category>翻墙</category>
         <category>谷歌</category>
         <category>谷歌搜索</category>
+        <item>
+            <guid isPermalink="true">https://erik.xyz/2024/12/25/agricultural-detection-system/</guid>
+            <title>农业检测系统设计</title>
+            <link>https://erik.xyz/2024/12/25/agricultural-detection-system/</link>
+            <category>农业系统</category>
+            <category>系统设计</category>
+            <pubDate>Wed, 25 Dec 2024 13:34:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;b&gt;农业检测系统设计&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;根据你的需求，我们将设计一个智能农业系统，通过多种技术手段实现温湿度、光照度监测、设备控制和远程管理。系统的核心功能包括：智能节点监控环境数据、手动和自动控制模式、通过 LoRa 和 4G 通信传输数据、以及通过手机或电脑端进行远程控制。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h4 id=&#34;1-系统模块概述&#34;&gt;&lt;a href=&#34;#1-系统模块概述&#34; class=&#34;headerlink&#34; title=&#34;1. 系统模块概述&#34;&gt;&lt;/a&gt;&lt;b&gt;1. 系统模块概述&lt;/b&gt;&lt;/h4&gt;&lt;p&gt;该农业检测系统包括以下几个主要模块：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;智能节点（传感器与控制单元）：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;获取温湿度、光照度传感器数据。&lt;/li&gt;
+&lt;li&gt;控制风扇的启停，显示当前风扇状态。&lt;/li&gt;
+&lt;li&gt;支持手动和自动模式切换。&lt;/li&gt;
+&lt;li&gt;显示温湿度、光照度、风扇状态和模式状态。&lt;/li&gt;
+&lt;li&gt;通过 LoRa 发送数据到 4G 节点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;4G 网关节点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;接收来自智能节点的传感器数据。&lt;/li&gt;
+&lt;li&gt;将数据通过 4G 网络上传至 MOTT 服务器。&lt;/li&gt;
+&lt;li&gt;在显示屏上显示各项传感器数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;MOTT 服务器：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;存储从 4G 节点发送来的数据。&lt;/li&gt;
+&lt;li&gt;提供远程访问接口。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;应用软件（电脑端或手机端）：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;显示温湿度、光照度、风扇状态、手动/自动模式等数据。&lt;/li&gt;
+&lt;li&gt;提供登录、手动控制、自动控制等功能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-系统功能设计&#34;&gt;&lt;a href=&#34;#2-系统功能设计&#34; class=&#34;headerlink&#34; title=&#34;2.系统功能设计&#34;&gt;&lt;/a&gt;&lt;b&gt;2.系统功能设计&lt;/b&gt;&lt;/h4&gt;&lt;p&gt;2.1 智能节点功能&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;传感器数据采集：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;温湿度传感器：实时获取温度和湿度数据。&lt;/li&gt;
+&lt;li&gt;光照度传感器：实时获取光照强度数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;模式切换：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;手动模式：允许用户通过按键手动启动或停止风扇。&lt;/li&gt;
+&lt;li&gt;自动模式：当温度和光照度超过设定阈值时，自动启停风扇。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;风扇控制：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在手动模式下，用户通过按键控制风扇开关，并通过绿色 LED 指示灯显示风扇状态。&lt;/li&gt;
+&lt;li&gt;在自动模式下，系统会根据设定的温度和光照度阈值自动控制风扇，并使用绿灯和红灯进行状态指示。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;数据传输：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用 LoRa 无线传输模块将传感器数据和风扇状态上传至 4G 网关节点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;显示屏：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;显示当前温湿度、光照度、模式状态和风扇状态。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;2.2 4G 网关节点功能&lt;/b&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;数据接收：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通过 LoRa 接收智能节点上传的传感器数据（温度、湿度、光照度、风扇状态、手动/自动模式状态）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;4G 网络传输：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将智能节点的数据通过 4G 网络上传至 MOTT 服务器。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;显示屏显示：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在 4G 网关节点的显示屏上展示温湿度、光照度、模式状态和风扇状态。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;2.3 MOTT 服务器功能&lt;/b&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;数据存储：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;存储来自 4G 网关节点的温湿度、光照度、风扇状态等数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;远程管理接口：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;提供 RESTful API 或 WebSocket 接口，供客户端应用访问。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;2.4 应用软件功能&lt;/b&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;用户登录：&lt;ul&gt;
+&lt;li&gt;提供登录界面，用户通过输入用户名和密码登录（用户名：admin，密码：admin123）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;手动控制：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;登录成功后，用户可通过界面手动启停风扇，操作时触发红灯和蜂鸣器的提示。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;自动控制：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用户可以设定温度和光照度的阈值，智能节点进入自动模式后，系统根据传感器数据自动控制风扇开关，并通过 LED 指示灯显示状态。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;显示功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;实时显示温度、湿度、光照度、风扇状态、手动/自动模式状态。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;3-原型图设计&#34;&gt;&lt;a href=&#34;#3-原型图设计&#34; class=&#34;headerlink&#34; title=&#34;3. 原型图设计&#34;&gt;&lt;/a&gt;&lt;b&gt;3. 原型图设计&lt;/b&gt;&lt;/h4&gt;&lt;p&gt;3.1 智能节点原型图&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;+-------------------------+&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    温湿度传感器          |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|                         |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    光照度传感器          |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|                         |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    按键面板 (5个按键)    |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|                         |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    显示屏 (LCD)          |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|                         |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    风扇控制 (LED/蜂鸣器) |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;+-------------------------+&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;显示屏：显示温度、湿度、光照度、当前模式（手动/自动）和风扇状态。&lt;/li&gt;
+&lt;li&gt;按键面板：5个按键，其中包括：&lt;ul&gt;
+&lt;li&gt;切换模式按键（手动/自动）&lt;/li&gt;
+&lt;li&gt;启动风扇的控制按键&lt;/li&gt;
+&lt;li&gt;停止风扇的控制按键&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LED 灯：指示风扇是否正在运行（绿色为运行，红色为停止）。&lt;/li&gt;
+&lt;li&gt;蜂鸣器：在风扇运行时以 1Hz 的频率发出声音。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;3.2 4G 网关节点原型图&lt;/b&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;+-------------------------+&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    LoRa 接收模块        |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    (接收数据)           |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|                         |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    显示屏 (LCD)          |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|                         |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    4G 网络模块          |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    (上传数据)           |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;+-------------------------+&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;显示屏：显示温湿度、光照度、模式状态和风扇状态。&lt;/li&gt;
+&lt;li&gt;LoRa 接收模块：接收智能节点发送的传感器数据。&lt;/li&gt;
+&lt;li&gt;4G 网络模块：将接收到的数据上传到 MOTT 服务器。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;3.3 应用软件原型图（电脑端或手机端）&lt;/b&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;+-------------------------------------------------------+&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;| 登录界面                                               |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|   - 用户名输入框                                        |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|   - 密码输入框                                          |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|   - 登录按钮                                            |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;+-------------------------------------------------------+&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;| 主界面                                                 |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|   - 实时显示温湿度、光照度、风扇状态、手动/自动模式   |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|   - 手动控制按钮 (启动/停止风扇)                       |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|   - 自动模式阈值设置 (温度、光照度)                    |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|   - 状态显示：当前模式（手动/自动）、风扇状态（开/关）|&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;+-------------------------------------------------------+&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;4-系统设计步骤&#34;&gt;&lt;a href=&#34;#4-系统设计步骤&#34; class=&#34;headerlink&#34; title=&#34;4. 系统设计步骤&#34;&gt;&lt;/a&gt;&lt;b&gt;4. 系统设计步骤&lt;/b&gt;&lt;/h4&gt;&lt;p&gt;&lt;b&gt;4.1 硬件设计与开发&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;选择适当的传感器：温湿度传感器（如 DHT22）、光照度传感器、风扇控制模块、LED 指示灯、蜂鸣器。&lt;/li&gt;
+&lt;li&gt;智能节点电路设计：设计电源管理电路，确保所有传感器和控制组件能正常工作。&lt;/li&gt;
+&lt;li&gt;LoRa 模块集成：将 LoRa 模块集成到智能节点中，实现数据的无线传输。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;4.2 软件开发&lt;/b&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;智能节点程序：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;编写代码获取传感器数据。&lt;/li&gt;
+&lt;li&gt;控制风扇及 LED 指示灯。&lt;/li&gt;
+&lt;li&gt;实现手动与自动模式的切换。&lt;/li&gt;
+&lt;li&gt;实现 LoRa 数据发送功能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;4G 网关节点程序：&lt;ul&gt;
+&lt;li&gt;接收 LoRa 数据并通过 4G 网络上传至 MOTT 服务器。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MOTT 服务器开发：&lt;ul&gt;
+&lt;li&gt;提供数据存储和远程管理接口（API）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;应用软件开发：&lt;ul&gt;
+&lt;li&gt;实现用户登录、手动控制、自动控制、数据展示等功能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;4.3 系统集成与测试&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;硬件集成：将传感器、LoRa 模块、显示屏等硬件连接至智能节点和 4G 网关节点。&lt;/li&gt;
+&lt;li&gt;功能测试：测试手动模式、自动模式、数据传输功能等。&lt;/li&gt;
+&lt;li&gt;性能优化：确保系统在实时数据传输和控制中的稳定性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;4.4 部署与维护&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;部署智能节点和 4G 网关：将系统部署到实际农业环境中，进行现场测试和调试。&lt;/li&gt;
+&lt;li&gt;维护与更新：定期检查系统，进行必要的功能更新和优化。&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://erik.xyz/2024/12/18/maven-intranet-library/</guid>
+            <title>maven内网库</title>
+            <link>https://erik.xyz/2024/12/18/maven-intranet-library/</link>
+            <category>maven搭建库</category>
+            <category>maven</category>
+            <category>maven内网库</category>
+            <pubDate>Wed, 18 Dec 2024 20:55:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h4 id=&#34;1-搭建-Maven-私有仓库&#34;&gt;&lt;a href=&#34;#1-搭建-Maven-私有仓库&#34; class=&#34;headerlink&#34; title=&#34;1. 搭建 Maven 私有仓库&#34;&gt;&lt;/a&gt;1. 搭建 Maven 私有仓库&lt;/h4&gt;&lt;p&gt;首先，需要在内网环境中搭建一个 Maven 仓库，常用的私有 Maven 仓库工具有：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nexus Repository：Sonatype Nexus 是最流行的私有 Maven 仓库管理工具。&lt;/li&gt;
+&lt;li&gt;Artifactory：JFrog Artifactory 是另一种流行的构建管理工具，提供了私有仓库的支持。&lt;/li&gt;
+&lt;li&gt;Apache Archiva：Apache Archiva 也是一个支持 Maven 的仓库管理工具。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以下是搭建 Nexus Repository 的简单步骤：&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;1.1 安装 Nexus Repository&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;下载 Nexus： 访问 Nexus Repository 下载页面 下载 Nexus OSS 版本。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;解压并启动： 解压下载的压缩包并启动 Nexus。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cd /opt/nexus/bin&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;./nexus start&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;访问 Nexus UI： 打开浏览器，访问 Nexus 的默认地址：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;http://localhost:8081&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;默认用户名为 admin，密码为 admin123，可以在首次登录后修改密码。&lt;/p&gt;
+&lt;p&gt;1.2 配置 Maven 仓库&lt;/p&gt;
+&lt;p&gt;在 Nexus UI 中，你可以创建一个新的 Maven 仓库。创建仓库后，你可以上传公司的内部依赖、插件和构建工件。&lt;/p&gt;
+&lt;h4 id=&#34;2-配置-Maven-使用内网仓库&#34;&gt;&lt;a href=&#34;#2-配置-Maven-使用内网仓库&#34; class=&#34;headerlink&#34; title=&#34;2. 配置 Maven 使用内网仓库&#34;&gt;&lt;/a&gt;2. 配置 Maven 使用内网仓库&lt;/h4&gt;&lt;p&gt;配置 Maven 使用内网仓库需要修改 settings.xml 文件。&lt;/p&gt;
+&lt;p&gt;2.1 修改 settings.xml&lt;/p&gt;
+&lt;p&gt;在 Maven 的 settings.xml 文件中，配置私有仓库的地址和认证信息。settings.xml 文件通常位于 ~/.m2/ 目录下（用户级别配置）或者 ${MAVEN_HOME}/conf/ 目录下（全局配置）。&lt;/p&gt;
+&lt;p&gt;以下是配置内网 Maven 仓库的示例：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;settings xmlns=&amp;quot;http://maven.apache.org/SETTINGS/1.0.0&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          xsi:schemaLocation=&amp;quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;mirrors&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;!-- 配置私有仓库镜像 --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;mirror&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;id&amp;gt;nexus&amp;lt;/id&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;mirrorOf&amp;gt;external:http://central&amp;lt;/mirrorOf&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;url&amp;gt;http://your-nexus-server:8081/repository/maven-public/&amp;lt;/url&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;blocked&amp;gt;false&amp;lt;/blocked&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;/mirror&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;/mirrors&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;repositories&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;repository&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;id&amp;gt;internal-repo&amp;lt;/id&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;url&amp;gt;http://your-nexus-server:8081/repository/maven-releases/&amp;lt;/url&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;snapshots&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &amp;lt;enabled&amp;gt;false&amp;lt;/enabled&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;/snapshots&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;/repository&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;/repositories&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;pluginRepositories&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;pluginRepository&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;id&amp;gt;internal-plugins&amp;lt;/id&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;url&amp;gt;http://your-nexus-server:8081/repository/maven-plugins/&amp;lt;/url&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;/pluginRepository&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;/pluginRepositories&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;servers&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;!-- 配置 Maven 仓库认证 --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;server&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;id&amp;gt;nexus&amp;lt;/id&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;username&amp;gt;your-nexus-username&amp;lt;/username&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;password&amp;gt;your-nexus-password&amp;lt;/password&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;/server&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;/servers&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/settings&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;2.2 配置镜像和仓库&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;镜像（Mirror）：在 &lt;mirrors&gt; 标签中配置私有仓库的 URL，将 Maven 的中央仓库或其他公共仓库的请求代理到私有仓库中。通过 mirrorOf 配置来选择代理哪些仓库（external:&lt;a href=&#34;http://central&#34;&gt;http://central&lt;/a&gt; 表示代理所有外部仓库）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;仓库（Repository）：在 &lt;repositories&gt; 和 &lt;pluginRepositories&gt; 标签中配置你的内网仓库的 URL。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;认证（Server Authentication）：在 &lt;servers&gt; 标签中配置内网仓库的认证信息（如果仓库需要认证）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;3-配置项目使用内网仓库&#34;&gt;&lt;a href=&#34;#3-配置项目使用内网仓库&#34; class=&#34;headerlink&#34; title=&#34;3. 配置项目使用内网仓库&#34;&gt;&lt;/a&gt;3. 配置项目使用内网仓库&lt;/h4&gt;&lt;p&gt;在项目的 pom.xml 文件中，通常不需要额外配置仓库，因为 Maven 会使用 settings.xml 中配置的内网仓库。但是如果需要强制指定某个仓库，可以在 pom.xml 中配置 &lt;repositories&gt; 标签：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;repositories&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;repository&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;id&amp;gt;nexus-repo&amp;lt;/id&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;url&amp;gt;http://your-nexus-server:8081/repository/maven-releases/&amp;lt;/url&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;/repository&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/repositories&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;4-上传和下载依赖&#34;&gt;&lt;a href=&#34;#4-上传和下载依赖&#34; class=&#34;headerlink&#34; title=&#34;4. 上传和下载依赖&#34;&gt;&lt;/a&gt;4. 上传和下载依赖&lt;/h4&gt;&lt;p&gt;4.1 上传依赖到内网仓库&lt;br&gt;你可以通过 Maven 命令将本地构建的 JAR 文件上传到内网仓库。例如，将某个 JAR 上传到 Nexus：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;mvn deploy:deploy-file \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -DgroupId=com.example \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -DartifactId=my-artifact \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -Dversion=1.0.0 \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -Dpackaging=jar \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -Dfile=path/to/your-artifact.jar \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -DrepositoryId=nexus \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -Durl=http://your-nexus-server:8081/repository/maven-releases/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;4.2 从内网仓库下载依赖&lt;/p&gt;
+&lt;p&gt;配置好内网仓库后，Maven 会自动从内网仓库下载依赖。如果仓库中没有该依赖，Maven 会尝试从其他配置的仓库下载。&lt;/p&gt;
+&lt;h4 id=&#34;5-使用私有仓库中的依赖&#34;&gt;&lt;a href=&#34;#5-使用私有仓库中的依赖&#34; class=&#34;headerlink&#34; title=&#34;5. 使用私有仓库中的依赖&#34;&gt;&lt;/a&gt;5. 使用私有仓库中的依赖&lt;/h4&gt;&lt;p&gt;一旦仓库配置好，Maven 将会从配置的内网仓库下载依赖。你可以在项目的 pom.xml 中正常引用依赖，Maven 会自动从私有仓库中拉取。&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;dependencies&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;dependency&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;groupId&amp;gt;com.example&amp;lt;/groupId&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;artifactId&amp;gt;my-artifact&amp;lt;/artifactId&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;version&amp;gt;1.0.0&amp;lt;/version&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;/dependency&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/dependencies&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;6-配置镜像以提高构建速度（可选）&#34;&gt;&lt;a href=&#34;#6-配置镜像以提高构建速度（可选）&#34; class=&#34;headerlink&#34; title=&#34;6. 配置镜像以提高构建速度（可选）&#34;&gt;&lt;/a&gt;6. 配置镜像以提高构建速度（可选）&lt;/h4&gt;&lt;p&gt;为了提高构建速度，你可以配置 settings.xml 来使用私有仓库作为 Maven 的默认镜像，确保所有的构建依赖都从私有仓库中拉取，避免每次访问外部仓库，降低构建时间。&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://erik.xyz/2024/12/12/intranet-spring-boot-install/</guid>
+            <title>spring boot内网部署</title>
+            <link>https://erik.xyz/2024/12/12/intranet-spring-boot-install/</link>
+            <category>springboot</category>
+            <category>springboot内网部署</category>
+            <pubDate>Thu, 12 Dec 2024 18:22:18 +0800</pubDate>
+            <description><![CDATA[ &lt;h4 id=&#34;1-准备环境&#34;&gt;&lt;a href=&#34;#1-准备环境&#34; class=&#34;headerlink&#34; title=&#34;1. 准备环境&#34;&gt;&lt;/a&gt;1. 准备环境&lt;/h4&gt;&lt;p&gt;确保内网中的服务器或机器具备运行 Spring Boot 应用的基本环境：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JDK：确保服务器安装了合适版本的 JDK（通常建议使用 Java 8 及以上版本）。&lt;/li&gt;
+&lt;li&gt;Maven/Gradle：根据项目使用的构建工具安装 Maven 或 Gradle。&lt;/li&gt;
+&lt;li&gt;数据库：如果应用需要连接数据库，确保数据库在内网中可访问，且连接配置正确。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h4 id=&#34;2-编译-Spring-Boot-应用&#34;&gt;&lt;a href=&#34;#2-编译-Spring-Boot-应用&#34; class=&#34;headerlink&#34; title=&#34;2. 编译 Spring Boot 应用&#34;&gt;&lt;/a&gt;2. 编译 Spring Boot 应用&lt;/h4&gt;&lt;p&gt;首先，你需要编译你的 Spring Boot 应用，生成可执行的 JAR 文件。可以通过以下命令在项目目录下执行：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Maven 构建命令：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;mvn clean package&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;Gradle 构建命令：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;./gradlew build&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这会在 target/ 或 build/libs/ 目录下生成一个可执行的 JAR 文件，通常名为 your-application-name.jar。&lt;/p&gt;
+&lt;h4 id=&#34;3-传输-JAR-到内网服务器&#34;&gt;&lt;a href=&#34;#3-传输-JAR-到内网服务器&#34; class=&#34;headerlink&#34; title=&#34;3. 传输 JAR 到内网服务器&#34;&gt;&lt;/a&gt;3. 传输 JAR 到内网服务器&lt;/h4&gt;&lt;p&gt;将生成的 JAR 文件上传到内网的目标服务器。可以使用各种文件传输工具，比如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SCP（如果服务器支持 SSH）：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;scp your-application-name.jar user@server-ip:/path/to/deploy/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;FTP 或 SFTP（如果有配置 FTP 服务）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;4-配置-Spring-Boot-应用&#34;&gt;&lt;a href=&#34;#4-配置-Spring-Boot-应用&#34; class=&#34;headerlink&#34; title=&#34;4. 配置 Spring Boot 应用&#34;&gt;&lt;/a&gt;4. 配置 Spring Boot 应用&lt;/h4&gt;&lt;p&gt;在内网部署时，你可能需要根据环境修改配置文件，比如 application.properties 或 application.yml。常见的配置项包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;数据库连接信息（spring.datasource.url、spring.datasource.username 等）。&lt;/li&gt;
+&lt;li&gt;日志配置。&lt;/li&gt;
+&lt;li&gt;服务端口（server.port）。&lt;/li&gt;
+&lt;li&gt;安全设置（如禁用外部访问，或者设置访问白名单等）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例如，修改 application.properties 中的数据库配置：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;spring.datasource.url=jdbc:mysql://localhost:3306/your_db&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;spring.datasource.username=db_user&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;spring.datasource.password=db_password&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h4 id=&#34;5-启动-Spring-Boot-应用&#34;&gt;&lt;a href=&#34;#5-启动-Spring-Boot-应用&#34; class=&#34;headerlink&#34; title=&#34;5. 启动 Spring Boot 应用&#34;&gt;&lt;/a&gt;5. 启动 Spring Boot 应用&lt;/h4&gt;&lt;p&gt;在内网服务器上，使用以下命令启动 Spring Boot 应用：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;java -jar your-application-name.jar&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;如果你希望应用在后台运行，可以使用 nohup 或者类似的工具：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;nohup java -jar your-application-name.jar &amp;gt; output.log 2&amp;gt;&amp;amp;1 &amp;amp;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这会将输出重定向到 output.log 文件，并让应用在后台运行。&lt;/p&gt;
+&lt;h4 id=&#34;6-配置防火墙和网络&#34;&gt;&lt;a href=&#34;#6-配置防火墙和网络&#34; class=&#34;headerlink&#34; title=&#34;6. 配置防火墙和网络&#34;&gt;&lt;/a&gt;6. 配置防火墙和网络&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;确保服务器的防火墙允许访问应用所绑定的端口（默认是 8080）。如果使用其他端口，可以在防火墙中配置允许访问该端口。&lt;/li&gt;
+&lt;li&gt;如果 Spring Boot 应用需要通过内网的特定 IP 地址或域名访问，确保 DNS 或 hosts 配置正确。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;7-监控和日志&#34;&gt;&lt;a href=&#34;#7-监控和日志&#34; class=&#34;headerlink&#34; title=&#34;7. 监控和日志&#34;&gt;&lt;/a&gt;7. 监控和日志&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;日志：Spring Boot 应用会将日志输出到控制台，你可以将日志配置为输出到文件中进行持久化存储。常见做法是在 application.properties 或 application.yml 中设置日志路径：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;logging.file.name=/path/to/logs/application.log&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;监控：可以使用 Spring Boot 的 Actuator 或其他监控工具（如 Prometheus 和 Grafana）来监控应用的运行状态。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;8-设置开机启动（可选）&#34;&gt;&lt;a href=&#34;#8-设置开机启动（可选）&#34; class=&#34;headerlink&#34; title=&#34;8. 设置开机启动（可选）&#34;&gt;&lt;/a&gt;8. 设置开机启动（可选）&lt;/h4&gt;&lt;p&gt;如果希望应用在服务器重启时自动启动，可以使用 systemd（Linux 系统）或配置为 Windows 服务。&lt;/p&gt;
+&lt;p&gt;Linux 系统 (Systemd)&lt;/p&gt;
+&lt;p&gt;创建一个 systemd 服务文件，如 /etc/systemd/system/yourapp.service：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;[Unit]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Description=Spring Boot Application&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;After=network.target&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[Service]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;User=your_user&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ExecStart=/usr/bin/java -jar /path/to/your-application-name.jar&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;SuccessExitStatus=143&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Restart=always&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[Install]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;WantedBy=multi-user.target&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;然后启用并启动服务：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo systemctl enable yourapp&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo systemctl start yourapp&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://erik.xyz/2024/11/15/deepin-not-login/</guid>
             <title>deepin无法登录报错emergency mode</title>
@@ -1943,83 +2267,6 @@ sink:
 
 
 &lt;p&gt;  转载自：&lt;a href=&#34;https://mp.weixin.qq.com/s/hpheu-C8ZiwyCuI9GdSTQA&#34;&gt;https://mp.weixin.qq.com/s/hpheu-C8ZiwyCuI9GdSTQA&lt;/a&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://erik.xyz/2022/12/14/shao-lu-luyouqi/</guid>
-            <title>如何把极路由从砖头变正常  </title>
-            <link>https://erik.xyz/2022/12/14/shao-lu-luyouqi/</link>
-            <category>路由器烧录</category>
-            <category>烧录</category>
-            <category>极路由2烧录</category>
-            <category>砖头烧录</category>
-            <pubDate>Wed, 14 Dec 2022 08:41:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;家里有一个闲置的极路由2，试试刷个openwrt，结果一不小心刷成砖头了。开机不能通电，没有指示灯亮。本来想着就这样丢了，再弄个查查咸鱼，二手的都要100多。果断找找解决办法。找这篇文章&lt;a href=&#34;https://www.ddmzf.cn/202203155.html&#34;&gt;极路由X编程器救砖教程编程器刷PandoraBox&lt;/a&gt;，根据这篇文章，到万能的淘宝买了CH341A编程器 + 烧录夹&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/202212/20221214084856.jpg&#34; width = &#34;500&#34; height = &#34;400&#34; alt=&#34;erik.xyz&#34; align=center /&gt;&lt;/p&gt;
-&lt;p&gt;价格还是合理的。东西一道就开始拆路由器，螺丝真的是奇葩，搞了好久才拆下来。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/202212/20221214085342.jpg&#34; width = &#34;500&#34; height = &#34;200&#34; alt=&#34;erik.xyz&#34; align=center /&gt;&lt;/p&gt;
-&lt;p&gt;然后在网上搜索CH341A编程器烧录软件。把下载的软件包解压。&lt;/p&gt;
-&lt;p&gt;1.先安装驱动&lt;br&gt;打开-编程器驱动手动安装文件夹&lt;br&gt;&lt;img src=&#34;/img/202212/1.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;2.打开&lt;br&gt;&lt;img src=&#34;/img/202212/2.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;3.点击安装&lt;br&gt;&lt;img src=&#34;/img/202212/3.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;4.提示驱动安装成功&lt;br&gt;&lt;img src=&#34;/img/202212/4.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;br&gt; *TTL驱动安装也一样&lt;/p&gt;
-&lt;p&gt;5.打开软件文件夹&lt;br&gt;&lt;img src=&#34;/img/202212/5.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;6.打开CH341A.exe程序 插上编程器&lt;br&gt;&lt;img src=&#34;/img/202212/6.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;7.软件右下角显示已连接说明驱动安装成功&lt;br&gt;&lt;img src=&#34;/img/202212/7.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;8.用我买的CH341A编程器安装一下&lt;br&gt;&lt;img src=&#34;/img/202212/254879.webp&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/202212/345517.webp&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;9.按软件检测按钮 检测不到或者型号不一致  就手动选择你的型号       显示检测到芯片25T80&lt;br&gt;&lt;img src=&#34;/img/202212/8.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;芯片识别正常之后，我们依次进行上方按钮的操作： 擦除 – 查空 – 打开 – 选择文件”HC5761A-sysupgrade-20170606-abe3b35e.bin“ – 编程 – 效验&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/202212/20221214091336.jpg&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://erik.xyz/2022/11/16/open-api-on/</guid>
-            <title>对外开放接口开发</title>
-            <link>https://erik.xyz/2022/11/16/open-api-on/</link>
-            <category>go</category>
-            <category>开放接口开发</category>
-            <pubDate>Wed, 16 Nov 2022 10:33:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;需求是这样的：&lt;br&gt;有个外部app给我们小程序做推广，在他们那领取优惠券码。然后到我们小程序领取优惠券，使用优惠券下单。同时，需要我们推送订单。还要接受他们那变更优惠券的状态。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;思路图如下：&lt;br&gt;&lt;img src=&#34;/img/202211/20221116094358.jpg&#34; alt=&#34;思路图&#34; title=&#34;思路图&#34;&gt;&lt;/p&gt;
-&lt;p&gt;那么，根据上面的思路。我这需要开发三个接口&lt;/p&gt;
-&lt;p&gt;1.优惠券列表&lt;/p&gt;
-&lt;p&gt;第三方调用接口，获取优惠券信息&lt;/p&gt;
-&lt;p&gt;2.优惠券状态变更&lt;/p&gt;
-&lt;p&gt;第三方调用变更优惠券状态&lt;/p&gt;
-&lt;p&gt;3.优惠券订单推送&lt;/p&gt;
-&lt;p&gt;第三方提供url，我这边根据使用优惠券产生的订单来推送订单信息&lt;/p&gt;
-&lt;p&gt;首先，设计一个开放应用表，主要存储应用id、应用秘钥，如图&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/202211/20221116102006.jpg&#34; alt=&#34;应用表设计&#34; title=&#34;应用表设计&#34;&gt;&lt;/p&gt;
-&lt;p&gt;要给数据做个签名以及重要数据做加密处理&lt;/p&gt;
-&lt;p&gt;签名就用常规的格式（也可以自己改动格式）:时间戳+应用秘钥+传输数据&lt;br&gt;按照上面的格式md5一下，然后再转码成base64。时间戳和签名要放在请求头传输。如图&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/202211/20221116102258.jpg&#34; alt=&#34;签名代码&#34; title=&#34;签名代码&#34;&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;func CouponSigin(appId, jsonData string, sid int, def ...string) (*string, *string, *string, error) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    openApp, err := GetStoreApp(appId, sid, 0)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    if err != nil &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        logs.Error(&amp;quot;获取应用失败&amp;quot;, err)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        return nil, nil, nil, err&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    apiKey := openApp.ApiOne&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    getTime := Util.Int64ToString(time.Now().UnixNano())&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    if len(def) &amp;gt; 0 &amp;amp;&amp;amp; len(def[0]) &amp;gt; 0 &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        getTime = def[0]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    strData := getTime + apiKey + jsonData + getTime&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    md := md5.New()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    md.Write([]byte(strData))&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    md5Str := hex.EncodeToString(md.Sum(nil))&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    SystemSign := base64.StdEncoding.EncodeToString([]byte(md5Str))&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    logs.Error(&amp;quot;==签名==&amp;quot;, SystemSign)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    logs.Error(&amp;quot;==时间戳==&amp;quot;, getTime)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    return &amp;amp;SystemSign, &amp;amp;getTime, &amp;amp;apiKey, nil&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;加解密就用常规的aes加密，自己用应用秘钥加密，这里不多讲了，很常见的。&lt;/p&gt;
-&lt;p&gt;到这里基础弄好了。&lt;/p&gt;
-&lt;p&gt;我们开发优惠券列表、变更优惠券状态、推送优惠券订单就可以通过签名校验数据，同时敏感数据就加密&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://erik.xyz/2022/09/15/rust-dev-test/</guid>
-            <title>初识rust语言</title>
-            <link>https://erik.xyz/2022/09/15/rust-dev-test/</link>
-            <category>rust</category>
-            <category>rust配置</category>
-            <pubDate>Thu, 15 Sep 2022 20:51:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;去年在刷招聘网站的时候，偶然认识了rust开发语言，留了个心眼，刚好这段时间不太忙，就先初步认识一下。&lt;/p&gt;
-&lt;p&gt;官方网站是这样介绍的：&lt;br&gt;一个赋予每个人构建可靠且高效软件能力的语言。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;首先，本地安装环境&lt;/p&gt;
-&lt;p&gt;我的是linux系统，就执行下面的命令&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;curl --proto &amp;#x27;=https&amp;#x27; --tlsv1.3 https://sh.rustup.rs -sSf | sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;安装好后，在命令窗口输入&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;rustc -V&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;你就会看到&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/202209/20221116105814.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;表示安装成功了&lt;/p&gt;
-&lt;p&gt;安装成的同时也会安装cargo&lt;/p&gt;
-&lt;p&gt;Cargo 是 Rust 的构建系统和包管理器。大多数 Rustacean 们使用 Cargo 来管理他们的 Rust 项目，因为它可以为你处理很多任务，比如构建代码、下载依赖库并编译这些库&lt;/p&gt;
-&lt;p&gt;如果你在终端任意位置输入rust -V或cargo —version没有响应，那就是你需要把安装好的这个两个命令软连接到/usr/local/bin或/usr/bin中，这样才能全局使用。&lt;/p&gt;
-&lt;p&gt;至此rust环境配置好了。&lt;/p&gt;
-&lt;p&gt;接下来通过&lt;a href=&#34;https://kaisery.github.io/trpl-zh-cn/ch02-00-guessing-game-tutorial.html&#34;&gt;文档&lt;/a&gt;来开发一个猜数字小游戏，代码如下&lt;br&gt;&lt;img src=&#34;/img/202209/20221116110422.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;最后的成品效果&lt;br&gt;&lt;img src=&#34;/img/202209/20221116110639.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

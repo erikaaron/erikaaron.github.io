@@ -40,6 +40,8 @@
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>农业系统</category>
+        <category>系统设计</category>
         <category>克莱姆法则</category>
         <category>行列式</category>
         <category>n阶行列式</category>
@@ -147,8 +149,8 @@
         <category>ping服务器</category>
         <category>各大网站ping</category>
         <category>搜引擎ping服务器</category>
-        <category>go获取ip</category>
         <category>go中pdf生成</category>
+        <category>go获取ip</category>
         <category>go中限流</category>
         <category>go对接快递签名</category>
         <category>go时间获取</category>
@@ -181,6 +183,8 @@
         <category>hyperf</category>
         <category>杂录</category>
         <category>新冠肺炎</category>
+        <category>springboot</category>
+        <category>springboot内网部署</category>
         <category>linux恢复</category>
         <category>linux误删</category>
         <category>linux命令</category>
@@ -216,6 +220,9 @@
         <category>linux运行命令报错</category>
         <category>web前端</category>
         <category>web优化</category>
+        <category>maven搭建库</category>
+        <category>maven</category>
+        <category>maven内网库</category>
         <category>撮合算法</category>
         <category>撮合</category>
         <category>php撮合算法</category>
@@ -357,10 +364,10 @@
         <category>css工具</category>
         <category>php正则</category>
         <category>正则</category>
-        <category>shopex</category>
         <category>shodan</category>
         <category>黑谷歌</category>
         <category>黒帽搜素</category>
+        <category>shopex</category>
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
