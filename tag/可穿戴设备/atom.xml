@@ -9,37 +9,39 @@
     <category term="jquery" />
     <category term="jquery插件" />
     <category term="js" />
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="css" />
     <category term="php" />
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
-    <category term="说说" />
-    <category term="趣闻" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
+    <category term="说说" />
+    <category term="趣闻" />
+    <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
-    <category term="nginx" />
+    <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="漏洞" />
     <category term="负载均衡" />
     <category term="http" />
     <category term="http服务器" />
+    <category term="kali" />
+    <category term="kali安装" />
     <category term="克莱姆法则" />
     <category term="行列式" />
     <category term="n阶行列式" />
-    <category term="kali" />
-    <category term="kali安装" />
+    <category term="支付系统" />
+    <category term="支付" />
     <category term="centos" />
     <category term="linux" />
     <category term="apache优化" />
@@ -47,8 +49,6 @@
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
     <category term="日常" />
-    <category term="支付系统" />
-    <category term="支付" />
     <category term="seo" />
     <category term="优化" />
     <category term="摘要" />
@@ -100,9 +100,9 @@
     <category term="容器" />
     <category term="cncf" />
     <category term="监控" />
-    <category term="composer" />
     <category term="cphalcon" />
     <category term="cphalcon报错" />
+    <category term="composer" />
     <category term="css中的em" />
     <category term="响应式字体" />
     <category term="响应式布局样式" />
@@ -208,11 +208,11 @@
     <category term="lanmp" />
     <category term="php环境独立配置" />
     <category term="服务器" />
+    <category term="flash" />
+    <category term="表单" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -308,10 +308,10 @@
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
+    <category term="php字符串" />
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
-    <category term="php字符串" />
     <category term="python" />
     <category term="python库" />
     <category term="a标签" />
@@ -319,9 +319,9 @@
     <category term="虚线框" />
     <category term="R语言" />
     <category term="数据随机化" />
-    <category term="redis监控" />
     <category term="redis总结" />
     <category term="redis命令" />
+    <category term="redis监控" />
     <category term="redis锁" />
     <category term="redis分布式锁" />
     <category term="任意金额输入" />
@@ -450,10 +450,10 @@
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
     <category term="邮箱服务器" />
-    <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <category term="正则表达式" />
     <entry>
         <id>https://erik.xyz/2014/12/27/mu-qian-hai-shi-wan-wu-ke-chuan-dai-shi-she-bei-bao-gao-jie-xi/</id>
         <title>目前还是玩物——可穿戴式设备报告解析</title>
@@ -466,8 +466,8 @@
 &lt;h2 id=&#34;三、什么人在用穿戴式设备？&#34;&gt;&lt;a href=&#34;#三、什么人在用穿戴式设备？&#34; class=&#34;headerlink&#34; title=&#34;三、什么人在用穿戴式设备？&#34;&gt;&lt;/a&gt;三、什么人在用穿戴式设备？&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/b443471216b517cc30cb9eea354e023d_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;目前还是玩物——可穿戴式设备报告解析 - 8.jpg&#34; title=&#34;目前还是玩物——可穿戴式设备报告解析&#34;&gt; &lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/6003950cffdc86970909a494861920c6_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;目前还是玩物——可穿戴式设备报告解析 - 9.jpg&#34; title=&#34;目前还是玩物——可穿戴式设备报告解析&#34;&gt; &lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/7db181be25ab69447b69a185006d9b03_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;目前还是玩物——可穿戴式设备报告解析 - 10.jpg&#34; title=&#34;目前还是玩物——可穿戴式设备报告解析&#34;&gt; &lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/07d34e2419c61216a85a2156b2cf8ae4_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;目前还是玩物——可穿戴式设备报告解析 - 11.jpg&#34; title=&#34;目前还是玩物——可穿戴式设备报告解析&#34;&gt; &lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/b5f30ed55c1e0b0c8be8d25edacb6f94_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;目前还是玩物——可穿戴式设备报告解析 - 12.jpg&#34; title=&#34;目前还是玩物——可穿戴式设备报告解析&#34;&gt; 调查里面有个很有意思的数字，学生比例是 20%，收入不愿意透露是 18.1%。无收入的学生在穿戴式设备中占得比例并不小。 从人群看，初中到大学文化，20-40 岁的社会中坚力量也是穿戴式设备消费的主力军。 穿戴式设备乐于被社会中坚力量所接受，但是这表明了它的潜力，而目前没有普及，是产品本身的问题，而非用户的问题。&lt;/p&gt;
 &lt;h2 id=&#34;四、结论&#34;&gt;&lt;a href=&#34;#四、结论&#34; class=&#34;headerlink&#34; title=&#34;四、结论&#34;&gt;&lt;/a&gt;四、结论&lt;/h2&gt;&lt;p&gt;从腾讯的调查结果看，穿戴式设备已经被网民认知，在主流人群中有很高的认知普及。有很大的市场潜力，但是由于目前的产品没有足够诱人的功能，体验也不好。人们对其满意度和购买欲望都是比较低的，还停留在玩具的阶段。从潜力到销量还有很长的路要走。出自www.zoopda.com/2719&lt;/p&gt;
 </content>
-        <category term="说说" />
         <category term="随笔" />
+        <category term="说说" />
         <category term="可穿戴设备" />
         <updated>2014-12-27T12:13:00.000Z</updated>
     </entry>
