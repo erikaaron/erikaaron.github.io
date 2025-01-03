@@ -5,48 +5,44 @@
         <link>https://erik.xyz</link>
         <description>一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。</description>
         <language>zh-CN</language>
-        <pubDate>Tue, 19 Mar 2024 23:06:00 +0800</pubDate>
-        <lastBuildDate>Tue, 19 Mar 2024 23:06:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
+        <pubDate>Fri, 03 Jan 2025 15:30:00 +0800</pubDate>
+        <lastBuildDate>Fri, 03 Jan 2025 15:30:00 +0800</lastBuildDate>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
         <category>jquery插件</category>
         <category>js</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>css</category>
         <category>php</category>
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>说说</category>
+        <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>说说</category>
-        <category>趣闻</category>
-        <category>nginx</category>
         <category>转载</category>
         <category>php库</category>
         <category>互联</category>
         <category>项目实战</category>
         <category>javascript</category>
-        <category>漏洞</category>
+        <category>nginx</category>
         <category>php应用</category>
         <category>浮点</category>
+        <category>漏洞</category>
+        <category>负载均衡</category>
         <category>http</category>
         <category>http服务器</category>
-        <category>负载均衡</category>
-        <category>kali</category>
-        <category>kali安装</category>
-        <category>农业系统</category>
-        <category>系统设计</category>
         <category>克莱姆法则</category>
         <category>行列式</category>
         <category>n阶行列式</category>
-        <category>支付系统</category>
-        <category>支付</category>
+        <category>kali</category>
+        <category>kali安装</category>
         <category>centos</category>
         <category>linux</category>
         <category>apache优化</category>
@@ -54,6 +50,8 @@
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
         <category>日常</category>
+        <category>支付系统</category>
+        <category>支付</category>
         <category>seo</category>
         <category>优化</category>
         <category>摘要</category>
@@ -105,6 +103,7 @@
         <category>容器</category>
         <category>cncf</category>
         <category>监控</category>
+        <category>composer</category>
         <category>cphalcon</category>
         <category>cphalcon报错</category>
         <category>css中的em</category>
@@ -124,6 +123,8 @@
         <category>emergency</category>
         <category>emergency mode</category>
         <category>deepin黑屏</category>
+        <category>清理系统</category>
+        <category>清理c盘</category>
         <category>dns</category>
         <category>域名监测</category>
         <category>网站监测</category>
@@ -149,8 +150,8 @@
         <category>ping服务器</category>
         <category>各大网站ping</category>
         <category>搜引擎ping服务器</category>
-        <category>go中pdf生成</category>
         <category>go获取ip</category>
+        <category>go中pdf生成</category>
         <category>go中限流</category>
         <category>go对接快递签名</category>
         <category>go时间获取</category>
@@ -220,12 +221,12 @@
         <category>linux运行命令报错</category>
         <category>web前端</category>
         <category>web优化</category>
-        <category>maven搭建库</category>
-        <category>maven</category>
-        <category>maven内网库</category>
         <category>撮合算法</category>
         <category>撮合</category>
         <category>php撮合算法</category>
+        <category>maven搭建库</category>
+        <category>maven</category>
+        <category>maven内网库</category>
         <category>高级缓存配置</category>
         <category>mongodb</category>
         <category>mongodb权限</category>
@@ -287,6 +288,7 @@
         <category>php-zookeeper</category>
         <category>zookeeper3.5.5</category>
         <category>php-zookeeper扩展</category>
+        <category>php串口开发</category>
         <category>php倒计时</category>
         <category>php时间</category>
         <category>倒计时</category>
@@ -309,10 +311,10 @@
         <category>php中if</category>
         <category>php中if判断</category>
         <category>php的if</category>
-        <category>php字符串</category>
         <category>php7中sphinx</category>
         <category>php7中sphinx扩展</category>
         <category>sphinx扩展</category>
+        <category>php字符串</category>
         <category>python</category>
         <category>python库</category>
         <category>a标签</category>
@@ -320,9 +322,9 @@
         <category>虚线框</category>
         <category>R语言</category>
         <category>数据随机化</category>
+        <category>redis监控</category>
         <category>redis总结</category>
         <category>redis命令</category>
-        <category>redis监控</category>
         <category>redis锁</category>
         <category>redis分布式锁</category>
         <category>任意金额输入</category>
@@ -333,6 +335,8 @@
         <category>链表</category>
         <category>数据结构</category>
         <category>线性结构</category>
+        <category>浏览器禁止操作视频</category>
+        <category>禁止视频</category>
         <category>响应慢</category>
         <category>页面优化</category>
         <category>js编辑</category>
@@ -411,7 +415,6 @@
         <category>xhprof</category>
         <category>webman</category>
         <category>laravel</category>
-        <category>composer</category>
         <category>composer插件</category>
         <category>html</category>
         <category>响应式分辨率</category>
@@ -454,6 +457,56 @@
         <category>翻墙</category>
         <category>谷歌</category>
         <category>谷歌搜索</category>
+        <item>
+            <guid isPermalink="true">https://erik.xyz/2025/01/03/php-serial-port-development/</guid>
+            <title>php串口开发</title>
+            <link>https://erik.xyz/2025/01/03/php-serial-port-development/</link>
+            <category>php</category>
+            <category>php串口开发</category>
+            <pubDate>Fri, 03 Jan 2025 15:30:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;使用外置设备，通过串口发送和接收数据。那么，就要在php端有个串口的操作代码。&lt;br&gt;PHP 的 dio 扩展（Direct I/O）提供了对底层 I/O 操作的访问，包括串口通信。通过 dio 扩展，你可以直接操作串口设备文件（如 /dev/ttyUSB0 或 COM1）来实现串口通信。&lt;br&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1-安装-dio-扩展&#34;&gt;&lt;a href=&#34;#1-安装-dio-扩展&#34; class=&#34;headerlink&#34; title=&#34;1. 安装 dio 扩展&#34;&gt;&lt;/a&gt;1. 安装 dio 扩展&lt;/h3&gt;&lt;p&gt;dio 扩展是 PHP 的一个 PECL 扩展。你可以通过以下步骤安装：&lt;/p&gt;
+&lt;p&gt;在 Linux 上安装：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get install php-dev  # 安装 PHP 开发工具&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo pecl install dio         # 安装 dio 扩展&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;安装完成后，在 php.ini 文件中启用扩展：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;extension=dio.so&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;2-使用-dio-实现串口通信&#34;&gt;&lt;a href=&#34;#2-使用-dio-实现串口通信&#34; class=&#34;headerlink&#34; title=&#34;2. 使用 dio 实现串口通信&#34;&gt;&lt;/a&gt;2. 使用 dio 实现串口通信&lt;/h3&gt;&lt;p&gt;以下是一个使用 dio 扩展实现串口通信的示例代码：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;?php&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 串口设备路径&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$device = &amp;#x27;/dev/pts/4&amp;#x27;; // Linux&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// $device = &amp;#x27;COM1&amp;#x27;;      // Windows&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 打开串口设备&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$fd = dio_open($device, O_RDWR | O_NOCTTY | O_NONBLOCK);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;if (!$fd) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    die(&amp;quot;无法打开串口设备: $device\n&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 配置串口参数&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;dio_tcsetattr($fd, [&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;baud&amp;#x27; =&amp;gt; 9600,          // 波特率&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;bits&amp;#x27; =&amp;gt; 8,             // 数据位&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;stop&amp;#x27; =&amp;gt; 1,             // 停止位&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;parity&amp;#x27; =&amp;gt; 0,           // 校验位 (0: none, 1: odd, 2: even)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;flow_control&amp;#x27; =&amp;gt; 0,     // 流控制 (0: none, 1: hardware)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 发送数据到串口&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$message = &amp;quot;你好我在https://erik.xyz上出生了！&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;dio_write($fd, $message);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo &amp;quot;已发送: $message&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 从串口读取数据&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$data = dio_read($fd, 1024); // 读取最多 1024 字节&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo &amp;quot;已接收: $data\n&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 关闭串口&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;dio_close($fd);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3-代码说明&#34;&gt;&lt;a href=&#34;#3-代码说明&#34; class=&#34;headerlink&#34; title=&#34;3. 代码说明&#34;&gt;&lt;/a&gt;3. 代码说明&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;dio_open: 打开串口设备文件。O_RDWR 表示以读写模式打开，O_NOCTTY 表示不将设备作为控制终端，O_NONBLOCK 表示非阻塞模式。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dio_tcsetattr: 配置串口参数，包括波特率、数据位、停止位、校验位和流控制。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dio_write: 向串口写入数据。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dio_read: 从串口读取数据。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dio_close: 关闭串口设备。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-串口参数配置&#34;&gt;&lt;a href=&#34;#4-串口参数配置&#34; class=&#34;headerlink&#34; title=&#34;4. 串口参数配置&#34;&gt;&lt;/a&gt;4. 串口参数配置&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;dio_tcsetattr 的配置选项：&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;baud: 波特率（如 9600、19200、38400、57600、115200）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;bits: 数据位（通常为 8）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;stop: 停止位（1 或 2）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;parity: 校验位（0: 无校验，1: 奇校验，2: 偶校验）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;flow_control: 流控制（0: 无流控制，1: 硬件流控制）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;那么这时候需要测试一下代码。那总不能真的找个串口设备吧，然而虚拟串口真香。&#34;&gt;&lt;a href=&#34;#那么这时候需要测试一下代码。那总不能真的找个串口设备吧，然而虚拟串口真香。&#34; class=&#34;headerlink&#34; title=&#34;那么这时候需要测试一下代码。那总不能真的找个串口设备吧，然而虚拟串口真香。&#34;&gt;&lt;/a&gt;那么这时候需要测试一下代码。那总不能真的找个串口设备吧，然而虚拟串口真香。&lt;/h2&gt;&lt;h3 id=&#34;5-在Linux中使用-socat-模拟虚拟串口&#34;&gt;&lt;a href=&#34;#5-在Linux中使用-socat-模拟虚拟串口&#34; class=&#34;headerlink&#34; title=&#34;5.在Linux中使用 socat 模拟虚拟串口&#34;&gt;&lt;/a&gt;5.在Linux中使用 socat 模拟虚拟串口&lt;/h3&gt;&lt;p&gt;socat 是一个强大的工具，可以创建虚拟串口对。&lt;/p&gt;
+&lt;p&gt;安装 socat：&lt;br&gt;在Debian/Ubuntu系统上：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install socat&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;创建虚拟串口对：&lt;br&gt;运行以下命令创建一对虚拟串口：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;socat -d -d pty,raw,echo=0 pty,raw,echo=0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;运行后如图：&lt;br&gt;&lt;img src=&#34;/img/2024/20250103151316.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;br&gt;这样可以看到出现两个虚拟串口。&lt;br&gt;把上面的php代码放到文件中运行一下:&lt;br&gt;&lt;img src=&#34;/img/2024/20250103151620.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;同时新开个窗口执行：&lt;code&gt;cat /dev/pts/5&lt;/code&gt;来读取串口数据。&lt;br&gt;如下图：&lt;br&gt;&lt;img src=&#34;/img/2024/20250103151927.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这里是发送数据，那接收数据怎么看呢。&lt;br&gt;那就在代码上改造一下加个for：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;// 从串口读取数据&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$data = dio_read($fd, 1024); // 读取最多 1024 字节&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo &amp;quot;已接收: $data\n&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;这里改造主要是测试用，实际上不需要。&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;//测试接收&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;for($i=0;$i&amp;lt;20;$i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    sleep(3);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 从串口读取数据&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$data = dio_read($fd, 1024); // 读取最多 1024 字节&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo &amp;quot;已接收: $data\n&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;那么，再次运行php代码,然后在新窗口运行&lt;code&gt;echo &amp;quot;欢迎你出生在https://erik.xyz&amp;quot; &amp;gt; /dev/pts/5&lt;/code&gt;来发送信息，你会看到如图的接收：&lt;br&gt;&lt;img src=&#34;/img/2024/20250103152421.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;到这里，发送和接收串口已经好了。&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://erik.xyz/2024/03/19/randomization/</guid>
             <title>数据随机化算法</title>
@@ -2446,21 +2499,6 @@ findMoney(34);
             <category>项目创建composer</category>
             <pubDate>Fri, 13 Oct 2017 21:19:00 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;composer是php5.3以上 的一个依赖管理工具。简单来说就是你在composer里面可以找到各种优秀的第三方扩展。可以丰富自己的项目节省开发时间。&lt;br&gt;首先要在你本地win电脑安装composer&lt;br&gt;安装成功后用命令窗口去安装打开目录执行：  echo @php “%~dp0composer.phar” %*&amp;gt;composer.bat&lt;br&gt;关闭命令窗口重新打开  执行 ： composer 结果如图&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/9eee8fc4cad0e8bfs.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/9eee8fc4cad0e8bfs.jpg&#34; alt=&#34;有关composer&#34;&gt;&lt;/a&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;表示已经安装成功了。 然后把镜像地址换到国内&lt;br&gt;执行：composer config -g repo.packagist composer &lt;a href=&#34;https://packagist.phpcomposer.com&#34;&gt;https://packagist.phpcomposer.com&lt;/a&gt;&lt;br&gt;之后执行 composer install  全局安装。&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/a199b856c2f065e1s.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/a199b856c2f065e1s.jpg&#34; alt=&#34;composer install&#34;&gt;&lt;/a&gt;&lt;br&gt;顺便再次执行：composer update   更新。&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/a306c860af2fae0as.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/a306c860af2fae0as.jpg&#34; alt=&#34;composer update&#34;&gt;&lt;/a&gt;&lt;br&gt;然后进入到你所在的项目目录执行： composer init  开始创建自己项目的composer.json&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/5fb4bf0bc075372as.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/5fb4bf0bc075372as.jpg&#34; alt=&#34;有关composer&#34;&gt;&lt;/a&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://erik.xyz/2017/09/15/php7-an-zhuang-sphinx-kuo-zhan/</guid>
-            <title>php7安装sphinx扩展</title>
-            <link>https://erik.xyz/2017/09/15/php7-an-zhuang-sphinx-kuo-zhan/</link>
-            <category>php7中sphinx</category>
-            <category>php7中sphinx扩展</category>
-            <category>sphinx扩展</category>
-            <pubDate>Fri, 15 Sep 2017 21:17:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;在官方pecl库中只能找到支持5.2版本的sphinx扩展。php7出来好一段时间了，没有sphinx不太科学。根据网友给的提提示，在pecl库下的sphinx页面中，点击[ Browse Source ] 如下图： &lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/08/1-1.jpg&#34; alt=&#34;&#34;&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;可以跳转到git页面在这里面你可以发下有支持php7的扩展文件 &lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/08/2-1.jpg&#34; alt=&#34;&#34;&gt; &lt;/p&gt;
-&lt;p&gt;这时就好办多了。 点击 shortlog进入下载页面，下载扩展 sphinx所需源码下载地址 &lt;a href=&#34;http://download.csdn.net/download/w15875510692/9931232&#34;&gt;http://download.csdn.net/download/w15875510692/9931232&lt;/a&gt; &lt;/p&gt;
-&lt;p&gt;最好浏览器下载  &lt;a href=&#34;http://git.php.net/?p=pecl/search_engine/sphinx.git;a=snapshot;h=339e123acb0ce7beb2d9d4f9094d6f8bcf15fb54;sf=tgz&#34;&gt;http://git.php.net/?p=pecl/search_engine/sphinx.git;a=snapshot;h=339e123acb0ce7beb2d9d4f9094d6f8bcf15fb54;sf=tgz&lt;/a&gt; 因为在安装sphinx扩展时总是报错libsphinxclient的错误，也就是缺少libsphinxclient。 那就需要下载coreseek，解压后进入csft-3.2.14/api/libsphinxclient目录下 ./configure make &amp;amp;&amp;amp; make install 安装libsphinxclient。如图安装成功。&lt;br&gt;&lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/08/core.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;接下来就是解压sphinx，并安装扩展。 进入sphinx目录 phpize ./configure —with-php-config=XXXX(php-config目录) make &amp;amp;&amp;amp; make install 安装成功，如图。 &lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/08/sphinx.jpg&#34; alt=&#34;&#34;&gt; &lt;/p&gt;
-&lt;p&gt;然后在php.ini，添加扩展，重启php服务就可以在phpinfo中看到sphinx的扩展了。&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

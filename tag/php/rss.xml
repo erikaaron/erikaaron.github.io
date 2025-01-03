@@ -5,48 +5,44 @@
         <link>https://erik.xyz</link>
         <description>一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。</description>
         <language>zh-CN</language>
-        <pubDate>Tue, 08 Jun 2021 11:12:00 +0800</pubDate>
-        <lastBuildDate>Tue, 08 Jun 2021 11:12:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
+        <pubDate>Fri, 03 Jan 2025 15:30:00 +0800</pubDate>
+        <lastBuildDate>Fri, 03 Jan 2025 15:30:00 +0800</lastBuildDate>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
         <category>jquery插件</category>
         <category>js</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>css</category>
         <category>php</category>
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>说说</category>
+        <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>说说</category>
-        <category>趣闻</category>
-        <category>nginx</category>
         <category>转载</category>
         <category>php库</category>
         <category>互联</category>
         <category>项目实战</category>
         <category>javascript</category>
-        <category>漏洞</category>
+        <category>nginx</category>
         <category>php应用</category>
         <category>浮点</category>
+        <category>漏洞</category>
+        <category>负载均衡</category>
         <category>http</category>
         <category>http服务器</category>
-        <category>负载均衡</category>
-        <category>kali</category>
-        <category>kali安装</category>
-        <category>农业系统</category>
-        <category>系统设计</category>
         <category>克莱姆法则</category>
         <category>行列式</category>
         <category>n阶行列式</category>
-        <category>支付系统</category>
-        <category>支付</category>
+        <category>kali</category>
+        <category>kali安装</category>
         <category>centos</category>
         <category>linux</category>
         <category>apache优化</category>
@@ -54,6 +50,8 @@
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
         <category>日常</category>
+        <category>支付系统</category>
+        <category>支付</category>
         <category>seo</category>
         <category>优化</category>
         <category>摘要</category>
@@ -105,6 +103,7 @@
         <category>容器</category>
         <category>cncf</category>
         <category>监控</category>
+        <category>composer</category>
         <category>cphalcon</category>
         <category>cphalcon报错</category>
         <category>css中的em</category>
@@ -124,6 +123,8 @@
         <category>emergency</category>
         <category>emergency mode</category>
         <category>deepin黑屏</category>
+        <category>清理系统</category>
+        <category>清理c盘</category>
         <category>dns</category>
         <category>域名监测</category>
         <category>网站监测</category>
@@ -149,8 +150,8 @@
         <category>ping服务器</category>
         <category>各大网站ping</category>
         <category>搜引擎ping服务器</category>
-        <category>go中pdf生成</category>
         <category>go获取ip</category>
+        <category>go中pdf生成</category>
         <category>go中限流</category>
         <category>go对接快递签名</category>
         <category>go时间获取</category>
@@ -220,12 +221,12 @@
         <category>linux运行命令报错</category>
         <category>web前端</category>
         <category>web优化</category>
-        <category>maven搭建库</category>
-        <category>maven</category>
-        <category>maven内网库</category>
         <category>撮合算法</category>
         <category>撮合</category>
         <category>php撮合算法</category>
+        <category>maven搭建库</category>
+        <category>maven</category>
+        <category>maven内网库</category>
         <category>高级缓存配置</category>
         <category>mongodb</category>
         <category>mongodb权限</category>
@@ -287,6 +288,7 @@
         <category>php-zookeeper</category>
         <category>zookeeper3.5.5</category>
         <category>php-zookeeper扩展</category>
+        <category>php串口开发</category>
         <category>php倒计时</category>
         <category>php时间</category>
         <category>倒计时</category>
@@ -309,10 +311,10 @@
         <category>php中if</category>
         <category>php中if判断</category>
         <category>php的if</category>
-        <category>php字符串</category>
         <category>php7中sphinx</category>
         <category>php7中sphinx扩展</category>
         <category>sphinx扩展</category>
+        <category>php字符串</category>
         <category>python</category>
         <category>python库</category>
         <category>a标签</category>
@@ -320,9 +322,9 @@
         <category>虚线框</category>
         <category>R语言</category>
         <category>数据随机化</category>
+        <category>redis监控</category>
         <category>redis总结</category>
         <category>redis命令</category>
-        <category>redis监控</category>
         <category>redis锁</category>
         <category>redis分布式锁</category>
         <category>任意金额输入</category>
@@ -333,6 +335,8 @@
         <category>链表</category>
         <category>数据结构</category>
         <category>线性结构</category>
+        <category>浏览器禁止操作视频</category>
+        <category>禁止视频</category>
         <category>响应慢</category>
         <category>页面优化</category>
         <category>js编辑</category>
@@ -411,7 +415,6 @@
         <category>xhprof</category>
         <category>webman</category>
         <category>laravel</category>
-        <category>composer</category>
         <category>composer插件</category>
         <category>html</category>
         <category>响应式分辨率</category>
@@ -454,6 +457,56 @@
         <category>翻墙</category>
         <category>谷歌</category>
         <category>谷歌搜索</category>
+        <item>
+            <guid isPermalink="true">https://erik.xyz/2025/01/03/php-serial-port-development/</guid>
+            <title>php串口开发</title>
+            <link>https://erik.xyz/2025/01/03/php-serial-port-development/</link>
+            <category>php</category>
+            <category>php串口开发</category>
+            <pubDate>Fri, 03 Jan 2025 15:30:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;使用外置设备，通过串口发送和接收数据。那么，就要在php端有个串口的操作代码。&lt;br&gt;PHP 的 dio 扩展（Direct I/O）提供了对底层 I/O 操作的访问，包括串口通信。通过 dio 扩展，你可以直接操作串口设备文件（如 /dev/ttyUSB0 或 COM1）来实现串口通信。&lt;br&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1-安装-dio-扩展&#34;&gt;&lt;a href=&#34;#1-安装-dio-扩展&#34; class=&#34;headerlink&#34; title=&#34;1. 安装 dio 扩展&#34;&gt;&lt;/a&gt;1. 安装 dio 扩展&lt;/h3&gt;&lt;p&gt;dio 扩展是 PHP 的一个 PECL 扩展。你可以通过以下步骤安装：&lt;/p&gt;
+&lt;p&gt;在 Linux 上安装：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get install php-dev  # 安装 PHP 开发工具&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo pecl install dio         # 安装 dio 扩展&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;安装完成后，在 php.ini 文件中启用扩展：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;extension=dio.so&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;2-使用-dio-实现串口通信&#34;&gt;&lt;a href=&#34;#2-使用-dio-实现串口通信&#34; class=&#34;headerlink&#34; title=&#34;2. 使用 dio 实现串口通信&#34;&gt;&lt;/a&gt;2. 使用 dio 实现串口通信&lt;/h3&gt;&lt;p&gt;以下是一个使用 dio 扩展实现串口通信的示例代码：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;?php&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 串口设备路径&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$device = &amp;#x27;/dev/pts/4&amp;#x27;; // Linux&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// $device = &amp;#x27;COM1&amp;#x27;;      // Windows&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 打开串口设备&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$fd = dio_open($device, O_RDWR | O_NOCTTY | O_NONBLOCK);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;if (!$fd) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    die(&amp;quot;无法打开串口设备: $device\n&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 配置串口参数&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;dio_tcsetattr($fd, [&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;baud&amp;#x27; =&amp;gt; 9600,          // 波特率&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;bits&amp;#x27; =&amp;gt; 8,             // 数据位&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;stop&amp;#x27; =&amp;gt; 1,             // 停止位&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;parity&amp;#x27; =&amp;gt; 0,           // 校验位 (0: none, 1: odd, 2: even)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;flow_control&amp;#x27; =&amp;gt; 0,     // 流控制 (0: none, 1: hardware)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 发送数据到串口&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$message = &amp;quot;你好我在https://erik.xyz上出生了！&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;dio_write($fd, $message);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo &amp;quot;已发送: $message&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 从串口读取数据&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$data = dio_read($fd, 1024); // 读取最多 1024 字节&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo &amp;quot;已接收: $data\n&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 关闭串口&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;dio_close($fd);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3-代码说明&#34;&gt;&lt;a href=&#34;#3-代码说明&#34; class=&#34;headerlink&#34; title=&#34;3. 代码说明&#34;&gt;&lt;/a&gt;3. 代码说明&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;dio_open: 打开串口设备文件。O_RDWR 表示以读写模式打开，O_NOCTTY 表示不将设备作为控制终端，O_NONBLOCK 表示非阻塞模式。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dio_tcsetattr: 配置串口参数，包括波特率、数据位、停止位、校验位和流控制。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dio_write: 向串口写入数据。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dio_read: 从串口读取数据。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dio_close: 关闭串口设备。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-串口参数配置&#34;&gt;&lt;a href=&#34;#4-串口参数配置&#34; class=&#34;headerlink&#34; title=&#34;4. 串口参数配置&#34;&gt;&lt;/a&gt;4. 串口参数配置&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;dio_tcsetattr 的配置选项：&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;baud: 波特率（如 9600、19200、38400、57600、115200）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;bits: 数据位（通常为 8）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;stop: 停止位（1 或 2）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;parity: 校验位（0: 无校验，1: 奇校验，2: 偶校验）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;flow_control: 流控制（0: 无流控制，1: 硬件流控制）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;那么这时候需要测试一下代码。那总不能真的找个串口设备吧，然而虚拟串口真香。&#34;&gt;&lt;a href=&#34;#那么这时候需要测试一下代码。那总不能真的找个串口设备吧，然而虚拟串口真香。&#34; class=&#34;headerlink&#34; title=&#34;那么这时候需要测试一下代码。那总不能真的找个串口设备吧，然而虚拟串口真香。&#34;&gt;&lt;/a&gt;那么这时候需要测试一下代码。那总不能真的找个串口设备吧，然而虚拟串口真香。&lt;/h2&gt;&lt;h3 id=&#34;5-在Linux中使用-socat-模拟虚拟串口&#34;&gt;&lt;a href=&#34;#5-在Linux中使用-socat-模拟虚拟串口&#34; class=&#34;headerlink&#34; title=&#34;5.在Linux中使用 socat 模拟虚拟串口&#34;&gt;&lt;/a&gt;5.在Linux中使用 socat 模拟虚拟串口&lt;/h3&gt;&lt;p&gt;socat 是一个强大的工具，可以创建虚拟串口对。&lt;/p&gt;
+&lt;p&gt;安装 socat：&lt;br&gt;在Debian/Ubuntu系统上：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install socat&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;创建虚拟串口对：&lt;br&gt;运行以下命令创建一对虚拟串口：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;socat -d -d pty,raw,echo=0 pty,raw,echo=0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;运行后如图：&lt;br&gt;&lt;img src=&#34;/img/2024/20250103151316.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;br&gt;这样可以看到出现两个虚拟串口。&lt;br&gt;把上面的php代码放到文件中运行一下:&lt;br&gt;&lt;img src=&#34;/img/2024/20250103151620.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;同时新开个窗口执行：&lt;code&gt;cat /dev/pts/5&lt;/code&gt;来读取串口数据。&lt;br&gt;如下图：&lt;br&gt;&lt;img src=&#34;/img/2024/20250103151927.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这里是发送数据，那接收数据怎么看呢。&lt;br&gt;那就在代码上改造一下加个for：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;// 从串口读取数据&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$data = dio_read($fd, 1024); // 读取最多 1024 字节&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo &amp;quot;已接收: $data\n&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;这里改造主要是测试用，实际上不需要。&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;//测试接收&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;for($i=0;$i&amp;lt;20;$i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    sleep(3);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 从串口读取数据&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$data = dio_read($fd, 1024); // 读取最多 1024 字节&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo &amp;quot;已接收: $data\n&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;那么，再次运行php代码,然后在新窗口运行&lt;code&gt;echo &amp;quot;欢迎你出生在https://erik.xyz&amp;quot; &amp;gt; /dev/pts/5&lt;/code&gt;来发送信息，你会看到如图的接收：&lt;br&gt;&lt;img src=&#34;/img/2024/20250103152421.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;到这里，发送和接收串口已经好了。&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://erik.xyz/2021/06/08/php-extension/</guid>
             <title>php扩展</title>
@@ -2647,19 +2700,6 @@ function resize_image($filename, $tmpname, $xmax, $ymax)
             <category>漏洞</category>
             <pubDate>Thu, 25 Dec 2014 10:27:00 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;来源：Linux社区  作者：Linux 受影响系统： PHP PHP &amp;lt; 5.4.36 描述： CVE(CAN) ID: CVE-2014-8142 PHP是广泛使用的通用目的脚本语言，特别适合于Web开发，可嵌入到HTML中。 PHP 5.4.36之前版本，”process_nested_data()”函数在实现上存在释放后重利用漏洞，攻击者通过向”unserialize()” 函数传递构造的输入，利用此漏洞可破坏内存；”var_push_dtor()”函数在实现上存在空指针间接引用漏洞，攻击者通过 向”unserialize()”函数传递构造的输入，利用此漏洞可造成崩溃。成功利用这些漏洞可造成任意代码执行。 &amp;lt;&lt;em&gt;来源：Stefan Esser 链接：&lt;a href=&#34;http://secunia.com/advisories/61236/&#34;&gt;http://secunia.com/advisories/61236/&lt;/a&gt; &lt;/em&gt;&gt; 建议： 厂商补丁： PHP —- 目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： PHP: &lt;a href=&#34;http://php.net/ChangeLog-5.php#5.4.36&#34;&gt;http://php.net/ChangeLog-5.php#5.4.36&lt;/a&gt; &lt;a href=&#34;https://bugs.php.net/bug.php?id=68594&#34;&gt;https://bugs.php.net/bug.php?id=68594&lt;/a&gt; Charlie Eriksen: &lt;a href=&#34;https://bugs.php.net/bug.php?id=68545&#34;&gt;https://bugs.php.net/bug.php?id=68545&lt;/a&gt; &lt;a href=&#34;http://www.linuxidc.com/topicnews.aspx?tid=14&#34; title=&#34;CentOS&#34;&gt;CentOS&lt;/a&gt; 6.3 安装LNMP (PHP 5.4,MyySQL5.6) &lt;a href=&#34;http://www.linuxidc.com/Linux/2013-04/82069.htm&#34;&gt;http://www.linuxidc.com/Linux/2013-04/82069.htm&lt;/a&gt; 在部署LNMP的时候遇到Nginx启动失败的2个问题 &lt;a href=&#34;http://www.linuxidc.com/Linux/2013-03/81120.htm&#34;&gt;http://www.linuxidc.com/Linux/2013-03/81120.htm&lt;/a&gt; &lt;a href=&#34;http://www.linuxidc.com/topicnews.aspx?tid=2&#34; title=&#34;Ubuntu&#34;&gt;Ubuntu&lt;/a&gt;安装Nginx php5-fpm MySQL(LNMP环境搭建) &lt;a href=&#34;http://www.linuxidc.com/Linux/2012-10/72458.htm&#34;&gt;http://www.linuxidc.com/Linux/2012-10/72458.htm&lt;/a&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://erik.xyz/2014/12/20/nginx-1-5-2-php-5-5-1-mysql-5-6-10-zai-centos-xia-de-bian-yi-an-zhuang/</guid>
-            <title>Nginx 1.5.2 + PHP 5.5.1 + MySQL 5.6.10 在 CentOS 下的编译安装</title>
-            <link>https://erik.xyz/2014/12/20/nginx-1-5-2-php-5-5-1-mysql-5-6-10-zai-centos-xia-de-bian-yi-an-zhuang/</link>
-            <category>php</category>
-            <category>web</category>
-            <category>php服务器</category>
-            <pubDate>Sat, 20 Dec 2014 19:58:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;by &lt;a href=&#34;http://zyan.cc/user/2/&#34;&gt;张宴&lt;/a&gt; ]&lt;/p&gt;
-&lt;p&gt;　　最近配置了几台Web服务器，将安装笔记贴出来吧。没时间像以前那样，将文章写的那样系统了，请见谅。详细配置，可以看以前的旧文章：&lt;a href=&#34;http://blog.zyan.cc/nginx_php_v6&#34;&gt;http://blog.zyan.cc/nginx_php_v6&lt;/a&gt; 1、安装Nginx：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;mkdir -p /Data/tgz cd /Data/tgz yum install wget yum install pcre yum install openssl* yum -y install gcc gcc-c++ autoconf libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel libxml2 libxml2-devel zlib zlib-devel glibc glibc-devel glib2 glib2-devel bzip2 bzip2-devel ncurses ncurses-devel curl curl-devel e2fsprogs e2fsprogs-devel krb5 krb5-devel libidn libidn-devel openssl openssl-devel openldap openldap-devel nss_ldap openldap-clients openldap-servers make yum -y install gd gd2 gd-devel gd2-devel /usr/sbin/groupadd www /usr/sbin/useradd -g www www ulimit -SHn 65535 wget [ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.32.tar.gz](ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.32.tar.gz) tar zxvf pcre-8.32.tar.gz cd pcre-8.32 ./configure --prefix=/Data/apps/pcre make &amp;amp;&amp;amp; make install cd ../wget [http://nginx.org/download/nginx-1.5.2.tar.gz](http://nginx.org/download/nginx-1.5.2.tar.gz) tar zxvf nginx-1.5.2.tar.gz cd nginx-1.5.2 ./configure --user=www --group=www --prefix=/Data/apps/nginx --with-http\_stub\_status\_module --with-http\_ssl\_module --with-pcre=/Data/tgz/pcre-8.32 --with-http\_realip\_module --with-http\_image\_filter\_module make make install cd ../&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;2、安装 MySQL：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;wget [http://downloads.mysql.com/archives/mysql-5.6/mysql-5.6.10-linux-glibc2.5-x86_64.tar.gz](http://downloads.mysql.com/archives/mysql-5.6/mysql-5.6.10-linux-glibc2.5-x86_64.tar.gz) tar zxvf mysql-5.6.10-linux-glibc2.5-x86\_64.tar.gz mv mysql-5.6.10-linux-glibc2.5-x86\_64 /Data/apps/mysql /usr/sbin/groupadd mysql /usr/sbin/useradd -g mysql mysql mkdir -p /Data/data/mysql/data yum install libaio /Data/apps/mysql/scripts/mysql\_install\_db --basedir=/Data/apps/mysql --datadir=/Data/data/mysql/data --user=mysqlsed -i &amp;quot;s#/usr/local/mysql#/Data/apps/mysql#g&amp;quot; /Data/apps/mysql/bin/mysqld_safe&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;3、安装PHP依赖库&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;mkdir -p /Data/apps/libs/ wget [http://www.ijg.org/files/jpegsrc.v9.tar.gz    ](http://www.ijg.org/files/jpegsrc.v9.tar.gz%C2%A0%C2%A0%C2%A0%C2%A0) tar zxvf jpegsrc.v9.tar.gz cd jpeg-9/ ./configure --prefix=/Data/apps/libs --enable-shared --enable-static --prefix=/Data/apps/libs make make install cd ../wget [http://prdownloads.sourceforge.net/libpng/libpng-1.6.2.tar.gz](http://prdownloads.sourceforge.net/libpng/libpng-1.6.2.tar.gz) tar zxvf libpng-1.6.2.tar.gz cd libpng-1.6.2/ ./configure --prefix=/Data/apps/libs make make install cd ../wget [http://download.savannah.gnu.org/releases/freetype/freetype-2.4.12.tar.gz](http://download.savannah.gnu.org/releases/freetype/freetype-2.4.12.tar.gz) tar zxvf freetype-2.4.12.tar.gz cd freetype-2.4.12/ ./configure --prefix=/Data/apps/libs make make install cd ../ wget &amp;quot;http://downloads.sourceforge.net/mhash/mhash-0.9.9.9.tar.gz?big\_mirror=0&amp;quot; wget &amp;quot;http://downloads.sourceforge.net/mcrypt/libmcrypt-2.5.8.tar.gz?big\_mirror=0&amp;quot; wget &amp;quot;http://downloads.sourceforge.net/mcrypt/mcrypt-2.6.8.tar.gz?big_mirror=0&amp;quot; tar zxvf libmcrypt-2.5.8.tar.gz cd libmcrypt-2.5.8/ ./configure --prefix=/Data/apps/libs make make install cd libltdl/ ./configure --prefix=/Data/apps/libs --enable-ltdl-install make make install cd ../../ tar zxvf mhash-0.9.9.9.tar.gz cd mhash-0.9.9.9/ ./configure --prefix=/Data/apps/libs make make install cd ../&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;vi /etc/ld.so.conf&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;添加：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;/Data/apps/libs/lib&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;然后：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ldconfig&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar zxvf mcrypt-2.6.8.tar.gz cd mcrypt-2.6.8/ export LDFLAGS=&amp;quot;-L/Data/apps/libs/lib -L/usr/lib&amp;quot; export CFLAGS=&amp;quot;-I/Data/apps/libs/include -I/usr/include&amp;quot; touch malloc.h ./configure --prefix=/Data/apps/libs --with-libmcrypt-prefix=/Data/apps/libs make make install cd ../&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;4、编译安装PHP 5.5&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;wget [http://www.php.net/get/php-5.5.1.tar.gz/from/tw2.php.net/mirror](http://www.php.net/get/php-5.5.1.tar.gz/from/tw2.php.net/mirror) tar zxvf php-5.5.1.tar.gz cd php-5.5.1/ export LIBS=&amp;quot;-lm -ltermcap -lresolv&amp;quot; export DYLD\_LIBRARY\_PATH=&amp;quot;/Data/apps/mysql/lib/:/lib/:/usr/lib/:/usr/local/lib:/lib64/:/usr/lib64/:/usr/local/lib64&amp;quot; export LD\_LIBRARY\_PATH=&amp;quot;/Data/apps/mysql/lib/:/lib/:/usr/lib/:/usr/local/lib:/lib64/:/usr/lib64/:/usr/local/lib64&amp;quot; ./configure --prefix=/Data/apps/php --with-config-file-path=/Data/apps/php/etc --with-mysql=/Data/apps/mysql --with-mysqli=/Data/apps/mysql/bin/mysql_config --with-iconv-dir --with-freetype-dir=/Data/apps/libs --with-jpeg-dir=/Data/apps/libs --with-png-dir=/Data/apps/libs --with-zlib --with-libxml-dir=/usr --enable-xml --disable-rpath --enable-bcmath --enable-shmop --enable-sysvsem --enable-inline-optimization --with-curl --enable-mbregex --enable-fpm --enable-mbstring --with-mcrypt=/Data/apps/libs --with-gd --enable-gd-native-ttf --with-openssl --with-mhash --enable-pcntl --enable-sockets --with-xmlrpc --enable-zip --enable-soap --enable-opcache --with-pdo-mysql --enable-maintainer-zts make make install cp php.ini-development /Data/apps/php/etc/php.ini cd ../ln -s /Data/apps/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclient.18.dylib mv /Data/apps/php/etc/php-fpm.conf.default /Data/apps/php/etc/php-fpm.conf&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;5、编译安装PHP扩展&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;wget [http://ftp.gnu.org/gnu/autoconf/autoconf-latest.tar.gz](http://ftp.gnu.org/gnu/autoconf/autoconf-latest.tar.gz) tar zxvf autoconf-latest.tar.gz cd autoconf-2.69/ ./configure --prefix=/Data/apps/libs make make install cd ../wget [http://pecl.php.net/get/memcache-2.2.7.tgz](http://pecl.php.net/get/memcache-2.2.7.tgz) tar zxvf memcache-2.2.7.tgz cd memcache-2.2.7/ export PHP\_AUTOCONF=&amp;quot;/Data/apps/libs/bin/autoconf&amp;quot; export PHP\_AUTOHEADER=&amp;quot;/Data/apps/libs/bin/autoheader&amp;quot; /Data/apps/php/bin/phpize ./configure --with-php-config=/Data/apps/php/bin/php-config make make install cd ../&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;打开 /Data/apps/php/etc/php.ini 查找 ; extension_dir = “ext” 在其后增加一行：&lt;/p&gt;
-&lt;p&gt;extension = “memcache.so”&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

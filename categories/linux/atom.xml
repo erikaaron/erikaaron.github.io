@@ -3,47 +3,43 @@
     <id>https://erik.xyz</id>
     <title>艾瑞可erik • Posts by &#34;linux&#34; categories</title>
     <link href="https://erik.xyz" />
-    <updated>2024-12-18T12:55:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
+    <updated>2025-01-03T07:30:00.000Z</updated>
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
     <category term="jquery插件" />
     <category term="js" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="css" />
     <category term="php" />
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="说说" />
+    <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="说说" />
-    <category term="趣闻" />
-    <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
-    <category term="漏洞" />
+    <category term="nginx" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="漏洞" />
+    <category term="负载均衡" />
     <category term="http" />
     <category term="http服务器" />
-    <category term="负载均衡" />
-    <category term="kali" />
-    <category term="kali安装" />
-    <category term="农业系统" />
-    <category term="系统设计" />
     <category term="克莱姆法则" />
     <category term="行列式" />
     <category term="n阶行列式" />
-    <category term="支付系统" />
-    <category term="支付" />
+    <category term="kali" />
+    <category term="kali安装" />
     <category term="centos" />
     <category term="linux" />
     <category term="apache优化" />
@@ -51,6 +47,8 @@
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
     <category term="日常" />
+    <category term="支付系统" />
+    <category term="支付" />
     <category term="seo" />
     <category term="优化" />
     <category term="摘要" />
@@ -102,6 +100,7 @@
     <category term="容器" />
     <category term="cncf" />
     <category term="监控" />
+    <category term="composer" />
     <category term="cphalcon" />
     <category term="cphalcon报错" />
     <category term="css中的em" />
@@ -121,6 +120,8 @@
     <category term="emergency" />
     <category term="emergency mode" />
     <category term="deepin黑屏" />
+    <category term="清理系统" />
+    <category term="清理c盘" />
     <category term="dns" />
     <category term="域名监测" />
     <category term="网站监测" />
@@ -146,8 +147,8 @@
     <category term="ping服务器" />
     <category term="各大网站ping" />
     <category term="搜引擎ping服务器" />
-    <category term="go中pdf生成" />
     <category term="go获取ip" />
+    <category term="go中pdf生成" />
     <category term="go中限流" />
     <category term="go对接快递签名" />
     <category term="go时间获取" />
@@ -217,12 +218,12 @@
     <category term="linux运行命令报错" />
     <category term="web前端" />
     <category term="web优化" />
-    <category term="maven搭建库" />
-    <category term="maven" />
-    <category term="maven内网库" />
     <category term="撮合算法" />
     <category term="撮合" />
     <category term="php撮合算法" />
+    <category term="maven搭建库" />
+    <category term="maven" />
+    <category term="maven内网库" />
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
@@ -284,6 +285,7 @@
     <category term="php-zookeeper" />
     <category term="zookeeper3.5.5" />
     <category term="php-zookeeper扩展" />
+    <category term="php串口开发" />
     <category term="php倒计时" />
     <category term="php时间" />
     <category term="倒计时" />
@@ -306,10 +308,10 @@
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
-    <category term="php字符串" />
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="php字符串" />
     <category term="python" />
     <category term="python库" />
     <category term="a标签" />
@@ -317,9 +319,9 @@
     <category term="虚线框" />
     <category term="R语言" />
     <category term="数据随机化" />
+    <category term="redis监控" />
     <category term="redis总结" />
     <category term="redis命令" />
-    <category term="redis监控" />
     <category term="redis锁" />
     <category term="redis分布式锁" />
     <category term="任意金额输入" />
@@ -330,6 +332,8 @@
     <category term="链表" />
     <category term="数据结构" />
     <category term="线性结构" />
+    <category term="浏览器禁止操作视频" />
+    <category term="禁止视频" />
     <category term="响应慢" />
     <category term="页面优化" />
     <category term="js编辑" />
@@ -408,7 +412,6 @@
     <category term="xhprof" />
     <category term="webman" />
     <category term="laravel" />
-    <category term="composer" />
     <category term="composer插件" />
     <category term="html" />
     <category term="响应式分辨率" />
@@ -451,6 +454,56 @@
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2025/01/03/php-serial-port-development/</id>
+        <title>php串口开发</title>
+        <link rel="alternate" href="https://erik.xyz/2025/01/03/php-serial-port-development/"/>
+        <content type="html">&lt;p&gt;使用外置设备，通过串口发送和接收数据。那么，就要在php端有个串口的操作代码。&lt;br&gt;PHP 的 dio 扩展（Direct I/O）提供了对底层 I/O 操作的访问，包括串口通信。通过 dio 扩展，你可以直接操作串口设备文件（如 /dev/ttyUSB0 或 COM1）来实现串口通信。&lt;br&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1-安装-dio-扩展&#34;&gt;&lt;a href=&#34;#1-安装-dio-扩展&#34; class=&#34;headerlink&#34; title=&#34;1. 安装 dio 扩展&#34;&gt;&lt;/a&gt;1. 安装 dio 扩展&lt;/h3&gt;&lt;p&gt;dio 扩展是 PHP 的一个 PECL 扩展。你可以通过以下步骤安装：&lt;/p&gt;
+&lt;p&gt;在 Linux 上安装：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get install php-dev  # 安装 PHP 开发工具&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo pecl install dio         # 安装 dio 扩展&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;安装完成后，在 php.ini 文件中启用扩展：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;extension=dio.so&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;2-使用-dio-实现串口通信&#34;&gt;&lt;a href=&#34;#2-使用-dio-实现串口通信&#34; class=&#34;headerlink&#34; title=&#34;2. 使用 dio 实现串口通信&#34;&gt;&lt;/a&gt;2. 使用 dio 实现串口通信&lt;/h3&gt;&lt;p&gt;以下是一个使用 dio 扩展实现串口通信的示例代码：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;?php&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 串口设备路径&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$device = &amp;#x27;/dev/pts/4&amp;#x27;; // Linux&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// $device = &amp;#x27;COM1&amp;#x27;;      // Windows&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 打开串口设备&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$fd = dio_open($device, O_RDWR | O_NOCTTY | O_NONBLOCK);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;if (!$fd) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    die(&amp;quot;无法打开串口设备: $device\n&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 配置串口参数&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;dio_tcsetattr($fd, [&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;baud&amp;#x27; =&amp;gt; 9600,          // 波特率&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;bits&amp;#x27; =&amp;gt; 8,             // 数据位&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;stop&amp;#x27; =&amp;gt; 1,             // 停止位&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;parity&amp;#x27; =&amp;gt; 0,           // 校验位 (0: none, 1: odd, 2: even)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;flow_control&amp;#x27; =&amp;gt; 0,     // 流控制 (0: none, 1: hardware)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 发送数据到串口&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$message = &amp;quot;你好我在https://erik.xyz上出生了！&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;dio_write($fd, $message);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo &amp;quot;已发送: $message&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 从串口读取数据&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$data = dio_read($fd, 1024); // 读取最多 1024 字节&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo &amp;quot;已接收: $data\n&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 关闭串口&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;dio_close($fd);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3-代码说明&#34;&gt;&lt;a href=&#34;#3-代码说明&#34; class=&#34;headerlink&#34; title=&#34;3. 代码说明&#34;&gt;&lt;/a&gt;3. 代码说明&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;dio_open: 打开串口设备文件。O_RDWR 表示以读写模式打开，O_NOCTTY 表示不将设备作为控制终端，O_NONBLOCK 表示非阻塞模式。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dio_tcsetattr: 配置串口参数，包括波特率、数据位、停止位、校验位和流控制。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dio_write: 向串口写入数据。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dio_read: 从串口读取数据。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dio_close: 关闭串口设备。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-串口参数配置&#34;&gt;&lt;a href=&#34;#4-串口参数配置&#34; class=&#34;headerlink&#34; title=&#34;4. 串口参数配置&#34;&gt;&lt;/a&gt;4. 串口参数配置&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;dio_tcsetattr 的配置选项：&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;baud: 波特率（如 9600、19200、38400、57600、115200）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;bits: 数据位（通常为 8）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;stop: 停止位（1 或 2）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;parity: 校验位（0: 无校验，1: 奇校验，2: 偶校验）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;flow_control: 流控制（0: 无流控制，1: 硬件流控制）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;那么这时候需要测试一下代码。那总不能真的找个串口设备吧，然而虚拟串口真香。&#34;&gt;&lt;a href=&#34;#那么这时候需要测试一下代码。那总不能真的找个串口设备吧，然而虚拟串口真香。&#34; class=&#34;headerlink&#34; title=&#34;那么这时候需要测试一下代码。那总不能真的找个串口设备吧，然而虚拟串口真香。&#34;&gt;&lt;/a&gt;那么这时候需要测试一下代码。那总不能真的找个串口设备吧，然而虚拟串口真香。&lt;/h2&gt;&lt;h3 id=&#34;5-在Linux中使用-socat-模拟虚拟串口&#34;&gt;&lt;a href=&#34;#5-在Linux中使用-socat-模拟虚拟串口&#34; class=&#34;headerlink&#34; title=&#34;5.在Linux中使用 socat 模拟虚拟串口&#34;&gt;&lt;/a&gt;5.在Linux中使用 socat 模拟虚拟串口&lt;/h3&gt;&lt;p&gt;socat 是一个强大的工具，可以创建虚拟串口对。&lt;/p&gt;
+&lt;p&gt;安装 socat：&lt;br&gt;在Debian/Ubuntu系统上：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install socat&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;创建虚拟串口对：&lt;br&gt;运行以下命令创建一对虚拟串口：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;socat -d -d pty,raw,echo=0 pty,raw,echo=0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;运行后如图：&lt;br&gt;&lt;img src=&#34;/img/2024/20250103151316.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;br&gt;这样可以看到出现两个虚拟串口。&lt;br&gt;把上面的php代码放到文件中运行一下:&lt;br&gt;&lt;img src=&#34;/img/2024/20250103151620.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;同时新开个窗口执行：&lt;code&gt;cat /dev/pts/5&lt;/code&gt;来读取串口数据。&lt;br&gt;如下图：&lt;br&gt;&lt;img src=&#34;/img/2024/20250103151927.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这里是发送数据，那接收数据怎么看呢。&lt;br&gt;那就在代码上改造一下加个for：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;// 从串口读取数据&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$data = dio_read($fd, 1024); // 读取最多 1024 字节&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo &amp;quot;已接收: $data\n&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;这里改造主要是测试用，实际上不需要。&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;//测试接收&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;for($i=0;$i&amp;lt;20;$i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    sleep(3);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 从串口读取数据&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$data = dio_read($fd, 1024); // 读取最多 1024 字节&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo &amp;quot;已接收: $data\n&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;那么，再次运行php代码,然后在新窗口运行&lt;code&gt;echo &amp;quot;欢迎你出生在https://erik.xyz&amp;quot; &amp;gt; /dev/pts/5&lt;/code&gt;来发送信息，你会看到如图的接收：&lt;br&gt;&lt;img src=&#34;/img/2024/20250103152421.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;到这里，发送和接收串口已经好了。&lt;/p&gt;
+</content>
+        <category term="php" />
+        <category term="php串口开发" />
+        <updated>2025-01-03T07:30:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2024/12/18/maven-intranet-library/</id>
         <title>maven内网库</title>
@@ -2823,20 +2876,5 @@ OpenResty® 的目标是让你的Web服务直接跑在 Nginx 服务内部，充�
         <category term="黑谷歌" />
         <category term="黒帽搜素" />
         <updated>2016-02-23T08:35:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://erik.xyz/2016/02/14/centos-an-zhuang-gu-ge-liu-lan-qi-yu-dao-de-wen-ti/</id>
-        <title>centos安装谷歌浏览器遇到的问题</title>
-        <link rel="alternate" href="https://erik.xyz/2016/02/14/centos-an-zhuang-gu-ge-liu-lan-qi-yu-dao-de-wen-ti/"/>
-        <content type="html">&lt;p&gt;突然发现centos自带的火狐浏览器好卡，打开网页速度太慢了。就尝试装个谷歌浏览器，结果报错。&lt;/p&gt;
-&lt;p&gt;如下： &lt;a href=&#34;http://dl.google.com/linux/rpm/stable/x86\_64/repodata/repomd.xml&#34;&gt;http://dl.google.com/linux/rpm/stable/x86\_64/repodata/repomd.xml&lt;/a&gt;: [Errno 14] curl#7 - “Failed to connect to 2404:6800:4005:800::200e: 网络不可达” 反反复复换了几个地方都不行（网址被封了），干脆把镜像源换了。 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;命令直接换： wget -O /etc/yum.repos.d/CentOS-Base.repo &lt;a href=&#34;http://mirrors.aliyun.com/repo/Centos-7.repo&#34;&gt;http://mirrors.aliyun.com/repo/Centos-7.repo&lt;/a&gt; 然后时候生成一下缓存 &lt;/p&gt;
-&lt;p&gt;yum makecache 报错： 正在处理依赖关系 libudev.so.0()(64bit)，它被软件包 chromium-31.0.1650.63-2.el6.x86_64 &lt;/p&gt;
-&lt;p&gt;需要执行：&lt;br&gt;yum install &lt;a href=&#34;http://mirror.yandex.ru/fedora/russianfedora/russianfedora/nonfree/el/releases/7/Everything/x86\_64/os/opera-developer-24.0.1558.21-3.el7.R.x86\_64.rpm&#34;&gt;http://mirror.yandex.ru/fedora/russianfedora/russianfedora/nonfree/el/releases/7/Everything/x86\_64/os/opera-developer-24.0.1558.21-3.el7.R.x86\_64.rpm&lt;/a&gt; &lt;/p&gt;
-&lt;p&gt;问题解决，这不过是安装个opera浏览器&lt;/p&gt;
-</content>
-        <category term="centos安装chromium报错" />
-        <category term="chromium安装报错" />
-        <updated>2016-02-14T06:12:00.000Z</updated>
     </entry>
 </feed>

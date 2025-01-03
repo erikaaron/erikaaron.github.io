@@ -7,46 +7,42 @@
         <language>zh-CN</language>
         <pubDate>Mon, 15 Nov 2021 21:43:00 +0800</pubDate>
         <lastBuildDate>Mon, 15 Nov 2021 21:43:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
         <category>jquery插件</category>
         <category>js</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>css</category>
         <category>php</category>
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>说说</category>
+        <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>说说</category>
-        <category>趣闻</category>
-        <category>nginx</category>
         <category>转载</category>
         <category>php库</category>
         <category>互联</category>
         <category>项目实战</category>
         <category>javascript</category>
-        <category>漏洞</category>
+        <category>nginx</category>
         <category>php应用</category>
         <category>浮点</category>
+        <category>漏洞</category>
+        <category>负载均衡</category>
         <category>http</category>
         <category>http服务器</category>
-        <category>负载均衡</category>
-        <category>kali</category>
-        <category>kali安装</category>
-        <category>农业系统</category>
-        <category>系统设计</category>
         <category>克莱姆法则</category>
         <category>行列式</category>
         <category>n阶行列式</category>
-        <category>支付系统</category>
-        <category>支付</category>
+        <category>kali</category>
+        <category>kali安装</category>
         <category>centos</category>
         <category>linux</category>
         <category>apache优化</category>
@@ -54,6 +50,8 @@
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
         <category>日常</category>
+        <category>支付系统</category>
+        <category>支付</category>
         <category>seo</category>
         <category>优化</category>
         <category>摘要</category>
@@ -105,6 +103,7 @@
         <category>容器</category>
         <category>cncf</category>
         <category>监控</category>
+        <category>composer</category>
         <category>cphalcon</category>
         <category>cphalcon报错</category>
         <category>css中的em</category>
@@ -124,6 +123,8 @@
         <category>emergency</category>
         <category>emergency mode</category>
         <category>deepin黑屏</category>
+        <category>清理系统</category>
+        <category>清理c盘</category>
         <category>dns</category>
         <category>域名监测</category>
         <category>网站监测</category>
@@ -149,8 +150,8 @@
         <category>ping服务器</category>
         <category>各大网站ping</category>
         <category>搜引擎ping服务器</category>
-        <category>go中pdf生成</category>
         <category>go获取ip</category>
+        <category>go中pdf生成</category>
         <category>go中限流</category>
         <category>go对接快递签名</category>
         <category>go时间获取</category>
@@ -220,12 +221,12 @@
         <category>linux运行命令报错</category>
         <category>web前端</category>
         <category>web优化</category>
-        <category>maven搭建库</category>
-        <category>maven</category>
-        <category>maven内网库</category>
         <category>撮合算法</category>
         <category>撮合</category>
         <category>php撮合算法</category>
+        <category>maven搭建库</category>
+        <category>maven</category>
+        <category>maven内网库</category>
         <category>高级缓存配置</category>
         <category>mongodb</category>
         <category>mongodb权限</category>
@@ -287,6 +288,7 @@
         <category>php-zookeeper</category>
         <category>zookeeper3.5.5</category>
         <category>php-zookeeper扩展</category>
+        <category>php串口开发</category>
         <category>php倒计时</category>
         <category>php时间</category>
         <category>倒计时</category>
@@ -309,10 +311,10 @@
         <category>php中if</category>
         <category>php中if判断</category>
         <category>php的if</category>
-        <category>php字符串</category>
         <category>php7中sphinx</category>
         <category>php7中sphinx扩展</category>
         <category>sphinx扩展</category>
+        <category>php字符串</category>
         <category>python</category>
         <category>python库</category>
         <category>a标签</category>
@@ -320,9 +322,9 @@
         <category>虚线框</category>
         <category>R语言</category>
         <category>数据随机化</category>
+        <category>redis监控</category>
         <category>redis总结</category>
         <category>redis命令</category>
-        <category>redis监控</category>
         <category>redis锁</category>
         <category>redis分布式锁</category>
         <category>任意金额输入</category>
@@ -333,6 +335,8 @@
         <category>链表</category>
         <category>数据结构</category>
         <category>线性结构</category>
+        <category>浏览器禁止操作视频</category>
+        <category>禁止视频</category>
         <category>响应慢</category>
         <category>页面优化</category>
         <category>js编辑</category>
@@ -411,7 +415,6 @@
         <category>xhprof</category>
         <category>webman</category>
         <category>laravel</category>
-        <category>composer</category>
         <category>composer插件</category>
         <category>html</category>
         <category>响应式分辨率</category>

